@@ -50,7 +50,7 @@ On écrira par exemple : $$\theta_1 = (\alpha_1-\alpha_0)$$ en réservant les le
 
 
 #### IV - Différences entre un rapporteur et un goniomètre.
-Si le rapporteur présente bien 90 graduations pour un angle droit, 360 graduations pour un tour complet, le goniomètre, lui, présente ... **60 fois plus de graduations** ! Non pas une graduation pour chaque degré mais une graduation pour chaque minute d'arc. Commercialement, ces instruments sont donc dits **30 secondes**, qui est la _demie-étendue_ que l'on peut associer à la lecture des graduations.
+Si le rapporteur présente bien 90 graduations pour un angle droit, 360 graduations pour un tour complet, le goniomètre, lui, présente ... **60 fois plus de graduations** ! Non pas une graduation pour chaque degré mais une graduation pour chaque minute d'arc. Commercialement, ces instruments sont dits **30 secondes**, comme la _demie-étendue_ que l'on peut associer à la lecture des graduations.
 
 ![vernier du goniomètre](/images_gonio_E01/spectro_5.png)
 
@@ -85,34 +85,34 @@ En faisant varier cet angle d'incidence de manière monotone entre zéro et 90 d
 >En réglant l'angle d'incidence de manière **à se placer au minimum de déviation**, on découvre une situation qui présente des symétries remarquables :
 - on peut tout d'abord remarquer que le plan du réseau se situe alors selon **la bissectrice** de l'angle formé par les directions du collimateur et de la lunette. Autrement dit, au minimun de déviation, l'angle d'incidence et l'angle de visée sont **égaux en valeur et opposés en signe**.
 
-- On peut ensuite remarquer que l'on retrouve ce même angle entre les directions de la normale au réseau et de la partie de la lumière qui n'est pas du tout déviée et que l'on appelle _ordre zéro_. Autrement dit, **l'angle de déviation D** vaut alors exactement **deux fois** l'angle d'incidence.
+- On peut ensuite remarquer que l'on retrouve ce même angle entre les directions de la normale au réseau et de la partie de la lumière qui n'est pas du tout déviée et que l'on appelle _ordre zéro_. Autrement dit, **l'angle de déviation D** vaut alors exactement **moins deux fois** l'angle d'incidence.
 
 En réglant l'angle d'incidence de manière à se placer au minimum de déviation pour la raie considérée dans l'ordre considéré, nous pouvons donc faire **l'économie de la mesure** de l'angle d'incidence. Dans le calcul menant à la détermination de la longueur d'onde correspondante, nous aurons donc fait **l'économie des incertitudes** correspondants aux visées des deux azimuts de l'angle d'incidence. Nous aurons donc **gagner en précision** sur la valeur de la longueur d'onde calculée.
 
 En partant de la formule fondamentale du réseau, on obtient :
 $$ \lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)] $$
-En se plaçant au minimum de déviation, on a :
-$$\theta=-\frac{D_{min}}{2}$$ et $$ \theta_o=\frac{D_{min}}{2}$$ D'où :
-$$ \lambda = \frac{a}{p}[sin(-\frac{D_{min}}{2})-sin(\frac{D_{min}}{2})]$$
+En se plaçant par exemple au minimum de déviation pour la raie verte de l'ordre $p= -1$, on a :
+$$\theta=\frac{D_{min}}{2}$$ et $$ \theta_o=-\frac{D_{min}}{2}$$ D'où :
+$$ \lambda = -a[sin(\frac{D_{min}}{2})-sin(\frac{-D_{min}}{2})]$$
 Soit encore :
-$$ \lambda = -\frac{2a}{p}[sin(\frac{D_{min}}{2})]$$
+$$ \lambda = -2a[sin(\frac{D_{min}}{2})]$$
 Et enfin, en exprimant l'angle $D$ comme la différence des azimuts $\alpha_1$ et $\alpha_0$  mesurés directement :
->$$ \lambda = \frac{2a}{p}sin(\frac{\alpha_1-\alpha_0}{2})$$
+>$$ \lambda = 2asin(\frac{\alpha_0-\alpha_1}{2})$$
 
 
 ####VII - Symétrie de la situation de mesure
 Pour aller encore un peu plus loin, il est légitime de demander à notre _modèle physique_ de rester pertinent que l'on regarde le phénomène depuis **le haut** ... ou bien qu'on le regarde depuis **le bas**.
 Il existe donc nécessairement une position du réseau et de la lunette qui réalise exactement la même configuration angulaire ... de l'autre côté du goniomètre.
 Ceci va donc nous permettre, en effectuant seulement deux visées, de calculer cette fois l'angle (2D) et donc d'évaluer l'angle D avec une incertitude expérimentale qui sera encore divisée par deux !
-Soit :
-$$ \lambda = -\frac{2a}{p}sin(\frac{(2D_{min}/2)}{2}) $$
+Soit, toujours pour la raie verte de l'ordre $p=-1$ :
+$$ \lambda = -2asin(\frac{(2D_{min}/2)}{2}) $$
 Et, si $\alpha_2$ est l'azimut correspondant à la raie de même couleur mais repérée dans l'ordre de signe opposé (l'ordre $-1$ dans notre exemple) :
->$$ \lambda = \frac{2a}{p}sin(\frac{\alpha_2-\alpha_1}{4})$$
+>$$ \lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$
 
 ___
 
 #### Pour conclure {ignore=true}
-Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du **prototocole**, c'est à dire de la **manière dont on conduit les mesures** en exploitant les symétries de la formule de calcul et de la situation de mesure.
+Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du **prototocole**, c'est à dire de la **manière dont on conduit les mesures** en exploitant les symétries du phénomène physique mis en jeu, en s'aidant notamment des symétries du modèle mathématique qui le modélise.
 
 ___
 

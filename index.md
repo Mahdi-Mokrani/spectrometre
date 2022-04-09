@@ -1,21 +1,15 @@
+---
+html:
+    toc: true 
+export_on_save:
+    html: true
+---
+
 #Le spectromètre à réseau {ignore=true}
 ######**Épisode 1** {ignore=true}
 ######Mesurer des angles pour déterminer des longueurs d'onde {ignore=true}
 ___
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
-<!-- code_chunk_output -->
-
-- [I - Goniomètre et spectromètre](#i-goniomètre-et-spectromètre)
-- [II - Mesurer des angles pour déterminer des longueurs d'onde.](#ii-mesurer-des-angles-pour-déterminer-des-longueurs-donde)
-- [III - Analogie entre un rapporteur et un goniomètre.](#iii-analogie-entre-un-rapporteur-et-un-goniomètre)
-- [IV - Différences entre un rapporteur et un goniomètre.](#iv-différences-entre-un-rapporteur-et-un-goniomètre)
-- [V - Comment se servir du goniomètre ? Le protocole à appliquer](#v-comment-se-servir-du-goniomètre-le-protocole-à-appliquer)
-- [VI - Symétries des images diffractées au minimum de déviation](#vi-symétries-des-images-diffractées-au-minimum-de-déviation)
-- [VII - Symétrie de la situation de mesure](#vii-symétrie-de-la-situation-de-mesure)
-
-<!-- /code_chunk_output -->
-___
 #### Introduction {ignore=true}
 Pour un physicien, les messages de la lumière sont nombreux et riches d'enseignements. **Déterminer avec précision la longueur d'onde d'un rayonnement** est le point de départ de nombreuses analyses dans des champs d'application très variés, des plus fondamentaux aux plus quotidiens.
 

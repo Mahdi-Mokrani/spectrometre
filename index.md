@@ -26,11 +26,11 @@ Pour un physicien, les messages de la lumière sont nombreux et riches d'enseign
 >Le **spectromètre**, comme son nom l'indique, est l'instrument qui permet de **décomposer** le faisceau lumineux issue d'une source dans l'ensemble des lumières colorées qui constitue son spectre, et de **mesurer** les longueurs d'onde des différentes contributions spectrales. 
     
 On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui **réfracte** chaque rayon coloré selon un angle différent. 
-On peut aussi utilisé un réseau qui, lui, **diffracte** la lumière incidente dans des directions différentes et dans des ordres différents.
+On peut aussi utiliser un réseau qui, lui, **diffracte** la lumière incidente dans des directions différentes et dans des ordres différents.
 
 ![prisme et réseau](/images_gonio_E01/spectro_2.png)
 
-On a d'ailleurs pris l'habitude de classer les différentes sources de lumière en fonction de la **nature de leur spectre** : une lampe blanche possède un spectre **continu** alors qu'une lampe spectrale montre un **spectre de raies**, contenant un nombre discret de contributions spectrales qui sont comme la _signature_ de l'élément chimique qui les a émis. 
+On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la **nature de leur spectre** : une lampe blanche possède un spectre **continu** alors qu'une lampe spectrale montre un **spectre de raies**, contenant un nombre discret de contributions spectrales qui sont comme la _signature_ de l'élément chimique qui les a émis. 
 
 #### II - Mesurer des angles pour déterminer des longueurs d'onde.
 À partir de la loi de la réfraction dans le cas du prisme, ou des lois de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de **calculer** les longueurs d'onde à partir des angles que l'on peut **mesurer directement**.

@@ -17,9 +17,7 @@ ___
 <!-- /code_chunk_output -->
 ___
 #### Introduction {ignore=true}
-Pour un physicien, les messages de la lumière sont nombreux et riches d'enseignements.
-
-**Déterminer avec précision la longueur d'onde d'un rayonnement** est le point de départ de nombreuses analyses dans des champs d'application très variés, des plus fondamentaux aux plus quotidiens.
+Pour un physicien, les messages de la lumière sont nombreux et riches d'enseignements. **Déterminer avec précision la longueur d'onde d'un rayonnement** est le point de départ de nombreuses analyses dans des champs d'application très variés, des plus fondamentaux aux plus quotidiens.
 
 ![goniomètre](/images_gonio_E01/spectro_1.png)
 #### I - Goniomètre et spectromètre
@@ -51,7 +49,7 @@ On pourrait dire qu'un goniomètre est comme le **rapporteur** des leçons de g�
 
 ![rapporteur](/images_gonio_E01/spectro_4.png)
 
-Remarquons tout d'abord que pour mesurer un angle, nous effectuons toujours **deux visées**. De la même manière que, sur un banc d'optique, on détermine toujours une distance $d$ en soustrayant **deux abscisses** $x_1$ et $x_2$ (on écrit $d=x_2-x_1$ ) ; sur un goniomètre, on détermine toujours un angle en soustrayant **deux azimuts**.
+Remarquons tout d'abord que pour mesurer un angle, nous effectuons toujours **deux visées**. De la même manière que, sur un banc d'optique, on détermine toujours une distance en soustrayant **deux abscisses** ; sur un goniomètre, on détermine toujours un angle en soustrayant **deux azimuts**.
 On écrira par exemple : $$\theta_1 = (\alpha_1-\alpha_0)$$ en réservant les lettres $\theta_i$ pour les angles et les lettres $\alpha_i$ pour les azimuts. 
 >Cette _distinction de vocabulaire_ nous permet de garder en tête que chaque mesure d'angle $\theta_1$ est "grosse" des **incertitudes expérimentales** que l'on peut attacher à chacune des **deux visées** et à chacune des **deux lectures** d'azimuts $\alpha_1$ et $\alpha_2$. 
 

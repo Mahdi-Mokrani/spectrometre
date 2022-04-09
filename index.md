@@ -5,7 +5,7 @@ export_on_save:
     html: true
 ---
 
-#Le spectromètre à réseau {ignore=true}
+#Le spectromètre à réseau
 ######**Épisode 1** {ignore=true}
 ######Mesurer des angles pour déterminer des longueurs d'onde {ignore=true}
 ___

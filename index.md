@@ -1,15 +1,16 @@
 ---
 html:
-    toc: true 
+    toc: false
 export_on_save:
     html: true
 ---
 
-#Le spectromètre à réseau
+#Le spectromètre à réseau {ignore=true}
 ######**Épisode 1** {ignore=true}
 ######Mesurer des angles pour déterminer des longueurs d'onde {ignore=true}
 ___
-
+[TOC]
+___
 #### Introduction {ignore=true}
 Pour un physicien, les messages de la lumière sont nombreux et riches d'enseignements. **Déterminer avec précision la longueur d'onde d'un rayonnement** est le point de départ de nombreuses analyses dans des champs d'application très variés, des plus fondamentaux aux plus quotidiens.
 

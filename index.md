@@ -73,11 +73,11 @@ Sur des goniomètres d'étude plus anciens, on peut noter que le **plateau n'est
 
 #### V - Comment se servir du goniomètre ? Le protocole à appliquer
 La manière dont il faut se servir du goniomètre répond, bien entendu, au souci d'effectuer les mesures les plus précises possibles.
-En résumé, il y a quatre étapes à répéter pour chaque mesure :
 
-!!! note Protocole :
+!!! note Protocole 
+    En résumé, il y a quatre étapes à répéter pour chaque mesure :
     1. **Déplacer grossièrement la lunette** pour visualiser l'ordre d'interférence considéré ;
-    2. **Régler l'angle d'incidence** dans la situation particulière du minimum de déviation - beaucoup plus de détails sur ce sujet dans un instant - ;
+    2. **Régler l'angle d'incidence** dans la situation particulière du minimum de déviation, beaucoup plus de détails sur ce sujet dans un instant ;
     3. **Viser la raie considérée** le plus précisément possible ;
     4. **Faire la lecture de l'azimut** correspondant et bien le relever pour le faire apparaître dans son compte-rendu.
 

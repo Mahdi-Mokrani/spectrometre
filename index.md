@@ -74,10 +74,10 @@ La manière dont il faut se servir du goniomètre répond, bien entendu, au souc
 
 !!! note Protocole 
     En résumé, il y a quatre étapes à répéter pour chaque mesure :
-    1. **Déplacer grossièrement la lunette** pour visualiser l'ordre d'interférence considéré ;
-    2. **Régler l'angle d'incidence** dans la situation particulière du minimum de déviation, beaucoup plus de détails sur ce sujet dans un instant ;
-    3. **Viser la raie considérée** le plus précisément possible ;
-    4. **Faire la lecture de l'azimut** correspondant et bien le relever pour le faire apparaître dans son compte-rendu.
+    1. **déplacer grossièrement la lunette** pour visualiser l'ordre d'interférence considéré ;
+    2. **régler l'angle d'incidence** dans la situation particulière du minimum de déviation, beaucoup plus de détails sur ce sujet dans un instant ;
+    3. **viser la raie considérée** le plus précisément possible ;
+    4. **faire la lecture de l'azimut** correspondant et bien le relever pour le faire apparaître dans son compte-rendu.
 
 L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exibées par le phénomène physique exploité.
 
@@ -97,10 +97,10 @@ En réglant l'angle d'incidence de manière à se placer au minimum de déviatio
 En partant de la formule fondamentale du réseau, on obtient :
 $$ \lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)] $$
 En se plaçant au minimum de déviation, on a :
-$$\theta=\frac{D}{2}$$ et $$ \theta_o=-\frac{D}{2}$$ D'où :
-$$ \lambda = \frac{a}{p}[sin(\frac{D}{2})-sin(-\frac{D}{2})]$$
+$$\theta=-\frac{D_{min}}{2}$$ et $$ \theta_o=\frac{D_{min}}{2}$$ D'où :
+$$ \lambda = \frac{a}{p}[sin(-\frac{D_{min}}{2})-sin(\frac{D_{min}}{2})]$$
 Soit encore :
-$$ \lambda = \frac{2a}{p}[sin(\frac{D}{2})]$$
+$$ \lambda = -\frac{2a}{p}[sin(\frac{D_{min}}{2})]$$
 Et enfin, en exprimant l'angle $D$ comme la différence des azimuts $\alpha_1$ et $\alpha_0$  mesurés directement :
 >$$ \lambda = \frac{2a}{p}sin(\frac{\alpha_1-\alpha_0}{2})$$
 
@@ -110,9 +110,9 @@ Pour aller encore un peu plus loin, il est légitime de demander à notre _modè
 Il existe donc nécessairement une position du réseau et de la lunette qui réalise exactement la même configuration angulaire ... de l'autre côté du goniomètre.
 Ceci va donc nous permettre, en effectuant seulement deux visées, de calculer cette fois l'angle (2D) et donc d'évaluer l'angle D avec une incertitude expérimentale qui sera encore divisée par deux !
 Soit :
-$$ \lambda = \frac{2a}{p}sin(\frac{(2D/2)}{2}) $$
+$$ \lambda = -\frac{2a}{p}sin(\frac{(2D_{min}/2)}{2}) $$
 Et, si $\alpha_2$ est l'azimut correspondant à la raie de même couleur mais repérée dans l'ordre de signe opposé (l'ordre $-1$ dans notre exemple) :
->$$ \lambda = \frac{2a}{p}sin(\frac{\alpha_1-\alpha_2}{4})$$
+>$$ \lambda = \frac{2a}{p}sin(\frac{\alpha_2-\alpha_1}{4})$$
 
 ___
 
@@ -122,7 +122,7 @@ Apprendre à se servir du goniomètre c'est donc réaliser que la précision de 
 ___
 
 #### Outro {ignore=true}
-Dans la prochaine vidéo, je vous proposerai une révision rapide de la manière dont on règle à sa vue l'ensemble lunette et colimateur.
+Dans la prochaine vidéo, je vous proposerai une révision rapide de la manière dont on règle à sa vue l'ensemble lunette et collimateur.
 Au revoir, et à très bientôt j'espère.
 
 

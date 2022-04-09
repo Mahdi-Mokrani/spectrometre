@@ -61,7 +61,7 @@ Si le rapporteur présente bien 90 graduations pour un angle droit, 360 graduati
 
 ![vernier du goniomètre](/images_gonio_E01/spectro_5.png)
 
-Pour justifier l'ambition d'une telle précision, le goniomètre est équipée d'un **système de visée de précision** qui est constitué d'une _partie optique_ (le **collimateur** et la **lunette**) et d'une _partie mécanique_. On distinguera la **vis de serrage**, que l'on désserre pour effectuer des mouvements grossiers avant de la ressérer, et la **vis de déplacement micrométrique** qui permet le déplacement fin de la lunette.
+Pour justifier une telle ambition, le goniomètre est équipée d'un **système de visée de précision** qui est constitué d'une _partie optique_ (le **collimateur** et la **lunette**) et d'une _partie mécanique_. On distinguera la **vis de serrage**, que l'on désserre pour effectuer des mouvements grossiers avant de la ressérer, et la **vis de déplacement micrométrique** qui permet le déplacement fin de la lunette.
 
 ![vis lunette](/images_gonio_E01/spectro_6.png)
 

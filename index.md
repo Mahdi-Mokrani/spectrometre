@@ -17,7 +17,9 @@ ___
 <!-- /code_chunk_output -->
 ___
 #### Introduction {ignore=true}
-Pour un physicien, les messages de la lumière sont nombreux et riches d'enseignements. **Déterminer avec précision la longueur d'onde d'un rayonnement** est le point de départ de nombreuses analyses dans des champs d'application très variés, des plus fondamentaux aux plus quotidiens.
+Pour un physicien, les messages de la lumière sont nombreux et riches d'enseignements.
+
+**Déterminer avec précision la longueur d'onde d'un rayonnement** est le point de départ de nombreuses analyses dans des champs d'application très variés, des plus fondamentaux aux plus quotidiens.
 
 ![goniomètre](/images_gonio_E01/spectro_1.png)
 #### I - Goniomètre et spectromètre

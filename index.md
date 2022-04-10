@@ -106,7 +106,7 @@ Il existe donc nécessairement une position du réseau et de la lunette qui réa
 Ceci va donc nous permettre, en effectuant seulement deux visées, de calculer cette fois l'angle (2D) et donc d'évaluer l'angle D avec une incertitude expérimentale qui sera encore divisée par deux !
 Soit, toujours pour la raie verte de l'ordre $p=-1$ :
 $$ \lambda = -2asin(\frac{(2D_{min}/2)}{2}) $$
-Et, si $\alpha_2$ est l'azimut correspondant à la raie de même couleur mais repérée dans l'ordre de signe opposé (l'ordre $-1$ dans notre exemple) :
+Et, si $\alpha_2$ est l'azimut correspondant à la raie de même couleur mais repérée dans l'ordre de signe opposé (l'ordre $p=+1$ dans notre exemple) :
 >$$ \lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$
 
 ___

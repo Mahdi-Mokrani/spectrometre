@@ -92,7 +92,7 @@ En réglant l'angle d'incidence de manière à se placer au minimum de déviatio
 En partant de la formule fondamentale du réseau, on obtient :
 $$ \lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)] $$
 En se plaçant par exemple au minimum de déviation pour la raie verte de l'ordre $p= -1$, on a :
-$$\theta=\frac{D_{min}}{2}$$ et $$ \theta_o=-\frac{D_{min}}{2}$$ D'où :
+$$\theta=\frac{D_{min}}{2}=-\theta_o$$ d'où :
 $$ \lambda = -a[sin(\frac{D_{min}}{2})-sin(\frac{-D_{min}}{2})]$$
 Soit encore :
 $$ \lambda = -2a[sin(\frac{D_{min}}{2})]$$

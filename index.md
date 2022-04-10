@@ -110,9 +110,13 @@ Et, si $\alpha_2$ est l'azimut correspondant à la raie de même couleur mais re
 >$$ \lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$
 
 ___
+#### Faire le bilan {ignore=true}
+Pour calculer la valeur de la longueur d'onde $\lambda$ à partir de la formule fondamentale du réseau, nous sommes partis du constat qu'il était nécessaire de mesurer deux angles. L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts. 
+
+En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié et, en effectuant la mesure symétrique, nous l'avons de nouveau divisé par deux. Soit un gain de 1 à 4.
 
 #### Pour conclure {ignore=true}
-Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du **prototocole**, c'est à dire de la **manière dont on conduit les mesures** en exploitant les symétries du phénomène physique mis en jeu, en s'aidant notamment des symétries du modèle mathématique qui le modélise.
+Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du **prototocole**, c'est à dire de la **manière dont on conduit les mesures**. On cherchera ainsi à exploiter au mieux les symétries du phénomène physique mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique quand il est fourni.
 
 ___
 

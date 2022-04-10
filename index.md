@@ -87,7 +87,7 @@ En faisant varier cet angle d'incidence de manière monotone entre zéro et 90 d
 
 - On peut ensuite remarquer que l'on retrouve ce même angle entre les directions de la normale au réseau et de la partie de la lumière qui n'est pas du tout déviée et que l'on appelle _ordre zéro_. Autrement dit, **l'angle de déviation D** vaut alors exactement **moins deux fois** l'angle d'incidence.
 
-En réglant l'angle d'incidence de manière à se placer au minimum de déviation pour la raie considérée dans l'ordre considéré, nous pouvons donc faire **l'économie de la mesure** de l'angle d'incidence. Dans le calcul menant à la détermination de la longueur d'onde correspondante, nous aurons donc fait **l'économie des incertitudes** correspondants aux visées des deux azimuts de l'angle d'incidence. Nous aurons donc **gagner en précision** sur la valeur de la longueur d'onde calculée.
+En réglant l'angle d'incidence de manière à se placer au minimum de déviation pour la raie considérée dans l'ordre considéré, nous pouvons donc faire **l'économie de la mesure** de l'angle d'incidence. Dans le calcul menant à la détermination de la longueur d'onde correspondante, nous aurons donc fait **l'économie des incertitudes** correspondantes. Nous aurons donc **gagner en précision** sur la valeur de la longueur d'onde calculée.
 
 En partant de la formule fondamentale du réseau, on obtient :
 $$ \lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)] $$

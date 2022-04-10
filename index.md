@@ -72,7 +72,7 @@ La manière dont il faut se servir du goniomètre répond, bien entendu, au souc
     1. **déplacer grossièrement la lunette** pour visualiser l'ordre d'interférence considéré ;
     2. **régler l'angle d'incidence** dans la situation particulière du minimum de déviation, beaucoup plus de détails sur ce sujet dans un instant ;
     3. **viser la raie considérée** le plus précisément possible ;
-    4. **faire la lecture de l'azimut** correspondant et bien le relever pour le faire apparaître dans son compte-rendu.
+    4. **faire la lecture de l'azimut** correspondant, le relever et le faire apparaître dans son compte-rendu.
 
 L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exibées par le phénomène physique exploité.
 

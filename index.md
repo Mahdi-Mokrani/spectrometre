@@ -62,7 +62,7 @@ On notera l'existence d'un système mécanique similaire sur le plateau du gonio
 
 ![vis plateau](/images_gonio_E01/spectro_7.png)
 
-Sur des goniomètres d'étude plus anciens, on peut noter que le **plateau n'est pas mobile**. En revanche, ils étaitent équipées d'une lunette supplémentaire, dont la fonction etait donc **mesurer l'angle d'incidence $\theta_0$**, en visant la part de la lumière incidente qui est réfléchie sur la face d'entrée du prisme.
+Sur des goniomètres d'étude plus anciens, on peut noter que le **plateau n'est pas mobile**. En revanche, ils étaitent équipées d'une lunette supplémentaire, dont la fonction etait de **mesurer l'angle d'incidence $\theta_0$**, en visant la part de la lumière incidente qui est réfléchie sur la face d'entrée du prisme.
 
 #### V - Comment se servir du goniomètre ? Le protocole à appliquer
 La manière dont il faut se servir du goniomètre répond, bien entendu, au souci d'effectuer les mesures les plus précises possibles.
@@ -77,6 +77,8 @@ La manière dont il faut se servir du goniomètre répond, bien entendu, au souc
 L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exibées par le phénomène physique exploité.
 
 #### VI - Symétries des images diffractées au minimum de déviation
+_Approche expérimentale_
+
 Pour un réseau de pas donné et pour une longueur d'onde donnée (celle du laser rouge ici), les angles auxquels on peut repérer les différents ordres d'interférence sont des fonctions de l'angle d'incidence $\theta_0$.
 En faisant varier cet angle d'incidence de manière monotone entre zéro et 90 degrés puis de nouveau de manière monotone entre 90 degrés et zéro, on observe que **l'angle de déviation passe par un minimum**.
 
@@ -87,7 +89,9 @@ En faisant varier cet angle d'incidence de manière monotone entre zéro et 90 d
 
 - On peut ensuite remarquer que l'on retrouve ce même angle entre les directions de la normale au réseau et de la partie de la lumière qui n'est pas du tout déviée et que l'on appelle _ordre zéro_. Autrement dit, **l'angle de déviation D** vaut alors exactement **moins deux fois** l'angle d'incidence.
 
-En réglant l'angle d'incidence de manière à se placer au minimum de déviation pour la raie considérée dans l'ordre considéré, nous pouvons donc faire **l'économie de la mesure** de l'angle d'incidence. Dans le calcul menant à la détermination de la longueur d'onde correspondante, nous aurons donc fait **l'économie des incertitudes** correspondantes. Nous aurons donc **gagner en précision** sur la valeur de la longueur d'onde calculée.
+En réglant l'angle d'incidence de manière à se placer au minimum de déviation, pour la raie considérée et dans l'ordre considéré, nous pouvons donc faire **l'économie de la mesure** de l'angle d'incidence et faire **l'économie des incertitudes** correspondantes. Nous aurons ainsi **gagner en précision** sur la valeur de la longueur d'onde calculée.
+
+_Approche par le modèle mathématique_
 
 En partant de la formule fondamentale du réseau, on obtient :
 $$ \lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)] $$

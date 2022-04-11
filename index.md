@@ -113,9 +113,9 @@ Et l'équation fondamentale du réseau devient :
 $$ sin(\theta_0+D)=sin(\theta_0)+p\frac{\lambda}{a}  $$
 
 On cherche la dérivée de cette expression par rapport à l'angle d'incidence $\theta_0$. 
-Pour la partie droite de l'égalité, il vient immédiatement :
+Pour le membre de droite de l'égalité, il vient immédiatement :
 $$ \frac{d(sin\theta_0+p\frac{\lambda}{a})}{d\theta_0}=cos\theta_0  $$
-Pour la partie gauche de l'égalité, comme :
+Pour le membre de gauche de l'égalité, comme :
 $$ sin(\theta_0+D)=sin\theta_0cosD+cos\theta_0sinD $$
 Il vient :
 
@@ -157,7 +157,7 @@ _Approche par l'exploration du modèle mathématique_
 La transformation mathématique qui correspond au changement de point de vue haut/bas peut être vue comme un retournement de l'image, une rotation d'un demi-tour autour de l'axe qui est vertical sur la feuille et passe par son milieu.
 
 En gardant la même convention d'orientation des angles, cette transformation :
-- conserve en _norme_ les valeurs des angles $\theta_0$ et $\theta$,
+- conserve _en norme_ les valeurs des angles $\theta_0$ et $\theta$,
 - change l'ordre $p=-1$ en un ordre $p=+1$,
 - change l'angle $\theta_0$ en $-\theta_0$ et
 - change l'angle $\theta$ en $-\theta$.

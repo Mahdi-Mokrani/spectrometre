@@ -112,7 +112,7 @@ $$  D=\theta-\theta_0 $$
 Et l'équation fondamentale du réseau devient : 
 $$ sin(\theta_0+D)=sin(\theta_0)+p\frac{\lambda}{a}  $$
 
-On cherche la dérivée de cette expression par rapport à l'angle d'incidence $\theta_0$. 
+On cherche la dérivée de cette expression par rapport à $\theta_0$. 
 Pour le membre de droite de l'égalité, il vient immédiatement :
 $$ \frac{d(sin\theta_0+p\frac{\lambda}{a})}{d\theta_0}=cos\theta_0  $$
 Pour le membre de gauche de l'égalité, comme :

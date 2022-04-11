@@ -77,6 +77,7 @@ La manière dont il faut se servir du goniomètre répond, bien entendu, au souc
 L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exibées par le phénomène physique exploité.
 
 #### VI - Symétries des images diffractées au minimum de déviation
+
 _Approche expérimentale_
 
 Pour un réseau de pas donné et pour une longueur d'onde donnée (celle du laser rouge ici), les angles auxquels on peut repérer les différents ordres d'interférence sont des fonctions de l'angle d'incidence $\theta_0$.
@@ -105,6 +106,9 @@ Et enfin, en exprimant l'angle $D$ comme la différence des azimuts $\alpha_1$ e
 
 
 ####VII - Symétrie de la situation de mesure
+
+_Approche expérimentale_
+
 Pour aller encore un peu plus loin, il est légitime de demander à notre _modèle physique_ de rester pertinent que l'on regarde le phénomène depuis **le haut** ... ou bien qu'on le regarde depuis **le bas**.
 Il existe donc nécessairement une position du réseau et de la lunette qui réalise exactement la même configuration angulaire ... de l'autre côté du goniomètre.
 Ceci va donc nous permettre, en effectuant seulement deux visées, de calculer cette fois l'angle (2D) et donc d'évaluer l'angle D avec une incertitude expérimentale qui sera encore divisée par deux !
@@ -113,11 +117,13 @@ $$ \lambda = -2asin(\frac{(2D_{min}/2)}{2}) $$
 Et, si $\alpha_2$ est l'azimut correspondant à la raie de même couleur mais repérée dans l'ordre de signe opposé (la raie verte dans l'ordre $p=+1$ dans notre exemple) :
 >$$ \lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$
 
+_Approche par le modèle mathématique_
+
 ___
 #### Faire le bilan {ignore=true}
 Pour calculer la valeur de la longueur d'onde $\lambda$ à partir de la formule fondamentale du réseau, nous sommes partis du constat qu'il était nécessaire de mesurer deux angles. L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts. 
 
-En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié et, en effectuant la mesure symétrique, nous l'avons de nouveau divisé par deux. Soit un gain de 1 à 4.
+En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié puis, en effectuant la mesure symétrique, nous l'avons de nouveau divisé par deux. Soit un gain de 1 à 4.
 
 #### Pour conclure {ignore=true}
 Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du **prototocole**, c'est à dire de la **manière dont on conduit les mesures**. On cherchera ainsi à exploiter au mieux les symétries du phénomène physique mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique quand il est fourni.

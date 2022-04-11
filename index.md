@@ -143,8 +143,10 @@ La seconde correspond bien aux symétries décrites plus haut :
 _Approche expérimentale_
 
 Pour aller encore un peu plus loin, il est légitime de demander à notre _modèle physique_ de rester pertinent que l'on regarde le phénomène depuis **le haut** ... ou bien qu'on le regarde depuis **le bas**.
+
 Il existe donc nécessairement une position symétrique du réseau et de la lunette qui réalise exactement la même configuration angulaire ... de l'autre côté du goniomètre.
 Ceci va donc nous permettre, en effectuant deux visées, de calculer cette fois l'angle (2D) et donc d'évaluer D avec une incertitude expérimentale qui sera de nouveau divisée par deux !
+
 Soit, pour la raie verte visée une première fois à l'azimut $\alpha_1$ dans l'ordre $p=-1$ , puis visée une seconde fois à l'azimut $\alpha_2$ dans l'ordre $p=+1$ de la position symétrique du réseau :
 $$ \lambda = -2asin(\frac{(2D_{min}/2)}{2}) $$
 

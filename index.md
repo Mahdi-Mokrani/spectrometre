@@ -113,10 +113,13 @@ Et l'équation fondamentale du réseau devient :
 $$ sin(\theta_0+D)=sin(\theta_0)+p\frac{\lambda}{a}  $$
 
 On cherche la dérivée de cette expression par rapport à $\theta_0$. 
+
 Pour le membre de droite de l'égalité, il vient immédiatement :
 $$ \frac{d(sin\theta_0+p\frac{\lambda}{a})}{d\theta_0}=cos\theta_0  $$
+
 Pour le membre de gauche de l'égalité, comme :
 $$ sin(\theta_0+D)=sin\theta_0cosD+cos\theta_0sinD $$
+
 Il vient :
 
 $$ \frac{d(sin(\theta_0+D))}{d\theta_0}=cos\theta_0cosD-sin\theta_0sinD\frac{dD}{d\theta_0}-sin\theta_0sinD+cos\theta_0cosD\frac{dD}{d\theta_0} $$
@@ -124,7 +127,9 @@ $$ \frac{d(sin(\theta_0+D))}{d\theta_0}=cos\theta_0cosD-sin\theta_0sinD\frac{dD}
 $$ \frac{d(sin(\theta_0+D))}{d\theta_0} = cos\theta_0cosD(1+\frac{dD}{d\theta_0})
 -sin\theta_0sinD(1+\frac{dD}{d\theta_0}) $$
 
-Comme au minimum de déviation $ \frac{dD}{d\theta_0}=0 $, l'égalité des deux membres s'écrit : 
+Comme au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
+
+L'égalité des deux membres s'écrit : 
 $$ cos\theta_0=cos\theta_0cosD_{min}-sin\theta_0sinD_{min}  $$
 
 Ce qui permet d'aboutir à l'équation :
@@ -145,6 +150,7 @@ _Approche expérimentale_
 Pour aller encore un peu plus loin, il est légitime de demander à notre _modèle physique_ de rester pertinent que l'on regarde le phénomène depuis **le haut** ... ou bien qu'on le regarde depuis **le bas**.
 
 Il existe donc nécessairement une position symétrique du réseau et de la lunette qui réalise exactement la même configuration angulaire ... de l'autre côté du goniomètre.
+
 Ceci va donc nous permettre, en effectuant deux visées, de calculer cette fois l'angle (2D) et donc d'évaluer D avec une incertitude expérimentale qui sera de nouveau divisée par deux !
 
 Soit, pour la raie verte visée une première fois à l'azimut $\alpha_1$ dans l'ordre $p=-1$ , puis visée une seconde fois à l'azimut $\alpha_2$ dans l'ordre $p=+1$ de la position symétrique du réseau :

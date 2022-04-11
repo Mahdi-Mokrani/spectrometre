@@ -522,33 +522,31 @@ pre[data-line] .line-highlight[data-end]:after {
 
 @font-face {
   font-family: adobe-caslon-pro;
-  src: url();
+  src: url("https://use.typekit.net/suz5epf.css");
 }
 .markdown-preview.markdown-preview {
-  width: 85%;
+  width: 80%;
   font-family: adobe-caslon-pro;
-  font-size: 22px;
-  line-height: 1.3;
-  text-align: left ;
+  text-align: left;
   text-indent: 1em ;
-  hyphens: auto ;
+  hyphens: auto;
+  font-size: 22px;
+  line-height: 1.33;
 }
 .markdown-preview.markdown-preview img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
   max-width: 100%;
+  height: auto;
   border: 2px solid #ddd;
   padding: 5px;
 }
-.md-sidebar-toc.md-sidebar-toc {
-  font-family: adobe-caslon-pro;
-}
 @page {
-  size: A4;
-  margin: 1.25cm;
-  font-size: 10px;
+  size: A4 ;
+  margin-top: 1.25cm;
+  margin-bottom: 1.25cm;
+  font-family: American Typewriter ;
   @bottom {
     content: counter(page) " sur " counter(pages);
   }
@@ -652,32 +650,64 @@ En faisant varier cet angle d&apos;incidence de mani&#xE8;re monotone entre z&#x
 <p>On peut ensuite remarquer que l&apos;on retrouve ce m&#xEA;me angle entre les directions de la normale au r&#xE9;seau et de la partie de la lumi&#xE8;re qui n&apos;est pas du tout d&#xE9;vi&#xE9;e et que l&apos;on appelle <em>ordre z&#xE9;ro</em>. Autrement dit, <strong>l&apos;angle de d&#xE9;viation D</strong> vaut alors exactement <strong>moins deux fois</strong> l&apos;angle d&apos;incidence.</p>
 </li>
 </ul>
-<p>En r&#xE9;glant l&apos;angle d&apos;incidence de mani&#xE8;re &#xE0; se placer au minimum de d&#xE9;viation, pour la raie consid&#xE9;r&#xE9;e et dans l&apos;ordre consid&#xE9;r&#xE9;, nous pouvons donc faire <strong>l&apos;&#xE9;conomie de la mesure</strong> de l&apos;angle d&apos;incidence et faire <strong>l&apos;&#xE9;conomie des incertitudes</strong> correspondantes. Nous aurons ainsi <strong>gagner en pr&#xE9;cision</strong> sur la valeur de la longueur d&apos;onde calcul&#xE9;e.</p>
-<p><em>Approche par l&apos;exploration du mod&#xE8;le math&#xE9;matique</em></p>
-<p>En partant de la formule fondamentale du r&#xE9;seau, on obtient :<br>
-</p><div class="mathjax-exps">$$\lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)]$$</div><br>
-En se pla&#xE7;ant par exemple au minimum de d&#xE9;viation pour la raie verte de l&apos;ordre <span class="mathjax-exps">$p= -1$</span>, on a :<br>
-<div class="mathjax-exps">$$\theta=\frac{D_{min}}{2}=-\theta_o$$</div> d&apos;o&#xF9; :<br>
+<p>En r&#xE9;glant l&apos;angle d&apos;incidence de mani&#xE8;re &#xE0; se placer au minimum de d&#xE9;viation, pour une raie de couleur donn&#xE9;e dans l&apos;ordre consid&#xE9;r&#xE9;, nous pouvons donc faire <strong>l&apos;&#xE9;conomie de la mesure</strong> de l&apos;angle d&apos;incidence. Mesurer la <em>d&#xE9;viation minimale</em> <span class="mathjax-exps">$D_{min}$</span> suffit &#xE0; d&#xE9;terminer compl&#xE8;tement <span class="mathjax-exps">$\theta_0$</span> et <span class="mathjax-exps">$\theta$</span>. L&apos;expression permettant de calculer <span class="mathjax-exps">$\lambda$</span> se ram&#xE8;ne alors &#xE0; une fonction de deux azimuts, plus de quatre.</p>
+<p>En effet, en nous pla&#xE7;ant par exemple au minimum de d&#xE9;viation pour la raie verte de l&apos;ordre <span class="mathjax-exps">$p= -1$</span>, on a :<br>
+</p><div class="mathjax-exps">$$\theta=\frac{D_{min}}{2}=-\theta_o$$</div> d&apos;o&#xF9; :<br>
 <div class="mathjax-exps">$$\lambda = -a[sin(\frac{D_{min}}{2})-sin(\frac{-D_{min}}{2})]$$</div><br>
-Soit encore :<br>
 <div class="mathjax-exps">$$\lambda = -2a[sin(\frac{D_{min}}{2})]$$</div><br>
 Et enfin, en exprimant l&apos;angle <span class="mathjax-exps">$D$</span> comme la diff&#xE9;rence des azimuts <span class="mathjax-exps">$\alpha_1$</span> et <span class="mathjax-exps">$\alpha_0$</span>  mesur&#xE9;s directement :<p></p>
 <blockquote>
 <p></p><div class="mathjax-exps">$$\lambda = 2asin(\frac{\alpha_0-\alpha_1}{2})$$</div><p></p>
 </blockquote>
+<p><em>Approche par l&apos;exploration du mod&#xE8;le math&#xE9;matique</em></p>
+<p>On peut commencer par remarquer que pour <span class="mathjax-exps">$p=0$</span>, la formule fondamentale du r&#xE9;seau se r&#xE9;duit &#xE0; <span class="mathjax-exps">$sin(\theta)=sin(\theta_0)$</span> soit <span class="mathjax-exps">$\theta = \theta_0$</span>. Une partie de la lumi&#xE8;re incidente n&apos;est donc pas du tout d&#xE9;vi&#xE9;e, quel que soit l&apos;angle d&apos;incidence et quelle que soit la longueur d&apos;onde.</p>
+<p>Il devient donc <em>plus pratique</em> de rep&#xE9;rer les diff&#xE9;rentes raies color&#xE9;es par rapport &#xE0; l&apos;ordre z&#xE9;ro que l&apos;on peut viser &#xE0; la lunette, que par rapport &#xE0; la normale au r&#xE9;seau.</p>
+<p>Par construction, il vient :</p>
+<p></p><div class="mathjax-exps">$$D=\theta-\theta_0$$</div><p></p>
+<p>Et l&apos;&#xE9;quation fondamentale du r&#xE9;seau devient :<br>
+</p><div class="mathjax-exps">$$sin(\theta_0+D)=sin(\theta_0)+p\frac{\lambda}{a}$$</div><p></p>
+<p>On cherche la d&#xE9;riv&#xE9;e de cette expression par rapport &#xE0; l&apos;angle d&apos;incidence <span class="mathjax-exps">$\theta_0$</span>.<br>
+Pour la partie droite de l&apos;&#xE9;galit&#xE9;, il vient imm&#xE9;diatement :<br>
+</p><div class="mathjax-exps">$$\frac{d(sin\theta_0+p\frac{\lambda}{a})}{d\theta_0}=cos\theta_0$$</div><br>
+Pour la partie gauche de l&apos;&#xE9;galit&#xE9;, comme :<br>
+<div class="mathjax-exps">$$sin(\theta_0+D)=sin\theta_0cosD+cos\theta_0sinD$$</div><br>
+Il vient :<p></p>
+<p></p><div class="mathjax-exps">$$\frac{d(sin(\theta_0+D))}{d\theta_0}=cos\theta_0cosD-sin\theta_0sinD\frac{dD}{d\theta_0}-sin\theta_0sinD+cos\theta_0cosD\frac{dD}{d\theta_0}$$</div><p></p>
+<p></p><div class="mathjax-exps">$$\frac{d(sin(\theta_0+D))}{d\theta_0} = cos\theta_0cosD(1+\frac{dD}{d\theta_0}) -sin\theta_0sinD(1+\frac{dD}{d\theta_0})$$</div><p></p>
+<p>Comme au minimum de d&#xE9;viation <span class="mathjax-exps">$\frac{dD}{d\theta_0}=0$</span>, l&apos;&#xE9;galit&#xE9; des deux membres s&apos;&#xE9;crit :<br>
+</p><div class="mathjax-exps">$$cos\theta_0=cos\theta_0cosD_{min}-sin\theta_0sinD_{min}$$</div><p></p>
+<p>Ce qui permet d&apos;aboutir &#xE0; l&apos;&#xE9;quation :<br>
+</p><div class="mathjax-exps">$$cos\theta_0=cos(\theta_0+D_{min})$$</div><br>
+L&apos;&#xE9;quation pr&#xE9;sente deux solutions.<br>
+La premi&#xE8;re, <span class="mathjax-exps">$D_{min}=0$</span>, correspond &#xE0; l&apos;ordre z&#xE9;ro.<br>
+La seconde correspond bien aux sym&#xE9;tries d&#xE9;crites plus haut :<p></p>
+<blockquote>
+<p></p><div class="mathjax-exps">$$D_{min}=-2\theta_0$$</div><p></p>
+</blockquote>
 <h4 class="mume-header" id="vii-sym%C3%A9trie-de-la-situation-de-mesure">VII - Sym&#xE9;trie de la situation de mesure</h4>
 
 <p><em>Approche exp&#xE9;rimentale</em></p>
 <p>Pour aller encore un peu plus loin, il est l&#xE9;gitime de demander &#xE0; notre <em>mod&#xE8;le physique</em> de rester pertinent que l&apos;on regarde le ph&#xE9;nom&#xE8;ne depuis <strong>le haut</strong> ... ou bien qu&apos;on le regarde depuis <strong>le bas</strong>.<br>
-Il existe donc n&#xE9;cessairement une position du r&#xE9;seau et de la lunette qui r&#xE9;alise exactement la m&#xEA;me configuration angulaire ... de l&apos;autre c&#xF4;t&#xE9; du goniom&#xE8;tre.<br>
-Ceci va donc nous permettre, en effectuant seulement deux vis&#xE9;es, de calculer cette fois l&apos;angle (2D) et donc d&apos;&#xE9;valuer l&apos;angle D avec une incertitude exp&#xE9;rimentale qui sera encore divis&#xE9;e par deux !<br>
-Soit, toujours pour la raie verte de l&apos;ordre <span class="mathjax-exps">$p=-1$</span> :<br>
+Il existe donc n&#xE9;cessairement une position sym&#xE9;trique du r&#xE9;seau et de la lunette qui r&#xE9;alise exactement la m&#xEA;me configuration angulaire ... de l&apos;autre c&#xF4;t&#xE9; du goniom&#xE8;tre.<br>
+Ceci va donc nous permettre, en effectuant deux vis&#xE9;es, de calculer cette fois l&apos;angle (2D) et donc d&apos;&#xE9;valuer D avec une incertitude exp&#xE9;rimentale qui sera de nouveau divis&#xE9;e par deux !<br>
+Soit, pour la raie verte vis&#xE9;e une premi&#xE8;re fois dans l&apos;ordre <span class="mathjax-exps">$p=-1$</span>, puis une seconde fois dans l&apos;ordre <span class="mathjax-exps">$p=+1$</span> de la position sym&#xE9;trique du r&#xE9;seau :<br>
 </p><div class="mathjax-exps">$$\lambda = -2asin(\frac{(2D_{min}/2)}{2})$$</div><br>
-Et, si <span class="mathjax-exps">$\alpha_2$</span> est l&apos;azimut correspondant &#xE0; la raie de m&#xEA;me couleur mais rep&#xE9;r&#xE9;e dans l&apos;ordre de signe oppos&#xE9; (la raie verte dans l&apos;ordre <span class="mathjax-exps">$p=+1$</span> dans notre exemple) :<p></p>
+Et, si <span class="mathjax-exps">$\alpha_2$</span> est l&apos;azimut correspondant  :<p></p>
 <blockquote>
 <p></p><div class="mathjax-exps">$$\lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$</div><p></p>
 </blockquote>
 <p><em>Approche par l&apos;exploration du mod&#xE8;le math&#xE9;matique</em></p>
+<p>La transformation math&#xE9;matique qui correspond au changement de point de vue haut/bas peut &#xEA;tre vue comme un retournement de l&apos;image, une rotation d&apos;un demi-tour autour de l&apos;axe qui est vertical sur la feuille et passe par son milieu.<br>
+En gardant la m&#xEA;me convention d&apos;orientation des angles, cette transformation :</p>
+<ul>
+<li>conserve, en <em>norme</em>, les valeurs des angles <span class="mathjax-exps">$\theta_0$</span> et <span class="mathjax-exps">$\theta$</span>,</li>
+<li>change l&apos;ordre <span class="mathjax-exps">$p=-1$</span> en un ordre <span class="mathjax-exps">$p=+1$</span>,</li>
+<li>change l&apos;angle <span class="mathjax-exps">$\theta_0$</span> en <span class="mathjax-exps">$-\theta_0$</span> et</li>
+<li>change l&apos;angle <span class="mathjax-exps">$\theta$</span> en <span class="mathjax-exps">$-\theta$</span>.</li>
+</ul>
+<p></p><div class="mathjax-exps">$$sin(-\theta)-sin(-\theta_0)=(-p)\frac{\lambda}{a}$$</div><p></p>
+<p>Vous noterez que l&apos;invariance observ&#xE9;e est traduite, dans le mod&#xE8;le math&#xE9;matique, par la propri&#xE9;t&#xE9; de la fonction sinus d&apos;&#xEA;tre une <strong>fonction impaire</strong>, c&apos;est &#xE0; dire telle que <span class="mathjax-exps">$sin(-x)=-sin(x)$</span>. Les angles correspondant &#xE0; la situation sym&#xE9;trique v&#xE9;rifient donc bien la formule fondamentale du r&#xE9;seau :<br>
+</p><div class="mathjax-exps">$$sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a}$$</div><p></p>
 <hr>
 <h4 class="mume-header undefined" id="faire-le-bilan">Faire le bilan</h4>
 
@@ -685,7 +715,8 @@ Et, si <span class="mathjax-exps">$\alpha_2$</span> est l&apos;azimut correspond
 <p>En nous pla&#xE7;ant au minimum de d&#xE9;viation, nous avons r&#xE9;duit ce nombre de moiti&#xE9; puis, en effectuant la mesure sym&#xE9;trique, nous l&apos;avons de nouveau divis&#xE9; par deux. Soit un gain de 1 &#xE0; 4.</p>
 <h4 class="mume-header undefined" id="pour-conclure">Pour conclure</h4>
 
-<p>Apprendre &#xE0; se servir du goniom&#xE8;tre c&apos;est donc r&#xE9;aliser que la pr&#xE9;cision de la d&#xE9;termination d&apos;une longueur d&apos;onde d&#xE9;pend non seulement de la <strong>pr&#xE9;cision de la vis&#xE9;e</strong> et de <strong>la pr&#xE9;cision de la lecture de l&apos;azimut</strong> mais &#xE9;galement du <strong>prototocole</strong>, c&apos;est &#xE0; dire de la <strong>mani&#xE8;re dont on conduit les mesures</strong>. On cherchera ainsi &#xE0; exploiter au mieux les sym&#xE9;tries du ph&#xE9;nom&#xE8;ne physique mis en jeu, en s&apos;aidant notamment pour cela des sym&#xE9;tries du mod&#xE8;le math&#xE9;matique quand il est fourni.</p>
+<p>Apprendre &#xE0; se servir du goniom&#xE8;tre c&apos;est donc r&#xE9;aliser que la pr&#xE9;cision de la d&#xE9;termination d&apos;une longueur d&apos;onde d&#xE9;pend non seulement de la <strong>pr&#xE9;cision de la vis&#xE9;e</strong> et de <strong>la pr&#xE9;cision de la lecture de l&apos;azimut</strong> mais &#xE9;galement du <strong>prototocole</strong>, c&apos;est &#xE0; dire de la <strong>mani&#xE8;re dont on conduit les mesures</strong>.</p>
+<p>On cherchera ainsi &#xE0; exploiter au mieux les sym&#xE9;tries du ph&#xE9;nom&#xE8;ne physique mis en jeu, en s&apos;aidant notamment pour cela des sym&#xE9;tries du mod&#xE8;le math&#xE9;matique quand il est fourni.</p>
 <hr>
 <h4 class="mume-header undefined" id="outro">Outro</h4>
 

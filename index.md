@@ -145,23 +145,26 @@ _Approche expérimentale_
 Pour aller encore un peu plus loin, il est légitime de demander à notre _modèle physique_ de rester pertinent que l'on regarde le phénomène depuis **le haut** ... ou bien qu'on le regarde depuis **le bas**.
 Il existe donc nécessairement une position symétrique du réseau et de la lunette qui réalise exactement la même configuration angulaire ... de l'autre côté du goniomètre.
 Ceci va donc nous permettre, en effectuant deux visées, de calculer cette fois l'angle (2D) et donc d'évaluer D avec une incertitude expérimentale qui sera de nouveau divisée par deux !
-Soit, pour la raie verte visée une première fois dans l'ordre $p=-1$, puis une seconde fois dans l'ordre $p=+1$ de la position symétrique du réseau :
+Soit, pour la raie verte visée une première fois à l'azimut $\alpha_1$ dans l'ordre $p=-1$ , puis visée une seconde fois à l'azimut $\alpha_2$ dans l'ordre $p=+1$ de la position symétrique du réseau :
 $$ \lambda = -2asin(\frac{(2D_{min}/2)}{2}) $$
-Et, si $\alpha_2$ est l'azimut correspondant  :
+
 >$$ \lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$
 
 _Approche par l'exploration du modèle mathématique_
 
 La transformation mathématique qui correspond au changement de point de vue haut/bas peut être vue comme un retournement de l'image, une rotation d'un demi-tour autour de l'axe qui est vertical sur la feuille et passe par son milieu.
+
 En gardant la même convention d'orientation des angles, cette transformation :
-- conserve, en _norme_, les valeurs des angles $\theta_0$ et $\theta$,
+- conserve en _norme_ les valeurs des angles $\theta_0$ et $\theta$,
 - change l'ordre $p=-1$ en un ordre $p=+1$,
 - change l'angle $\theta_0$ en $-\theta_0$ et
 - change l'angle $\theta$ en $-\theta$.
 
 $$ sin(-\theta)-sin(-\theta_0)=(-p)\frac{\lambda}{a} $$
 
-Vous noterez que l'invariance observée est traduite, dans le modèle mathématique, par la propriété de la fonction sinus d'être une **fonction impaire**, c'est à dire telle que $sin(-x)=-sin(x)$. Les angles correspondant à la situation symétrique vérifient donc bien la formule fondamentale du réseau :
+Vous noterez que l'invariance observée est traduite, dans le modèle mathématique, par la propriété de la fonction sinus d'être une **fonction impaire**, c'est à dire telle que $sin(-x)=-sin(x)$. 
+
+Les angles correspondant à la situation symétrique vérifient donc bien la formule fondamentale du réseau :
 $$ sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a} $$
 ___
 #### Faire le bilan {ignore=true}

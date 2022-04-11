@@ -92,7 +92,7 @@ En faisant varier cet angle d'incidence de manière monotone entre zéro et 90 d
 
 En réglant l'angle d'incidence de manière à se placer au minimum de déviation, pour la raie considérée et dans l'ordre considéré, nous pouvons donc faire **l'économie de la mesure** de l'angle d'incidence et faire **l'économie des incertitudes** correspondantes. Nous aurons ainsi **gagner en précision** sur la valeur de la longueur d'onde calculée.
 
-_Approche par le modèle mathématique_
+_Approche par l'exploration du modèle mathématique_
 
 En partant de la formule fondamentale du réseau, on obtient :
 $$ \lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)] $$
@@ -117,7 +117,7 @@ $$ \lambda = -2asin(\frac{(2D_{min}/2)}{2}) $$
 Et, si $\alpha_2$ est l'azimut correspondant à la raie de même couleur mais repérée dans l'ordre de signe opposé (la raie verte dans l'ordre $p=+1$ dans notre exemple) :
 >$$ \lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$
 
-_Approche par le modèle mathématique_
+_Approche par l'exploration du modèle mathématique_
 
 ___
 #### Faire le bilan {ignore=true}

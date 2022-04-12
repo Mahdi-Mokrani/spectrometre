@@ -522,33 +522,31 @@ pre[data-line] .line-highlight[data-end]:after {
 
 @font-face {
   font-family: adobe-caslon-pro;
-  src: url();
+  src: url("https://use.typekit.net/suz5epf.css");
 }
 .markdown-preview.markdown-preview {
   width: 85%;
   font-family: adobe-caslon-pro;
   font-size: 22px;
   line-height: 1.3;
-  text-align: left ;
+  text-align: left;
   text-indent: 1em ;
-  hyphens: auto ;
+  hyphens: auto;
 }
 .markdown-preview.markdown-preview img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
   max-width: 100%;
+  height: auto;
   border: 2px solid #ddd;
   padding: 5px;
 }
-.md-sidebar-toc.md-sidebar-toc {
-  font-family: adobe-caslon-pro;
-}
 @page {
-  size: A4;
-  margin: 1.25cm;
-  font-size: 10px;
+  size: A4 ;
+  margin-top: 1.25cm;
+  margin-bottom: 1.25cm;
+  font-family: American Typewriter ;
   @bottom {
     content: counter(page) " sur " counter(pages);
   }
@@ -585,7 +583,7 @@ pre[data-line] .line-highlight[data-end]:after {
 <p>Un <strong>goniom&#xE8;tre</strong> est un instrument de pr&#xE9;cision qui sert &#xE0; <strong>mesurer</strong> des angles.</p>
 </blockquote>
 <blockquote>
-<p>Le <strong>spectrom&#xE8;tre</strong>, comme son nom l&apos;indique, est l&apos;instrument qui permet de <strong>d&#xE9;composer</strong> le faisceau lumineux issue d&apos;une source dans l&apos;ensemble des lumi&#xE8;res color&#xE9;es qui constitue son spectre, et de <strong>mesurer</strong> les longueurs d&apos;onde des diff&#xE9;rentes contributions spectrales.</p>
+<p>Le <strong>spectrom&#xE8;tre</strong>, comme son nom l&apos;indique, est l&apos;instrument qui permet de <strong>d&#xE9;composer</strong> le faisceau lumineux issue d&apos;une source dans l&apos;ensemble des lumi&#xE8;res color&#xE9;es qui constitue son spectre, et de <strong>mesurer</strong> leurs longueurs d&apos;onde.</p>
 </blockquote>
 <p>On peut obtenir un spectrom&#xE8;tre en associant le goniom&#xE8;tre avec un syst&#xE8;me dispersif comme le prisme, qui <strong>r&#xE9;fracte</strong> chaque rayon color&#xE9; selon un angle diff&#xE9;rent.<br>
 On peut aussi utiliser un r&#xE9;seau qui, lui, <strong>diffracte</strong> la lumi&#xE8;re incidente dans des directions diff&#xE9;rentes et dans des ordres diff&#xE9;rents.</p>
@@ -618,7 +616,7 @@ On &#xE9;crira par exemple : </p><div class="mathjax-exps">$$\theta_1 = (\alpha_
 <p><img src="images_gonio_E01/spectro_5.png" alt="vernier du goniom&#xE8;tre"></p>
 <p>Pour justifier une telle ambition, le goniom&#xE8;tre est &#xE9;quip&#xE9;e d&apos;un <strong>syst&#xE8;me de vis&#xE9;e de pr&#xE9;cision</strong> qui est constitu&#xE9; d&apos;une <em>partie optique</em> (le <strong>collimateur</strong> et la <strong>lunette</strong>) et d&apos;une <em>partie m&#xE9;canique</em>. On distinguera la <strong>vis de serrage</strong>, que l&apos;on d&#xE9;sserre pour effectuer des mouvements grossiers avant de la ress&#xE9;rer, et la <strong>vis de d&#xE9;placement microm&#xE9;trique</strong> qui permet le d&#xE9;placement fin de la lunette.</p>
 <p><img src="images_gonio_E01/spectro_6.png" alt="vis lunette"></p>
-<p>On notera l&apos;existence d&apos;un syst&#xE8;me m&#xE9;canique similaire sur le plateau du goniom&#xE8;tre, une vis de serrage permet des mouvements grossiers et, une fois cette derni&#xE8;re ress&#xE9;r&#xE9;e, la vis de d&#xE9;placement microm&#xE9;trique permet de contr&#xF4;ler des mouvements fins de rotation du plateau.</p>
+<p>On notera l&apos;existence d&apos;un syst&#xE8;me m&#xE9;canique similaire sur le plateau du goniom&#xE8;tre. Une vis de serrage permet des mouvements grossiers et, une fois cette derni&#xE8;re ress&#xE9;r&#xE9;e, la vis de d&#xE9;placement microm&#xE9;trique permet de contr&#xF4;ler des mouvements fins de rotation du plateau.</p>
 <p><img src="images_gonio_E01/spectro_7.png" alt="vis plateau"></p>
 <p>Sur des goniom&#xE8;tres d&apos;&#xE9;tude plus anciens, on peut noter que le <strong>plateau n&apos;est pas mobile</strong>. En revanche, ils &#xE9;taitent &#xE9;quip&#xE9;es d&apos;une lunette suppl&#xE9;mentaire, dont la fonction etait de <strong>mesurer l&apos;angle d&apos;incidence <span class="mathjax-exps">$\theta_0$</span></strong>, en visant la part de la lumi&#xE8;re incidente qui est r&#xE9;fl&#xE9;chie sur la face d&apos;entr&#xE9;e du prisme.</p>
 <h4 class="mume-header" id="v-comment-se-servir-du-goniom%C3%A8tre-le-protocole-%C3%A0-appliquer">V - Comment se servir du goniom&#xE8;tre ? Le protocole &#xE0; appliquer</h4>
@@ -638,9 +636,10 @@ On &#xE9;crira par exemple : </p><div class="mathjax-exps">$$\theta_1 = (\alpha_
 <h4 class="mume-header" id="vi-sym%C3%A9tries-des-images-diffract%C3%A9es-au-minimum-de-d%C3%A9viation">VI - Sym&#xE9;tries des images diffract&#xE9;es au minimum de d&#xE9;viation</h4>
 
 <p><em>Approche exp&#xE9;rimentale</em></p>
-<p>Pour un r&#xE9;seau de pas donn&#xE9; et pour une longueur d&apos;onde donn&#xE9;e (celle du laser rouge ici), les angles auxquels on peut rep&#xE9;rer les diff&#xE9;rents ordres d&apos;interf&#xE9;rence sont des fonctions de l&apos;angle d&apos;incidence <span class="mathjax-exps">$\theta_0$</span>.<br>
-En faisant varier cet angle d&apos;incidence de mani&#xE8;re monotone entre z&#xE9;ro et 90 degr&#xE9;s puis de nouveau de mani&#xE8;re monotone entre 90 degr&#xE9;s et z&#xE9;ro, on observe que <strong>l&apos;angle de d&#xE9;viation passe par un minimum</strong>.</p>
+<p>Pour un r&#xE9;seau de pas donn&#xE9; et pour une longueur d&apos;onde donn&#xE9;e (celle du laser rouge ici), les angles auxquels on peut rep&#xE9;rer les diff&#xE9;rents ordres d&apos;interf&#xE9;rence sont des fonctions de l&apos;angle d&apos;incidence <span class="mathjax-exps">$\theta_0$</span>.</p>
+<p>&#xC0; l&apos;ordre z&#xE9;ro, la lumi&#xE8;re n&apos;est pas du tout d&#xE9;vi&#xE9;e, quelle que soit la longueur d&apos;onde. Dans la pratique, nous rep&#xE8;rerons les raies color&#xE9;es par rapport &#xE0; cette direction que l&apos;on peut viser, plut&#xF4;t que par rapport &#xE0; la normale au r&#xE9;seau, comme nous l&apos;avions fait dans la mise en place th&#xE9;orique. On consid&#xE8;rera donc dor&#xE9;navant la <em>d&#xE9;viation</em> <span class="mathjax-exps">$D$</span> d&apos;une raie color&#xE9;e, grandeur mesurable, plut&#xF4;t que son angle de sortie <span class="mathjax-exps">$\theta$</span>.</p>
 <p><img src="images_gonio_E01/spectro_8.png" alt="minimum de d&#xE9;viation laser"></p>
+<p>En faisant varier l&apos;angle d&apos;incidence de mani&#xE8;re monotone entre z&#xE9;ro et 90 degr&#xE9;s puis de nouveau de mani&#xE8;re monotone entre 90 degr&#xE9;s et z&#xE9;ro, on observe que, pour une raie color&#xE9;e choisie dans un ordre donn&#xE9;, <strong>l&apos;angle de d&#xE9;viation passe par un minimum</strong>.</p>
 <blockquote>
 <p>En r&#xE9;glant l&apos;angle d&apos;incidence de mani&#xE8;re <strong>&#xE0; se placer au minimum de d&#xE9;viation</strong>, on d&#xE9;couvre une situation qui pr&#xE9;sente des sym&#xE9;tries remarquables :</p>
 </blockquote>
@@ -649,20 +648,22 @@ En faisant varier cet angle d&apos;incidence de mani&#xE8;re monotone entre z&#x
 <p>on peut tout d&apos;abord remarquer que le plan du r&#xE9;seau se situe alors selon <strong>la bissectrice</strong> de l&apos;angle form&#xE9; par les directions du collimateur et de la lunette. Autrement dit, au minimun de d&#xE9;viation, l&apos;angle d&apos;incidence et l&apos;angle de vis&#xE9;e sont <strong>&#xE9;gaux en valeur et oppos&#xE9;s en signe</strong>.</p>
 </li>
 <li>
-<p>On peut ensuite remarquer que l&apos;on retrouve ce m&#xEA;me angle entre les directions de la normale au r&#xE9;seau et de la partie de la lumi&#xE8;re qui n&apos;est pas du tout d&#xE9;vi&#xE9;e et que l&apos;on appelle <em>ordre z&#xE9;ro</em>. Autrement dit, <strong>l&apos;angle de d&#xE9;viation D</strong> vaut alors exactement <strong>moins deux fois</strong> l&apos;angle d&apos;incidence.</p>
+<p>On peut ensuite remarquer que l&apos;on retrouve ce m&#xEA;me angle entre la direction de la normale au r&#xE9;seau et la direction de la lumi&#xE8;re qui n&apos;est pas d&#xE9;vi&#xE9;e dans <em>l&apos;ordre z&#xE9;ro</em>. Autrement dit, <strong>l&apos;angle de d&#xE9;viation <span class="mathjax-exps">$D_{min}$</span></strong> vaut alors exactement <strong>moins deux fois</strong> l&apos;angle d&apos;incidence.</p>
 </li>
 </ul>
-<p>En r&#xE9;glant l&apos;angle d&apos;incidence de mani&#xE8;re &#xE0; se placer au minimum de d&#xE9;viation, pour une raie de couleur donn&#xE9;e dans l&apos;ordre consid&#xE9;r&#xE9;, nous pouvons donc faire <strong>l&apos;&#xE9;conomie de la mesure</strong> de l&apos;angle d&apos;incidence. Mesurer la <em>d&#xE9;viation minimale</em> <span class="mathjax-exps">$D_{min}$</span> suffit &#xE0; d&#xE9;terminer compl&#xE8;tement <span class="mathjax-exps">$\theta_0$</span> et <span class="mathjax-exps">$\theta$</span>. L&apos;expression permettant de calculer <span class="mathjax-exps">$\lambda$</span> se ram&#xE8;ne alors &#xE0; une fonction de deux azimuts, plus de quatre.</p>
-<p>En effet, en nous pla&#xE7;ant par exemple au minimum de d&#xE9;viation pour la raie verte de l&apos;ordre <span class="mathjax-exps">$p= -1$</span>, on a :<br>
+<p>Mesurer la <em>d&#xE9;viation minimale</em> suffit donc &#xE0; d&#xE9;terminer non seulement <span class="mathjax-exps">$D_{min}$</span> mais &#xE9;galement <span class="mathjax-exps">$\theta_0$</span> et <span class="mathjax-exps">$\theta$</span> g&#xE9;om&#xE9;triquement, sans mesure suppl&#xE9;mentaire.</p>
+<p>En r&#xE9;glant l&apos;angle d&apos;incidence par rotation du plateau, de mani&#xE8;re &#xE0; se placer au minimum de d&#xE9;viation, la pr&#xE9;sence d&apos;une deuxi&#xE8;me lunette n&apos;est plus n&#xE9;cessaire. Nous pouvons donc faire <strong>l&apos;&#xE9;conomie de la mesure</strong> de l&apos;angle d&apos;incidence.</p>
+<p>L&apos;expression permettant de calculer <span class="mathjax-exps">$\lambda$</span> se ram&#xE8;ne alors &#xE0; une fonction d&apos;un seul angle et non plus de deux.</p>
+<p>En nous pla&#xE7;ant par exemple au minimum de d&#xE9;viation pour la raie verte de l&apos;ordre <span class="mathjax-exps">$p= -1$</span>, on a :<br>
 </p><div class="mathjax-exps">$$\theta=\frac{D_{min}}{2}=-\theta_o$$</div> d&apos;o&#xF9; :<br>
 <div class="mathjax-exps">$$\lambda = -a[sin(\frac{D_{min}}{2})-sin(\frac{-D_{min}}{2})]$$</div><br>
-<div class="mathjax-exps">$$\lambda = -2a[sin(\frac{D_{min}}{2})]$$</div><br>
-Et enfin, en exprimant l&apos;angle <span class="mathjax-exps">$D$</span> comme la diff&#xE9;rence des azimuts <span class="mathjax-exps">$\alpha_1$</span> et <span class="mathjax-exps">$\alpha_0$</span>  mesur&#xE9;s directement :<p></p>
+<div class="mathjax-exps">$$\lambda = -2a[sin(\frac{D_{min}}{2})]$$</div><p></p>
+<p>On cherchera enfin &#xE0; exprimer <span class="mathjax-exps">$D$</span> en fonction des azimuts <span class="mathjax-exps">$\alpha_1$</span> et <span class="mathjax-exps">$\alpha_0$</span>  qui sont les grandeurs mesur&#xE9;s directement et auxquelles on pourra attacher des incertitudes  :</p>
 <blockquote>
 <p></p><div class="mathjax-exps">$$\lambda = 2asin(\frac{\alpha_0-\alpha_1}{2})$$</div><p></p>
 </blockquote>
 <p><em>Approche par l&apos;exploration du mod&#xE8;le math&#xE9;matique</em></p>
-<p>On peut commencer par remarquer que pour <span class="mathjax-exps">$p=0$</span>, la formule fondamentale du r&#xE9;seau se r&#xE9;duit &#xE0; <span class="mathjax-exps">$sin(\theta)=sin(\theta_0)$</span> soit <span class="mathjax-exps">$\theta = \theta_0$</span>. Une partie de la lumi&#xE8;re incidente n&apos;est donc pas du tout d&#xE9;vi&#xE9;e, quel que soit l&apos;angle d&apos;incidence et quelle que soit la longueur d&apos;onde.</p>
+<p>On peut commencer par remarquer que pour <span class="mathjax-exps">$p=0$</span>, la formule fondamentale du r&#xE9;seau se r&#xE9;duit &#xE0; <span class="mathjax-exps">$sin(\theta)=sin(\theta_0)$</span>, soit <span class="mathjax-exps">$\theta = \theta_0$</span>. Une partie de la lumi&#xE8;re incidente n&apos;est donc pas du tout d&#xE9;vi&#xE9;e, quel que soit l&apos;angle d&apos;incidence et quelle que soit la longueur d&apos;onde.</p>
 <p>Il devient donc <em>plus pratique</em> de rep&#xE9;rer les diff&#xE9;rentes raies color&#xE9;es par rapport &#xE0; l&apos;ordre z&#xE9;ro que l&apos;on peut viser &#xE0; la lunette, que par rapport &#xE0; la normale au r&#xE9;seau.</p>
 <p>Par construction, il vient :</p>
 <p></p><div class="mathjax-exps">$$D=\theta-\theta_0$$</div><p></p>
@@ -675,14 +676,14 @@ Et enfin, en exprimant l&apos;angle <span class="mathjax-exps">$D$</span> comme 
 </p><div class="mathjax-exps">$$sin(\theta_0+D)=sin\theta_0cosD+cos\theta_0sinD$$</div><p></p>
 <p>Il vient :</p>
 <p></p><div class="mathjax-exps">$$\frac{d(sin(\theta_0+D))}{d\theta_0}=cos\theta_0cosD-sin\theta_0sinD\frac{dD}{d\theta_0}-sin\theta_0sinD+cos\theta_0cosD\frac{dD}{d\theta_0}$$</div><p></p>
-<p></p><div class="mathjax-exps">$$\frac{d(sin(\theta_0+D))}{d\theta_0} = cos\theta_0cosD(1+\frac{dD}{d\theta_0}) -sin\theta_0sinD(1+\frac{dD}{d\theta_0})$$</div><p></p>
-<p>Comme au minimum de d&#xE9;viation on a : </p><div class="mathjax-exps">$$\frac{dD}{d\theta_0}=0$$</div><p></p>
-<p>L&apos;&#xE9;galit&#xE9; des deux membres s&apos;&#xE9;crit :<br>
+<p></p><div class="mathjax-exps">$$\frac{d(sin(\theta_0+D))}{d\theta_0} = cos\theta_0cosD(1+\frac{dD}{d\theta_0})-sin\theta_0sinD(1+\frac{dD}{d\theta_0})$$</div><p></p>
+<p>Au minimum de d&#xE9;viation on a : </p><div class="mathjax-exps">$$\frac{dD}{d\theta_0}=0$$</div><p></p>
+<p>L&apos;&#xE9;galit&#xE9; des deux membres s&apos;&#xE9;crit alors :<br>
 </p><div class="mathjax-exps">$$cos\theta_0=cos\theta_0cosD_{min}-sin\theta_0sinD_{min}$$</div><p></p>
 <p>Ce qui permet d&apos;aboutir &#xE0; l&apos;&#xE9;quation :<br>
 </p><div class="mathjax-exps">$$cos\theta_0=cos(\theta_0+D_{min})$$</div><br>
-L&apos;&#xE9;quation pr&#xE9;sente deux solutions.<br>
-La premi&#xE8;re, <span class="mathjax-exps">$D_{min}=0$</span>, correspond &#xE0; l&apos;ordre z&#xE9;ro.<br>
+Cette &#xE9;quation admet deux solutions.<br>
+La premi&#xE8;re solution, <span class="mathjax-exps">$D_{min}=0$</span>, correspond &#xE0; l&apos;ordre z&#xE9;ro.<br>
 La seconde correspond bien aux sym&#xE9;tries d&#xE9;crites plus haut :<p></p>
 <blockquote>
 <p></p><div class="mathjax-exps">$$D_{min}=-2\theta_0$$</div><p></p>
@@ -690,14 +691,22 @@ La seconde correspond bien aux sym&#xE9;tries d&#xE9;crites plus haut :<p></p>
 <h4 class="mume-header" id="vii-sym%C3%A9trie-de-la-situation-de-mesure">VII - Sym&#xE9;trie de la situation de mesure</h4>
 
 <p><em>Approche exp&#xE9;rimentale</em></p>
-<p>Pour aller encore un peu plus loin, il est l&#xE9;gitime de demander &#xE0; notre <em>mod&#xE8;le physique</em> de rester pertinent que l&apos;on regarde le ph&#xE9;nom&#xE8;ne depuis <strong>le haut</strong> ... ou bien qu&apos;on le regarde depuis <strong>le bas</strong>.</p>
+<p>Il est l&#xE9;gitime de demander &#xE0; notre <em>mod&#xE8;le physique</em> de rester pertinent que l&apos;on regarde le ph&#xE9;nom&#xE8;ne depuis <strong>le haut</strong> ... ou bien qu&apos;on le regarde depuis <strong>le bas</strong>.</p>
 <p>Il existe donc n&#xE9;cessairement une position sym&#xE9;trique du r&#xE9;seau et de la lunette qui r&#xE9;alise exactement la m&#xEA;me configuration angulaire ... de l&apos;autre c&#xF4;t&#xE9; du goniom&#xE8;tre.</p>
-<p>Ceci va donc nous permettre, en effectuant deux vis&#xE9;es, de calculer cette fois l&apos;angle (2D) et donc d&apos;&#xE9;valuer D avec une incertitude exp&#xE9;rimentale qui sera de nouveau divis&#xE9;e par deux !</p>
-<p>Soit, pour la raie verte vis&#xE9;e une premi&#xE8;re fois &#xE0; l&apos;azimut <span class="mathjax-exps">$\alpha_1$</span> dans l&apos;ordre <span class="mathjax-exps">$p=-1$</span> , puis vis&#xE9;e une seconde fois &#xE0; l&apos;azimut <span class="mathjax-exps">$\alpha_2$</span> dans l&apos;ordre <span class="mathjax-exps">$p=+1$</span> de la position sym&#xE9;trique du r&#xE9;seau :<br>
+<div class="admonition note">
+<p class="admonition-title">Protocole</p>
+<p>R&#xE9;sum&#xE9; en trois &#xE9;tapes, nous allons :<br>
+1- <strong>viser la raie verte</strong> dans l&apos;ordre <span class="mathjax-exps">$p=-1$</span> et d&#xE9;terminer son azimut <span class="mathjax-exps">$\alpha_1$</span> au minimum de d&#xE9;viation ;<br>
+2- <strong>d&#xE9;placer le r&#xE9;seau</strong>, par rotation du plateau, approximativement dans la position sym&#xE9;trique &#xE0; la pr&#xE9;c&#xE9;dente par rapport &#xE0; l&apos;axe qui est la  direction de la lumi&#xE8;re incidente ;<br>
+3- <strong>viser la raie verte</strong> une seconde fois, mais dans l&apos;ordre <span class="mathjax-exps">$p=+1$</span> de cette nouvelle configuration et d&#xE9;terminer son azimut <span class="mathjax-exps">$\alpha_2$</span> au minimum de d&#xE9;viation.</p>
+</div>
+<p>On obtient donc :<br>
 </p><div class="mathjax-exps">$$\lambda = -2asin(\frac{(2D_{min}/2)}{2})$$</div><p></p>
+<p>On cherchera ici &#xE9;galement &#xE0; exprimer <span class="mathjax-exps">$\lambda$</span> en fonction des azimuts <span class="mathjax-exps">$\alpha_1$</span> et <span class="mathjax-exps">$\alpha_2$</span>  qui sont les grandeurs mesur&#xE9;s directement et auxquelles on pourra attacher des incertitudes  :</p>
 <blockquote>
 <p></p><div class="mathjax-exps">$$\lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$</div><p></p>
 </blockquote>
+<p>En effectuant deux vis&#xE9;es, nous avons cette fois calcul&#xE9; l&apos;angle (<span class="mathjax-exps">$2D_{min}$</span>). L&apos;incertitude exp&#xE9;rimentale attach&#xE9;e &#xE0; la d&#xE9;termination de l&apos;angle <span class="mathjax-exps">$D_{min}$</span>  est donc de nouveau divis&#xE9;e par deux !</p>
 <p><em>Approche par l&apos;exploration du mod&#xE8;le math&#xE9;matique</em></p>
 <p>La transformation math&#xE9;matique qui correspond au changement de point de vue haut/bas peut &#xEA;tre vue comme un retournement de l&apos;image, une rotation d&apos;un demi-tour autour de l&apos;axe qui est vertical sur la feuille et passe par son milieu.</p>
 <p>En gardant la m&#xEA;me convention d&apos;orientation des angles, cette transformation :</p>
@@ -709,21 +718,22 @@ La seconde correspond bien aux sym&#xE9;tries d&#xE9;crites plus haut :<p></p>
 </ul>
 <p></p><div class="mathjax-exps">$$sin(-\theta)-sin(-\theta_0)=(-p)\frac{\lambda}{a}$$</div><p></p>
 <p>Vous noterez que l&apos;invariance observ&#xE9;e est traduite, dans le mod&#xE8;le math&#xE9;matique, par la propri&#xE9;t&#xE9; de la fonction sinus d&apos;&#xEA;tre une <strong>fonction impaire</strong>, c&apos;est &#xE0; dire telle que <span class="mathjax-exps">$sin(-x)=-sin(x)$</span>.</p>
-<p>Les angles correspondant &#xE0; la situation sym&#xE9;trique v&#xE9;rifient donc bien la formule fondamentale du r&#xE9;seau :<br>
+<p>Les angles correspondant &#xE0; la situation sym&#xE9;trique v&#xE9;rifient donc bien la formule fondamentale du r&#xE9;seau avec les m&#xEA;mes valeurs :<br>
 </p><div class="mathjax-exps">$$sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a}$$</div><p></p>
 <hr>
 <h4 class="mume-header undefined" id="faire-le-bilan">Faire le bilan</h4>
 
 <p>Pour calculer la valeur de la longueur d&apos;onde <span class="mathjax-exps">$\lambda$</span> &#xE0; partir de la formule fondamentale du r&#xE9;seau, nous sommes partis du constat qu&apos;il &#xE9;tait n&#xE9;cessaire de mesurer deux angles. L&apos;incertitude exp&#xE9;rimentale attach&#xE9;e &#xE0; la connaissance de <span class="mathjax-exps">$\lambda$</span> se calculerait donc, <em>a priori</em>, &#xE0; partir de celles attach&#xE9;es &#xE0; quatre d&#xE9;terminations d&apos;azimuts.</p>
-<p>En nous pla&#xE7;ant au minimum de d&#xE9;viation, nous avons r&#xE9;duit ce nombre de moiti&#xE9; puis, en effectuant la mesure sym&#xE9;trique, nous l&apos;avons de nouveau divis&#xE9; par deux. Soit un gain de 1 &#xE0; 4.</p>
+<p>En nous pla&#xE7;ant au minimum de d&#xE9;viation, nous avons r&#xE9;duit ce nombre de moiti&#xE9; puis, en effectuant la mesure sym&#xE9;trique, nous l&apos;avons de nouveau divis&#xE9; par deux.</p>
+<p>Soit un gain de 1 &#xE0; 4.</p>
 <h4 class="mume-header undefined" id="pour-conclure">Pour conclure</h4>
 
 <p>Apprendre &#xE0; se servir du goniom&#xE8;tre c&apos;est donc r&#xE9;aliser que la pr&#xE9;cision de la d&#xE9;termination d&apos;une longueur d&apos;onde d&#xE9;pend non seulement de la <strong>pr&#xE9;cision de la vis&#xE9;e</strong> et de <strong>la pr&#xE9;cision de la lecture de l&apos;azimut</strong> mais &#xE9;galement du <strong>prototocole</strong>, c&apos;est &#xE0; dire de la <strong>mani&#xE8;re dont on conduit les mesures</strong>.</p>
-<p>On cherchera ainsi &#xE0; exploiter au mieux les sym&#xE9;tries du ph&#xE9;nom&#xE8;ne physique mis en jeu, en s&apos;aidant notamment pour cela des sym&#xE9;tries du mod&#xE8;le math&#xE9;matique quand il est fourni.</p>
+<p>On a ainsi chercher &#xE0; exploiter au mieux les sym&#xE9;tries du ph&#xE9;nom&#xE8;ne physique mis en jeu, en s&apos;aidant notamment pour cela des sym&#xE9;tries du mod&#xE8;le math&#xE9;matique fourni.</p>
 <hr>
 <h4 class="mume-header undefined" id="outro">Outro</h4>
 
-<p>Dans la prochaine vid&#xE9;o, je vous proposerai une r&#xE9;vision rapide de la mani&#xE8;re dont on r&#xE8;gle &#xE0; sa vue l&apos;ensemble lunette et collimateur.<br>
+<p>Dans le prochaine &#xE9;pisode, nous nous int&#xE9;resserons au probl&#xE8;me de la pr&#xE9;cision des vis&#xE9;es. En particulier, nous traiterons de la mani&#xE8;re dont on r&#xE8;gle &#xE0; sa vue l&apos;ensemble lunette et collimateur.<br>
 Au revoir, et &#xE0; tr&#xE8;s bient&#xF4;t j&apos;esp&#xE8;re.</p>
 
       </div>

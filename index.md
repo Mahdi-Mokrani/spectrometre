@@ -18,7 +18,7 @@ Pour un physicien, les messages de la lumière sont nombreux et riches d'enseign
 #### I - Goniomètre et spectromètre
 >Un **goniomètre** est un instrument de précision qui sert à **mesurer** des angles.
 
->Le **spectromètre**, comme son nom l'indique, est l'instrument qui permet de **décomposer** le faisceau lumineux issue d'une source dans l'ensemble des lumières colorées qui constitue son spectre, et de **mesurer** les longueurs d'onde des différentes contributions spectrales. 
+>Le **spectromètre**, comme son nom l'indique, est l'instrument qui permet de **décomposer** le faisceau lumineux issue d'une source dans l'ensemble des lumières colorées qui constitue son spectre, et de **mesurer** leurs longueurs d'onde. 
     
 On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui **réfracte** chaque rayon coloré selon un angle différent. 
 On peut aussi utiliser un réseau qui, lui, **diffracte** la lumière incidente dans des directions différentes et dans des ordres différents.
@@ -58,7 +58,7 @@ Pour justifier une telle ambition, le goniomètre est équipée d'un **système 
 
 ![vis lunette](/images_gonio_E01/spectro_6.png)
 
-On notera l'existence d'un système mécanique similaire sur le plateau du goniomètre, une vis de serrage permet des mouvements grossiers et, une fois cette dernière ressérée, la vis de déplacement micrométrique permet de contrôler des mouvements fins de rotation du plateau.
+On notera l'existence d'un système mécanique similaire sur le plateau du goniomètre. Une vis de serrage permet des mouvements grossiers et, une fois cette dernière ressérée, la vis de déplacement micrométrique permet de contrôler des mouvements fins de rotation du plateau.
 
 ![vis plateau](/images_gonio_E01/spectro_7.png)
 
@@ -81,27 +81,35 @@ L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de
 _Approche expérimentale_
 
 Pour un réseau de pas donné et pour une longueur d'onde donnée (celle du laser rouge ici), les angles auxquels on peut repérer les différents ordres d'interférence sont des fonctions de l'angle d'incidence $\theta_0$.
-En faisant varier cet angle d'incidence de manière monotone entre zéro et 90 degrés puis de nouveau de manière monotone entre 90 degrés et zéro, on observe que **l'angle de déviation passe par un minimum**.
+
+À l'ordre zéro, la lumière n'est pas du tout déviée, quelle que soit la longueur d'onde. Dans la pratique, nous repèrerons les raies colorées par rapport à cette direction que l'on peut viser, plutôt que par rapport à la normale au réseau, comme nous l'avions fait dans la mise en place théorique. On considèrera donc dorénavant la _déviation_ $D$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta$.
 
 ![minimum de déviation laser](/images_gonio_E01/spectro_8.png)
+
+En faisant varier l'angle d'incidence de manière monotone entre zéro et 90 degrés puis de nouveau de manière monotone entre 90 degrés et zéro, on observe que, pour une raie colorée choisie dans un ordre donné, **l'angle de déviation passe par un minimum**.
 
 >En réglant l'angle d'incidence de manière **à se placer au minimum de déviation**, on découvre une situation qui présente des symétries remarquables :
 - on peut tout d'abord remarquer que le plan du réseau se situe alors selon **la bissectrice** de l'angle formé par les directions du collimateur et de la lunette. Autrement dit, au minimun de déviation, l'angle d'incidence et l'angle de visée sont **égaux en valeur et opposés en signe**.
 
-- On peut ensuite remarquer que l'on retrouve ce même angle entre les directions de la normale au réseau et de la partie de la lumière qui n'est pas du tout déviée et que l'on appelle _ordre zéro_. Autrement dit, **l'angle de déviation D** vaut alors exactement **moins deux fois** l'angle d'incidence.
+- On peut ensuite remarquer que l'on retrouve ce même angle entre la direction de la normale au réseau et la direction de la lumière qui n'est pas déviée dans _l'ordre zéro_. Autrement dit, **l'angle de déviation $D_{min}$** vaut alors exactement **moins deux fois** l'angle d'incidence.
 
-En réglant l'angle d'incidence de manière à se placer au minimum de déviation, pour une raie de couleur donnée dans l'ordre considéré, nous pouvons donc faire **l'économie de la mesure** de l'angle d'incidence. Mesurer la _déviation minimale_ $D_{min}$ suffit à déterminer complètement $\theta_0$ et $\theta$. L'expression permettant de calculer $\lambda$ se ramène alors à une fonction de deux azimuts, plus de quatre.
+Mesurer la _déviation minimale_ suffit donc à déterminer non seulement $D_{min}$ mais également $\theta_0$ et $\theta$ géométriquement, sans mesure supplémentaire. 
 
-En effet, en nous plaçant par exemple au minimum de déviation pour la raie verte de l'ordre $p= -1$, on a :
+En réglant l'angle d'incidence par rotation du plateau, de manière à se placer au minimum de déviation, la présence d'une deuxième lunette n'est plus nécessaire. Nous pouvons donc faire **l'économie de la mesure** de l'angle d'incidence.
+
+L'expression permettant de calculer $\lambda$ se ramène alors à une fonction d'un seul angle et non plus de deux.
+
+En nous plaçant par exemple au minimum de déviation pour la raie verte de l'ordre $p= -1$, on a :
 $$\theta=\frac{D_{min}}{2}=-\theta_o$$ d'où :
 $$ \lambda = -a[sin(\frac{D_{min}}{2})-sin(\frac{-D_{min}}{2})] $$
 $$ \lambda = -2a[sin(\frac{D_{min}}{2})]$$
-Et enfin, en exprimant l'angle $D$ comme la différence des azimuts $\alpha_1$ et $\alpha_0$  mesurés directement :
+
+On cherchera enfin à exprimer $D$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
 >$$ \lambda = 2asin(\frac{\alpha_0-\alpha_1}{2})$$
 
 _Approche par l'exploration du modèle mathématique_
 
-On peut commencer par remarquer que pour $p=0$, la formule fondamentale du réseau se réduit à $sin(\theta)=sin(\theta_0)$ soit $\theta = \theta_0$. Une partie de la lumière incidente n'est donc pas du tout déviée, quel que soit l'angle d'incidence et quelle que soit la longueur d'onde.
+On peut commencer par remarquer que pour $p=0$, la formule fondamentale du réseau se réduit à $sin(\theta)=sin(\theta_0)$, soit $\theta = \theta_0$. Une partie de la lumière incidente n'est donc pas du tout déviée, quel que soit l'angle d'incidence et quelle que soit la longueur d'onde.
 
 Il devient donc _plus pratique_ de repérer les différentes raies colorées par rapport à l'ordre zéro que l'on peut viser à la lunette, que par rapport à la normale au réseau. 
 
@@ -124,18 +132,17 @@ Il vient :
 
 $$ \frac{d(sin(\theta_0+D))}{d\theta_0}=cos\theta_0cosD-sin\theta_0sinD\frac{dD}{d\theta_0}-sin\theta_0sinD+cos\theta_0cosD\frac{dD}{d\theta_0} $$
 
-$$ \frac{d(sin(\theta_0+D))}{d\theta_0} = cos\theta_0cosD(1+\frac{dD}{d\theta_0})
--sin\theta_0sinD(1+\frac{dD}{d\theta_0}) $$
+$$ \frac{d(sin(\theta_0+D))}{d\theta_0} = cos\theta_0cosD(1+\frac{dD}{d\theta_0})-sin\theta_0sinD(1+\frac{dD}{d\theta_0}) $$
 
-Comme au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
+Au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
 
-L'égalité des deux membres s'écrit : 
+L'égalité des deux membres s'écrit alors : 
 $$ cos\theta_0=cos\theta_0cosD_{min}-sin\theta_0sinD_{min}  $$
 
 Ce qui permet d'aboutir à l'équation :
 $$ cos\theta_0=cos(\theta_0+D_{min}) $$
-L'équation présente deux solutions. 
-La première, $D_{min}=0$, correspond à l'ordre zéro. 
+Cette équation admet deux solutions. 
+La première solution, $D_{min}=0$, correspond à l'ordre zéro. 
 La seconde correspond bien aux symétries décrites plus haut :
 >$$ D_{min}=-2\theta_0  $$
 
@@ -147,16 +154,24 @@ La seconde correspond bien aux symétries décrites plus haut :
 
 _Approche expérimentale_
 
-Pour aller encore un peu plus loin, il est légitime de demander à notre _modèle physique_ de rester pertinent que l'on regarde le phénomène depuis **le haut** ... ou bien qu'on le regarde depuis **le bas**.
+Il est légitime de demander à notre _modèle physique_ de rester pertinent que l'on regarde le phénomène depuis **le haut** ... ou bien qu'on le regarde depuis **le bas**.
 
 Il existe donc nécessairement une position symétrique du réseau et de la lunette qui réalise exactement la même configuration angulaire ... de l'autre côté du goniomètre.
 
-Ceci va donc nous permettre, en effectuant deux visées, de calculer cette fois l'angle (2D) et donc d'évaluer D avec une incertitude expérimentale qui sera de nouveau divisée par deux !
+!!! Note Protocole
+    Résumé en trois étapes, nous allons :
+    1- **viser la raie verte** dans l'ordre $p=-1$ et déterminer son azimut $\alpha_1$ au minimum de déviation ;
+    2- **déplacer le réseau**, par rotation du plateau, approximativement dans la position symétrique à la précédente par rapport à l'axe qui est la  direction de la lumière incidente ;
+    3- **viser la raie verte** une seconde fois, mais dans l'ordre $p=+1$ de cette nouvelle configuration et déterminer son azimut $\alpha_2$ au minimum de déviation.
 
-Soit, pour la raie verte visée une première fois à l'azimut $\alpha_1$ dans l'ordre $p=-1$ , puis visée une seconde fois à l'azimut $\alpha_2$ dans l'ordre $p=+1$ de la position symétrique du réseau :
+On obtient donc :
 $$ \lambda = -2asin(\frac{(2D_{min}/2)}{2}) $$
 
+On cherchera ici également à exprimer $\lambda$ en fonction des azimuts $\alpha_1$ et $\alpha_2$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
+
 >$$ \lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$
+
+En effectuant deux visées, nous avons cette fois calculé l'angle ($2D_{min} $). L'incertitude expérimentale attachée à la détermination de l'angle $D_{min} $  est donc de nouveau divisée par deux !
 
 _Approche par l'exploration du modèle mathématique_
 
@@ -172,23 +187,25 @@ $$ sin(-\theta)-sin(-\theta_0)=(-p)\frac{\lambda}{a} $$
 
 Vous noterez que l'invariance observée est traduite, dans le modèle mathématique, par la propriété de la fonction sinus d'être une **fonction impaire**, c'est à dire telle que $sin(-x)=-sin(x)$. 
 
-Les angles correspondant à la situation symétrique vérifient donc bien la formule fondamentale du réseau :
+Les angles correspondant à la situation symétrique vérifient donc bien la formule fondamentale du réseau avec les mêmes valeurs :
 $$ sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a} $$
 ___
 #### Faire le bilan {ignore=true}
 Pour calculer la valeur de la longueur d'onde $\lambda$ à partir de la formule fondamentale du réseau, nous sommes partis du constat qu'il était nécessaire de mesurer deux angles. L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts. 
 
-En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié puis, en effectuant la mesure symétrique, nous l'avons de nouveau divisé par deux. Soit un gain de 1 à 4.
+En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié puis, en effectuant la mesure symétrique, nous l'avons de nouveau divisé par deux. 
+
+Soit un gain de 1 à 4.
 
 #### Pour conclure {ignore=true}
 Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du **prototocole**, c'est à dire de la **manière dont on conduit les mesures**. 
 
-On cherchera ainsi à exploiter au mieux les symétries du phénomène physique mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique quand il est fourni.
+On a ainsi chercher à exploiter au mieux les symétries du phénomène physique mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique fourni.
 
 ___
 
 #### Outro {ignore=true}
-Dans la prochaine vidéo, je vous proposerai une révision rapide de la manière dont on règle à sa vue l'ensemble lunette et collimateur.
+Dans le prochaine épisode, nous nous intéresserons au problème de la précision des visées. En particulier, nous traiterons de la manière dont on règle à sa vue l'ensemble lunette et collimateur.
 Au revoir, et à très bientôt j'espère.
 
 

@@ -205,8 +205,9 @@ On a ainsi chercher à exploiter au mieux les symétries du phénomène physique
 ___
 
 #### Outro {ignore=true}
-Dans le prochaine épisode, nous nous intéresserons au problème de la précision des visées. En particulier, nous traiterons de la manière dont on règle à sa vue l'ensemble lunette et collimateur.
+Dans le [prochaine épisode](/SspectroE02.html), nous nous intéresserons au problème de la précision des visées. En particulier, nous traiterons de la manière dont on règle à sa vue l'ensemble lunette et collimateur.
 Au revoir, et à très bientôt j'espère.
+
 
 
 

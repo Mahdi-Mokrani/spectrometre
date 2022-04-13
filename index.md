@@ -130,9 +130,15 @@ $$ sin(\theta_0+D)=sin\theta_0cosD+cos\theta_0sinD $$
 
 Il vient :
 
-$$ \frac{d(sin(\theta_0+D))}{d\theta_0}=cos\theta_0cosD-sin\theta_0sinD\frac{dD}{d\theta_0}-sin\theta_0sinD+cos\theta_0cosD\frac{dD}{d\theta_0} $$
+$\begin{align}
+\frac{d(sin(\theta_0+D))}{d\theta_0} & =cos\theta_0cosD-sin\theta_0sinD\frac{dD}{d\theta_0} \\
+ & -sin\theta_0sinD+cos\theta_0cosD\frac{dD}{d\theta_0} \\ 
+\end{align}$
 
-$$ \frac{d(sin(\theta_0+D))}{d\theta_0} = cos\theta_0cosD(1+\frac{dD}{d\theta_0})-sin\theta_0sinD(1+\frac{dD}{d\theta_0}) $$
+$\begin{align} 
+    \frac{d(sin(\theta_0+D))}{d\theta_0} & = cos\theta_0cosD(1+\frac{dD}{d\theta_0}) \\
+    & -sin\theta_0sinD(1+\frac{dD}{d\theta_0})
+\end{align}$
 
 Au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
 

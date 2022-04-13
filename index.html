@@ -5,7 +5,7 @@
       
       
         <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/CommonHTML"],"messageStyle":"none","positionToHash":true,"showMathMenu":true,"tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"loader":{"load":["tex/ams"]},"TeX":{"packages":{"[+]":["ams"]},"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"CommonHTML":{"availableFonts":["TeX"]}});
         </script>
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
         
@@ -522,33 +522,31 @@ pre[data-line] .line-highlight[data-end]:after {
 
 @font-face {
   font-family: adobe-caslon-pro;
-  src: url();
+  src: url("https://use.typekit.net/suz5epf.css");
 }
 .markdown-preview.markdown-preview {
   width: 85%;
   font-family: adobe-caslon-pro;
   font-size: 22px;
   line-height: 1.3;
-  text-align: left ;
+  text-align: left;
   text-indent: 1em ;
-  hyphens: auto ;
+  hyphens: auto;
 }
 .markdown-preview.markdown-preview img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
   max-width: 100%;
+  height: auto;
   border: 2px solid #ddd;
   padding: 5px;
 }
-.md-sidebar-toc.md-sidebar-toc {
-  font-family: adobe-caslon-pro;
-}
 @page {
-  size: A4;
-  margin: 1.25cm;
-  font-size: 10px;
+  size: A4 ;
+  margin-top: 1.25cm;
+  margin-bottom: 1.25cm;
+  font-family: American Typewriter ;
   @bottom {
     content: counter(page) " sur " counter(pages);
   }
@@ -677,8 +675,8 @@ On &#xE9;crira par exemple : </p><div class="mathjax-exps">$$\theta_1 = (\alpha_
 <p>Pour le membre de gauche de l&apos;&#xE9;galit&#xE9;, comme :<br>
 </p><div class="mathjax-exps">$$sin(\theta_0+D)=sin\theta_0cosD+cos\theta_0sinD$$</div><p></p>
 <p>Il vient :</p>
-<p></p><div class="mathjax-exps">$$\frac{d(sin(\theta_0+D))}{d\theta_0}=cos\theta_0cosD-sin\theta_0sinD\frac{dD}{d\theta_0}-sin\theta_0sinD+cos\theta_0cosD\frac{dD}{d\theta_0}$$</div><p></p>
-<p></p><div class="mathjax-exps">$$\frac{d(sin(\theta_0+D))}{d\theta_0} = cos\theta_0cosD(1+\frac{dD}{d\theta_0})-sin\theta_0sinD(1+\frac{dD}{d\theta_0})$$</div><p></p>
+<p><span class="mathjax-exps">$\begin{align} \frac{d(sin(\theta_0+D))}{d\theta_0} &amp; =cos\theta_0cosD-sin\theta_0sinD\frac{dD}{d\theta_0} \\  &amp; -sin\theta_0sinD+cos\theta_0cosD\frac{dD}{d\theta_0} \\  \end{align}$</span></p>
+<p><span class="mathjax-exps">$\begin{align}      \frac{d(sin(\theta_0+D))}{d\theta_0} &amp; = cos\theta_0cosD(1+\frac{dD}{d\theta_0}) \\     &amp; -sin\theta_0sinD(1+\frac{dD}{d\theta_0}) \end{align}$</span></p>
 <p>Au minimum de d&#xE9;viation on a : </p><div class="mathjax-exps">$$\frac{dD}{d\theta_0}=0$$</div><p></p>
 <p>L&apos;&#xE9;galit&#xE9; des deux membres s&apos;&#xE9;crit alors :<br>
 </p><div class="mathjax-exps">$$cos\theta_0=cos\theta_0cosD_{min}-sin\theta_0sinD_{min}$$</div><p></p>

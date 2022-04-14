@@ -27,7 +27,7 @@ On peut aussi utiliser un réseau qui, lui, **diffracte** la lumière incidente 
 
 On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la **nature de leur spectre** : une lampe blanche possède un spectre **continu** alors qu'une lampe spectrale montre un **spectre de raies**, contenant un nombre discret de contributions spectrales qui sont comme la _signature_ de l'élément chimique qui les a émis. 
 
-#### II - Mesurer des angles pour déterminer des longueurs d'onde.
+#### II - Mesurer des angles pour déterminer des longueurs d'onde
 À partir de la loi de la réfraction dans le cas du prisme, ou des lois de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de **calculer** les longueurs d'onde à partir des angles que l'on peut **mesurer directement**.
 
 !!! note Formule fondamentale du réseau 
@@ -68,7 +68,7 @@ On notera l'existence d'un système mécanique similaire sur le plateau du gonio
 
 Sur des goniomètres d'étude plus anciens, on peut noter que le **plateau n'est pas mobile**. En revanche, ils étaitent équipées d'une lunette supplémentaire, dont la fonction etait de **mesurer l'angle d'incidence $\theta_0$**, en visant la part de la lumière incidente qui est réfléchie sur la face d'entrée du prisme.
 
-#### IV - Comment se servir du goniomètre ? Le protocole à appliquer
+#### IV - Comment se servir du goniomètre ? Le protocole
 La manière dont il faut se servir du goniomètre répond, bien entendu, au souci d'effectuer les mesures les plus précises possibles.
 
 !!! note Protocole 
@@ -197,7 +197,7 @@ Vous noterez que l'invariance observée est traduite, dans le modèle mathémati
 Les angles correspondant à la situation symétrique vérifient donc bien la formule fondamentale du réseau avec les mêmes valeurs :
 $$ sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a} $$
 ___
-#### Faire le bilan {ignore=true}
+#### Bilan {ignore=true}
 Pour calculer la valeur de la longueur d'onde $\lambda$ à partir de la formule fondamentale du réseau, nous sommes partis du constat qu'il était nécessaire de mesurer deux angles. L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts. 
 
 En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié puis, en effectuant la mesure symétrique, nous l'avons de nouveau divisé par deux. 
@@ -211,7 +211,6 @@ On a ainsi chercher à exploiter au mieux les symétries du phénomène physique
 
 ___
 
-#### Outro {ignore=true}
 Dans le [prochaine épisode](/SspectroE02.html), nous nous intéresserons au problème de la précision des visées. En particulier, nous traiterons de la manière dont on règle à sa vue l'ensemble lunette et collimateur.
 Au revoir, et à très bientôt j'espère.
 

@@ -39,7 +39,10 @@ On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction d
  
 $$ \lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)] $$
  
-#### III - Analogie entre un rapporteur et un goniomètre.
+#### III - Goniomètre et rapporteur
+
+_- Analogie entre un rapporteur et un goniomètre_
+
 On pourrait dire qu'un goniomètre est comme le **rapporteur** des leçons de géométrie. Cette analogie va d'ailleurs nous permettre de préciser un point de méthode et un point de vocabulaire.
 
 ![rapporteur](/images_gonio_E01/spectro_4.png)
@@ -49,7 +52,8 @@ On écrira par exemple : $$\theta_1 = (\alpha_1-\alpha_0)$$ en réservant les le
 >Cette _distinction de vocabulaire_ nous permet de garder en tête que chaque mesure d'angle $\theta_1$ est "grosse" des **incertitudes expérimentales** que l'on peut attacher à chacune des **deux visées** et à chacune des **deux lectures** d'azimuts $\alpha_1$ et $\alpha_2$. 
 
 
-#### IV - Différences entre un rapporteur et un goniomètre.
+_- Différences entre un rapporteur et un goniomètre._
+
 Si le rapporteur présente bien 90 graduations pour un angle droit, 360 graduations pour un tour complet, le goniomètre, lui, présente ... **60 fois plus de graduations** ! Non pas une graduation pour chaque degré mais une graduation pour chaque minute d'arc. Commercialement, ces instruments sont dits **30 secondes**, comme la _demie-étendue_ que l'on peut associer à la lecture des graduations.
 
 ![vernier du goniomètre](/images_gonio_E01/spectro_5.png)
@@ -64,7 +68,7 @@ On notera l'existence d'un système mécanique similaire sur le plateau du gonio
 
 Sur des goniomètres d'étude plus anciens, on peut noter que le **plateau n'est pas mobile**. En revanche, ils étaitent équipées d'une lunette supplémentaire, dont la fonction etait de **mesurer l'angle d'incidence $\theta_0$**, en visant la part de la lumière incidente qui est réfléchie sur la face d'entrée du prisme.
 
-#### V - Comment se servir du goniomètre ? Le protocole à appliquer
+#### IV - Comment se servir du goniomètre ? Le protocole à appliquer
 La manière dont il faut se servir du goniomètre répond, bien entendu, au souci d'effectuer les mesures les plus précises possibles.
 
 !!! note Protocole 
@@ -76,7 +80,7 @@ La manière dont il faut se servir du goniomètre répond, bien entendu, au souc
 
 L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exibées par le phénomène physique exploité.
 
-#### VI - Symétries des images diffractées au minimum de déviation
+#### V - Symétries des images diffractées au minimum de déviation
 
 _Approche expérimentale_
 
@@ -153,10 +157,7 @@ La seconde correspond bien aux symétries décrites plus haut :
 >$$ D_{min}=-2\theta_0  $$
 
 
-
-
-
-####VII - Symétrie de la situation de mesure
+####VI - Symétrie de la situation de mesure
 
 _Approche expérimentale_
 

@@ -5,7 +5,7 @@
       
       
         <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","showMathMenu":true,"tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","showMathMenu":true,"tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"loader":{"load":["tex/ams"]},"TeX":{"packages":{"[+]":["ams"]},"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
         </script>
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
         
@@ -522,23 +522,23 @@ pre[data-line] .line-highlight[data-end]:after {
 
 @font-face {
   font-family: adobe-caslon-pro;
-  src: url();
+  src: url("https://use.typekit.net/suz5epf.css");
 }
 .markdown-preview.markdown-preview {
   width: 85%;
   font-family: adobe-caslon-pro;
   font-size: 22px;
   line-height: 1.25;
-  text-align: left ;
+  text-align: left;
   text-indent: 1em ;
-  hyphens: auto ;
+  hyphens: auto;
 }
 .markdown-preview.markdown-preview img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
   max-width: 100%;
+  height: auto;
   border: 2px solid #ddd;
   padding: 5px;
 }
@@ -548,7 +548,8 @@ pre[data-line] .line-highlight[data-end]:after {
 @page {
   size: A4;
   margin: 1.25cm;
-  font-size: 10px;
+  font-family: adobe-caslon-pro;
+  font-size: 14px;
   @bottom {
     content: counter(page) " sur " counter(pages);
   }
@@ -566,31 +567,32 @@ pre[data-line] .line-highlight[data-end]:after {
 
 <hr>
 <ul>
-<li><a href="#i-goniom%C3%A8tre-et-spectrom%C3%A8tre">I - Goniom&#xE8;tre et spectrom&#xE8;tre</a></li>
-<li><a href="#ii-mesurer-des-angles-pour-d%C3%A9terminer-des-longueurs-donde">II - Mesurer des angles pour d&#xE9;terminer des longueurs d&apos;onde</a></li>
-<li><a href="#iii-goniom%C3%A8tre-et-rapporteur">III - Goniom&#xE8;tre et rapporteur</a></li>
-<li><a href="#iv-comment-se-servir-du-goniom%C3%A8tre-le-protocole">IV - Comment se servir du goniom&#xE8;tre ? Le protocole</a></li>
-<li><a href="#v-sym%C3%A9tries-des-images-diffract%C3%A9es-au-minimum-de-d%C3%A9viation">V - Sym&#xE9;tries des images diffract&#xE9;es au minimum de d&#xE9;viation</a></li>
-<li><a href="#vi-sym%C3%A9trie-de-la-situation-de-mesure">VI - Sym&#xE9;trie de la situation de mesure</a></li>
+<li><a href="#i-mesurer-des-angles-pour-d%C3%A9terminer-des-longueurs-donde">I - Mesurer des angles pour d&#xE9;terminer des longueurs d&apos;onde</a></li>
+<li><a href="#ii-goniom%C3%A8tre-et-rapporteur">II - Goniom&#xE8;tre et rapporteur</a></li>
+<li><a href="#iii-comment-se-servir-du-goniom%C3%A8tre-le-protocole">III - Comment se servir du goniom&#xE8;tre ? Le protocole</a></li>
+<li><a href="#iv-sym%C3%A9tries-des-images-diffract%C3%A9es-au-minimum-de-d%C3%A9viation">IV - Sym&#xE9;tries des images diffract&#xE9;es au minimum de d&#xE9;viation</a></li>
+<li><a href="#v-sym%C3%A9trie-de-la-situation-de-mesure">V - Sym&#xE9;trie de la situation de mesure</a></li>
 </ul>
 <hr>
+<h4 class="mume-header undefined" id="prologue">Prologue</h4>
+
+<p>Pour les physiciens, la lumi&#xE8;re est un message duquel on peut extraire de nombreuses informations.</p>
+<p>Dans des champs d&apos;application tr&#xE8;s vari&#xE9;s, le point de d&#xE9;part de l&apos;analyse consiste &#xE0; d&#xE9;terminer avec pr&#xE9;cision la fr&#xE9;quence d&apos;un rayonnement, sa couleur exacte.</p>
+<p><img src="images_gonio_E01/spectro_1.png" alt="goniom&#xE8;tre"></p>
 <h4 class="mume-header undefined" id="introduction">Introduction</h4>
 
-<p>Pour un physicien, les messages de la lumi&#xE8;re sont nombreux et riches d&apos;enseignements. <strong>D&#xE9;terminer avec pr&#xE9;cision la longueur d&apos;onde d&apos;un rayonnement</strong> est le point de d&#xE9;part de nombreuses analyses dans des champs d&apos;application tr&#xE8;s vari&#xE9;s, des plus fondamentaux aux plus quotidiens.</p>
-<p><img src="images_gonio_E01/spectro_1.png" alt="goniom&#xE8;tre"></p>
-<h4 class="mume-header" id="i-goniom%C3%A8tre-et-spectrom%C3%A8tre">I - Goniom&#xE8;tre et spectrom&#xE8;tre</h4>
-
+<p><em>- Goniom&#xE8;tre et spectrom&#xE8;tre</em></p>
 <blockquote>
 <p>Un <strong>goniom&#xE8;tre</strong> est un instrument de pr&#xE9;cision qui sert &#xE0; <strong>mesurer</strong> des angles.</p>
 </blockquote>
 <blockquote>
-<p>Le <strong>spectrom&#xE8;tre</strong>, comme son nom l&apos;indique, est l&apos;instrument qui permet de <strong>d&#xE9;composer</strong> le faisceau lumineux issue d&apos;une source dans l&apos;ensemble des lumi&#xE8;res color&#xE9;es qui constitue son spectre, et de <strong>mesurer</strong> leurs longueurs d&apos;onde.</p>
+<p>Le <strong>spectrom&#xE8;tre</strong>, comme son nom l&apos;indique, est l&apos;instrument qui permet de <strong>d&#xE9;composer</strong> le faisceau lumineux issu d&apos;une source, comme <em>m&#xE9;lange</em>, dans l&apos;ensemble des lumi&#xE8;res color&#xE9;es <em>pures</em> qui constituent son spectre, afin d&apos;obtenir une <strong>mesure</strong>  de leurs longueurs d&apos;onde.</p>
 </blockquote>
 <p>On peut obtenir un spectrom&#xE8;tre en associant le goniom&#xE8;tre avec un syst&#xE8;me dispersif comme le prisme, qui <strong>r&#xE9;fracte</strong> chaque rayon color&#xE9; selon un angle diff&#xE9;rent.<br>
-On peut aussi utiliser un r&#xE9;seau qui, lui, <strong>diffracte</strong> la lumi&#xE8;re incidente dans des directions diff&#xE9;rentes et dans des ordres diff&#xE9;rents.</p>
+On peut aussi utiliser un r&#xE9;seau qui lui, <strong>diffracte</strong> la lumi&#xE8;re incidente dans des directions diff&#xE9;rentes et dans des ordres diff&#xE9;rents.</p>
 <p><img src="images_gonio_E01/spectro_2.png" alt="prisme et r&#xE9;seau"></p>
-<p>On a d&apos;ailleurs pris l&apos;habitude de classer les sources de lumi&#xE8;re en fonction de la <strong>nature de leur spectre</strong> : une lampe blanche poss&#xE8;de un spectre <strong>continu</strong> alors qu&apos;une lampe spectrale montre un <strong>spectre de raies</strong>, contenant un nombre discret de contributions spectrales qui sont comme la <em>signature</em> de l&apos;&#xE9;l&#xE9;ment chimique qui les a &#xE9;mis.</p>
-<h4 class="mume-header" id="ii-mesurer-des-angles-pour-d%C3%A9terminer-des-longueurs-donde">II - Mesurer des angles pour d&#xE9;terminer des longueurs d&apos;onde</h4>
+<p>On a d&apos;ailleurs pris l&apos;habitude de classer les sources de lumi&#xE8;re en fonction de la <strong>nature</strong> de leur spectre : une lampe blanche poss&#xE8;de un spectre <strong>continu</strong> alors que les lampes spectrales exhibent un spectre contenant un nombre <strong>discret</strong> de raies, qui sont comme la <em>signature</em> de l&apos;&#xE9;l&#xE9;ment chimique qui les a &#xE9;mis.</p>
+<h4 class="mume-header" id="i-mesurer-des-angles-pour-d%C3%A9terminer-des-longueurs-donde">I - Mesurer des angles pour d&#xE9;terminer des longueurs d&apos;onde</h4>
 
 <p>&#xC0; partir de la loi de la r&#xE9;fraction dans le cas du prisme, ou des lois de la diffraction dans le cas du r&#xE9;seau, on peut &#xE9;tablir une expression math&#xE9;matique, une formule, qui nous permet de <strong>calculer</strong> les longueurs d&apos;onde &#xE0; partir des angles que l&apos;on peut <strong>mesurer directement</strong>.</p>
 <div class="admonition note">
@@ -602,7 +604,7 @@ On peut aussi utiliser un r&#xE9;seau qui, lui, <strong>diffracte</strong> la lu
 <p>En particulier, la <em>formule fondamentale du r&#xE9;seau</em>   nous montre que pour calculer la longueur d&apos;onde <span class="mathjax-exps">$\lambda$</span>, il nous faudra, <strong>en pratique, faire la  mesure  de deux angles</strong> : <em>l&apos;angle d&apos;incidence</em> <span class="mathjax-exps">$\theta_o$</span> et l&apos;angle <span class="mathjax-exps">$\theta$</span> auquel est diffract&#xE9;e la lumi&#xE8;re color&#xE9;e consid&#xE9;r&#xE9;e dans l&apos;ordre d&apos;interf&#xE9;rence <span class="mathjax-exps">$p$</span> consid&#xE9;r&#xE9; :</p>
 </blockquote>
 <p></p><div class="mathjax-exps">$$\lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)]$$</div><p></p>
-<h4 class="mume-header" id="iii-goniom%C3%A8tre-et-rapporteur">III - Goniom&#xE8;tre et rapporteur</h4>
+<h4 class="mume-header" id="ii-goniom%C3%A8tre-et-rapporteur">II - Goniom&#xE8;tre et rapporteur</h4>
 
 <p><em>- Analogie entre un rapporteur et un goniom&#xE8;tre</em></p>
 <p>On pourrait dire qu&apos;un goniom&#xE8;tre est comme le <strong>rapporteur</strong> des le&#xE7;ons de g&#xE9;om&#xE9;trie. Cette analogie va d&apos;ailleurs nous permettre de pr&#xE9;ciser un point de m&#xE9;thode et un point de vocabulaire.</p>
@@ -620,7 +622,7 @@ On &#xE9;crira par exemple : </p><div class="mathjax-exps">$$\theta_1 = (\alpha_
 <p>On notera l&apos;existence d&apos;un syst&#xE8;me m&#xE9;canique similaire sur le plateau du goniom&#xE8;tre. Une vis de serrage permet des mouvements grossiers et, une fois cette derni&#xE8;re ress&#xE9;r&#xE9;e, la vis de d&#xE9;placement microm&#xE9;trique permet de contr&#xF4;ler des mouvements fins de rotation du plateau.</p>
 <p><img src="images_gonio_E01/spectro_7.png" alt="vis plateau"></p>
 <p>Sur des goniom&#xE8;tres d&apos;&#xE9;tude plus anciens, on peut noter que le <strong>plateau n&apos;est pas mobile</strong>. En revanche, ils &#xE9;taitent &#xE9;quip&#xE9;es d&apos;une lunette suppl&#xE9;mentaire, dont la fonction etait de <strong>mesurer l&apos;angle d&apos;incidence <span class="mathjax-exps">$\theta_0$</span></strong>, en visant la part de la lumi&#xE8;re incidente qui est r&#xE9;fl&#xE9;chie sur la face d&apos;entr&#xE9;e du prisme.</p>
-<h4 class="mume-header" id="iv-comment-se-servir-du-goniom%C3%A8tre-le-protocole">IV - Comment se servir du goniom&#xE8;tre ? Le protocole</h4>
+<h4 class="mume-header" id="iii-comment-se-servir-du-goniom%C3%A8tre-le-protocole">III - Comment se servir du goniom&#xE8;tre ? Le protocole</h4>
 
 <p>La mani&#xE8;re dont il faut se servir du goniom&#xE8;tre r&#xE9;pond, bien entendu, au souci d&apos;effectuer les mesures les plus pr&#xE9;cises possibles.</p>
 <div class="admonition note">
@@ -634,9 +636,9 @@ On &#xE9;crira par exemple : </p><div class="mathjax-exps">$$\theta_1 = (\alpha_
 </ol>
 </div>
 <p>L&apos;enjeu principal de cette vid&#xE9;o est de comprendre que ce protocole d&#xE9;coule de la prise en compte des <strong>sym&#xE9;tries</strong> exib&#xE9;es par le ph&#xE9;nom&#xE8;ne physique exploit&#xE9;.</p>
-<h4 class="mume-header" id="v-sym%C3%A9tries-des-images-diffract%C3%A9es-au-minimum-de-d%C3%A9viation">V - Sym&#xE9;tries des images diffract&#xE9;es au minimum de d&#xE9;viation</h4>
+<h4 class="mume-header" id="iv-sym%C3%A9tries-des-images-diffract%C3%A9es-au-minimum-de-d%C3%A9viation">IV - Sym&#xE9;tries des images diffract&#xE9;es au minimum de d&#xE9;viation</h4>
 
-<p><em>Approche exp&#xE9;rimentale</em></p>
+<p><em>- Approche exp&#xE9;rimentale</em></p>
 <p>Pour un r&#xE9;seau de pas donn&#xE9; et pour une longueur d&apos;onde donn&#xE9;e (celle du laser rouge ici), les angles auxquels on peut rep&#xE9;rer les diff&#xE9;rents ordres d&apos;interf&#xE9;rence sont des fonctions de l&apos;angle d&apos;incidence <span class="mathjax-exps">$\theta_0$</span>.</p>
 <p>&#xC0; l&apos;ordre z&#xE9;ro, la lumi&#xE8;re n&apos;est pas du tout d&#xE9;vi&#xE9;e, quelle que soit la longueur d&apos;onde. Dans la pratique, nous rep&#xE8;rerons les raies color&#xE9;es par rapport &#xE0; cette direction que l&apos;on peut viser, plut&#xF4;t que par rapport &#xE0; la normale au r&#xE9;seau, comme nous l&apos;avions fait dans la mise en place th&#xE9;orique. On consid&#xE8;rera donc dor&#xE9;navant la <em>d&#xE9;viation</em> <span class="mathjax-exps">$D$</span> d&apos;une raie color&#xE9;e, grandeur mesurable, plut&#xF4;t que son angle de sortie <span class="mathjax-exps">$\theta$</span>.</p>
 <p><img src="images_gonio_E01/spectro_8.png" alt="minimum de d&#xE9;viation laser"></p>
@@ -663,7 +665,7 @@ On &#xE9;crira par exemple : </p><div class="mathjax-exps">$$\theta_1 = (\alpha_
 <blockquote>
 <p></p><div class="mathjax-exps">$$\lambda = 2asin(\frac{\alpha_0-\alpha_1}{2})$$</div><p></p>
 </blockquote>
-<p><em>Approche par l&apos;exploration du mod&#xE8;le math&#xE9;matique</em></p>
+<p><em>- Approche par l&apos;exploration du mod&#xE8;le math&#xE9;matique</em></p>
 <p>On peut commencer par remarquer que pour <span class="mathjax-exps">$p=0$</span>, la formule fondamentale du r&#xE9;seau se r&#xE9;duit &#xE0; <span class="mathjax-exps">$sin(\theta)=sin(\theta_0)$</span>, soit <span class="mathjax-exps">$\theta = \theta_0$</span>. Une partie de la lumi&#xE8;re incidente n&apos;est donc pas du tout d&#xE9;vi&#xE9;e, quel que soit l&apos;angle d&apos;incidence et quelle que soit la longueur d&apos;onde.</p>
 <p>Il devient donc <em>plus pratique</em> de rep&#xE9;rer les diff&#xE9;rentes raies color&#xE9;es par rapport &#xE0; l&apos;ordre z&#xE9;ro que l&apos;on peut viser &#xE0; la lunette, que par rapport &#xE0; la normale au r&#xE9;seau.</p>
 <p>Par construction, il vient :</p>
@@ -689,9 +691,9 @@ La seconde correspond bien aux sym&#xE9;tries d&#xE9;crites plus haut :<p></p>
 <blockquote>
 <p></p><div class="mathjax-exps">$$D_{min}=-2\theta_0$$</div><p></p>
 </blockquote>
-<h4 class="mume-header" id="vi-sym%C3%A9trie-de-la-situation-de-mesure">VI - Sym&#xE9;trie de la situation de mesure</h4>
+<h4 class="mume-header" id="v-sym%C3%A9trie-de-la-situation-de-mesure">V - Sym&#xE9;trie de la situation de mesure</h4>
 
-<p><em>Approche exp&#xE9;rimentale</em></p>
+<p><em>- Approche exp&#xE9;rimentale</em></p>
 <p>Il est l&#xE9;gitime de demander &#xE0; notre <em>mod&#xE8;le physique</em> de rester pertinent que l&apos;on regarde le ph&#xE9;nom&#xE8;ne depuis <strong>le haut</strong> ... ou bien qu&apos;on le regarde depuis <strong>le bas</strong>.</p>
 <p>Il existe donc n&#xE9;cessairement une position sym&#xE9;trique du r&#xE9;seau et de la lunette qui r&#xE9;alise exactement la m&#xEA;me configuration angulaire ... de l&apos;autre c&#xF4;t&#xE9; du goniom&#xE8;tre.</p>
 <div class="admonition note">
@@ -708,7 +710,7 @@ La seconde correspond bien aux sym&#xE9;tries d&#xE9;crites plus haut :<p></p>
 <p></p><div class="mathjax-exps">$$\lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$</div><p></p>
 </blockquote>
 <p>En effectuant deux vis&#xE9;es, nous avons cette fois calcul&#xE9; l&apos;angle (<span class="mathjax-exps">$2D_{min}$</span>). L&apos;incertitude exp&#xE9;rimentale attach&#xE9;e &#xE0; la d&#xE9;termination de l&apos;angle <span class="mathjax-exps">$D_{min}$</span>  est donc de nouveau divis&#xE9;e par deux !</p>
-<p><em>Approche par l&apos;exploration du mod&#xE8;le math&#xE9;matique</em></p>
+<p><em>- Approche par l&apos;exploration du mod&#xE8;le math&#xE9;matique</em></p>
 <p>La transformation math&#xE9;matique qui correspond au changement de point de vue haut/bas peut &#xEA;tre vue comme un retournement de l&apos;image, une rotation d&apos;un demi-tour autour de l&apos;axe qui est vertical sur la feuille et passe par son milieu.</p>
 <p>En gardant la m&#xEA;me convention d&apos;orientation des angles, cette transformation :</p>
 <ul>

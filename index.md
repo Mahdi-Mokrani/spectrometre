@@ -1,6 +1,6 @@
 ---
 html:
-    toc: false
+    toc: true
 export_on_save:
     html: true
 ---
@@ -11,23 +11,31 @@ export_on_save:
 ___
 [TOC]
 ___
-#### Introduction {ignore=true}
-Pour un physicien, les messages de la lumière sont nombreux et riches d'enseignements. **Déterminer avec précision la longueur d'onde d'un rayonnement** est le point de départ de nombreuses analyses dans des champs d'application très variés, des plus fondamentaux aux plus quotidiens.
+
+#### Prologue {ignore=true}
+
+Pour les physiciens, la lumière est un message duquel on peut extraire de nombreuses informations.
+
+Dans des champs d'application très variés, le point de départ de l'analyse consiste à déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte.
 
 ![goniomètre](/images_gonio_E01/spectro_1.png)
-#### I - Goniomètre et spectromètre
+
+#### Introduction {ignore=true}
+
+_- Goniomètre et spectromètre_
+
 >Un **goniomètre** est un instrument de précision qui sert à **mesurer** des angles.
 
->Le **spectromètre**, comme son nom l'indique, est l'instrument qui permet de **décomposer** le faisceau lumineux issue d'une source dans l'ensemble des lumières colorées qui constitue son spectre, et de **mesurer** leurs longueurs d'onde. 
+>Le **spectromètre**, comme son nom l'indique, est l'instrument qui permet de **décomposer** le faisceau lumineux issu d'une source, comme _mélange_, dans l'ensemble des lumières colorées _pures_ qui constituent son spectre, afin d'obtenir une **mesure**  de leurs longueurs d'onde. 
     
 On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui **réfracte** chaque rayon coloré selon un angle différent. 
-On peut aussi utiliser un réseau qui, lui, **diffracte** la lumière incidente dans des directions différentes et dans des ordres différents.
+On peut aussi utiliser un réseau qui lui, **diffracte** la lumière incidente dans des directions différentes et dans des ordres différents.
 
 ![prisme et réseau](/images_gonio_E01/spectro_2.png)
 
-On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la **nature de leur spectre** : une lampe blanche possède un spectre **continu** alors qu'une lampe spectrale montre un **spectre de raies**, contenant un nombre discret de contributions spectrales qui sont comme la _signature_ de l'élément chimique qui les a émis. 
+On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la **nature** de leur spectre : une lampe blanche possède un spectre **continu** alors que les lampes spectrales exhibent un spectre contenant un nombre **discret** de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis. 
 
-#### II - Mesurer des angles pour déterminer des longueurs d'onde
+#### I - Mesurer des angles pour déterminer des longueurs d'onde
 À partir de la loi de la réfraction dans le cas du prisme, ou des lois de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de **calculer** les longueurs d'onde à partir des angles que l'on peut **mesurer directement**.
 
 !!! note Formule fondamentale du réseau 
@@ -39,7 +47,7 @@ On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction d
  
 $$ \lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)] $$
  
-#### III - Goniomètre et rapporteur
+#### II - Goniomètre et rapporteur
 
 _- Analogie entre un rapporteur et un goniomètre_
 
@@ -68,7 +76,7 @@ On notera l'existence d'un système mécanique similaire sur le plateau du gonio
 
 Sur des goniomètres d'étude plus anciens, on peut noter que le **plateau n'est pas mobile**. En revanche, ils étaitent équipées d'une lunette supplémentaire, dont la fonction etait de **mesurer l'angle d'incidence $\theta_0$**, en visant la part de la lumière incidente qui est réfléchie sur la face d'entrée du prisme.
 
-#### IV - Comment se servir du goniomètre ? Le protocole
+#### III - Comment se servir du goniomètre ? Le protocole
 La manière dont il faut se servir du goniomètre répond, bien entendu, au souci d'effectuer les mesures les plus précises possibles.
 
 !!! note Protocole 
@@ -80,9 +88,9 @@ La manière dont il faut se servir du goniomètre répond, bien entendu, au souc
 
 L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exibées par le phénomène physique exploité.
 
-#### V - Symétries des images diffractées au minimum de déviation
+#### IV - Symétries des images diffractées au minimum de déviation
 
-_Approche expérimentale_
+_- Approche expérimentale_
 
 Pour un réseau de pas donné et pour une longueur d'onde donnée (celle du laser rouge ici), les angles auxquels on peut repérer les différents ordres d'interférence sont des fonctions de l'angle d'incidence $\theta_0$.
 
@@ -111,7 +119,7 @@ $$ \lambda = -2a[sin(\frac{D_{min}}{2})]$$
 On cherchera enfin à exprimer $D$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
 >$$ \lambda = 2asin(\frac{\alpha_0-\alpha_1}{2})$$
 
-_Approche par l'exploration du modèle mathématique_
+_- Approche par l'exploration du modèle mathématique_
 
 On peut commencer par remarquer que pour $p=0$, la formule fondamentale du réseau se réduit à $sin(\theta)=sin(\theta_0)$, soit $\theta = \theta_0$. Une partie de la lumière incidente n'est donc pas du tout déviée, quel que soit l'angle d'incidence et quelle que soit la longueur d'onde.
 
@@ -157,9 +165,9 @@ La seconde correspond bien aux symétries décrites plus haut :
 >$$ D_{min}=-2\theta_0  $$
 
 
-####VI - Symétrie de la situation de mesure
+#### V - Symétrie de la situation de mesure
 
-_Approche expérimentale_
+_- Approche expérimentale_
 
 Il est légitime de demander à notre _modèle physique_ de rester pertinent que l'on regarde le phénomène depuis **le haut** ... ou bien qu'on le regarde depuis **le bas**.
 
@@ -180,7 +188,7 @@ On cherchera ici également à exprimer $\lambda$ en fonction des azimuts $\alph
 
 En effectuant deux visées, nous avons cette fois calculé l'angle ($2D_{min} $). L'incertitude expérimentale attachée à la détermination de l'angle $D_{min} $  est donc de nouveau divisée par deux !
 
-_Approche par l'exploration du modèle mathématique_
+_- Approche par l'exploration du modèle mathématique_
 
 La transformation mathématique qui correspond au changement de point de vue haut/bas peut être vue comme un retournement de l'image, une rotation d'un demi-tour autour de l'axe qui est vertical sur la feuille et passe par son milieu.
 

@@ -33,7 +33,7 @@ On peut aussi utiliser un réseau qui lui, **diffracte** la lumière incidente d
 
 ![prisme et réseau](/images_gonio_E01/spectro_2.png)
 
-On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la **nature** de leur spectre : une lampe blanche possède un spectre **continu** alors que les lampes spectrales exhibent un spectre contenant un nombre **discret** de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis. 
+On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la **nature** de leur spectre : une lampe blanche possède un spectre **continu** alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre **discret** de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis. 
 
 #### I - Mesurer des angles pour déterminer des longueurs d'onde
 À partir de la loi de la réfraction dans le cas du prisme, ou des lois de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de **calculer** les longueurs d'onde à partir des angles que l'on peut **mesurer directement**.

@@ -5,7 +5,7 @@
       
       
         <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","showMathMenu":true,"tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"loader":{"load":["tex/ams"]},"TeX":{"packages":{"[+]":["ams"]},"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","showMathMenu":true,"tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
         </script>
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
         
@@ -522,23 +522,23 @@ pre[data-line] .line-highlight[data-end]:after {
 
 @font-face {
   font-family: adobe-caslon-pro;
-  src: url("https://use.typekit.net/suz5epf.css");
+  src: url();
 }
 .markdown-preview.markdown-preview {
   width: 85%;
   font-family: adobe-caslon-pro;
   font-size: 22px;
   line-height: 1.25;
-  text-align: left;
+  text-align: left ;
   text-indent: 1em ;
-  hyphens: auto;
+  hyphens: auto ;
 }
 .markdown-preview.markdown-preview img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
   border: 2px solid #ddd;
   padding: 5px;
 }
@@ -548,8 +548,7 @@ pre[data-line] .line-highlight[data-end]:after {
 @page {
   size: A4;
   margin: 1.25cm;
-  font-family: adobe-caslon-pro;
-  font-size: 14px;
+  font-size: 10px;
   @bottom {
     content: counter(page) " sur " counter(pages);
   }
@@ -591,7 +590,7 @@ pre[data-line] .line-highlight[data-end]:after {
 <p>On peut obtenir un spectrom&#xE8;tre en associant le goniom&#xE8;tre avec un syst&#xE8;me dispersif comme le prisme, qui <strong>r&#xE9;fracte</strong> chaque rayon color&#xE9; selon un angle diff&#xE9;rent.<br>
 On peut aussi utiliser un r&#xE9;seau qui lui, <strong>diffracte</strong> la lumi&#xE8;re incidente dans des directions diff&#xE9;rentes et dans des ordres diff&#xE9;rents.</p>
 <p><img src="images_gonio_E01/spectro_2.png" alt="prisme et r&#xE9;seau"></p>
-<p>On a d&apos;ailleurs pris l&apos;habitude de classer les sources de lumi&#xE8;re en fonction de la <strong>nature</strong> de leur spectre : une lampe blanche poss&#xE8;de un spectre <strong>continu</strong> alors que les lampes spectrales exhibent un spectre contenant un nombre <strong>discret</strong> de raies, qui sont comme la <em>signature</em> de l&apos;&#xE9;l&#xE9;ment chimique qui les a &#xE9;mis.</p>
+<p>On a d&apos;ailleurs pris l&apos;habitude de classer les sources de lumi&#xE8;re en fonction de la <strong>nature</strong> de leur spectre : une lampe blanche poss&#xE8;de un spectre <strong>continu</strong> alors que les lampes &#xE0; vapeurs m&#xE9;talliques ont un spectre contenant un nombre <strong>discret</strong> de raies, qui sont comme la <em>signature</em> de l&apos;&#xE9;l&#xE9;ment chimique qui les a &#xE9;mis.</p>
 <h4 class="mume-header" id="i-mesurer-des-angles-pour-d%C3%A9terminer-des-longueurs-donde">I - Mesurer des angles pour d&#xE9;terminer des longueurs d&apos;onde</h4>
 
 <p>&#xC0; partir de la loi de la r&#xE9;fraction dans le cas du prisme, ou des lois de la diffraction dans le cas du r&#xE9;seau, on peut &#xE9;tablir une expression math&#xE9;matique, une formule, qui nous permet de <strong>calculer</strong> les longueurs d&apos;onde &#xE0; partir des angles que l&apos;on peut <strong>mesurer directement</strong>.</p>

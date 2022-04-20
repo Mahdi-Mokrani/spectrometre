@@ -5,7 +5,7 @@
       
       
         <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","showMathMenu":true,"tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"loader":{"load":["tex/ams"]},"TeX":{"packages":{"[+]":["ams"]},"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","showMathMenu":true,"tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
         </script>
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
         
@@ -522,23 +522,23 @@ pre[data-line] .line-highlight[data-end]:after {
 
 @font-face {
   font-family: adobe-caslon-pro;
-  src: url("https://use.typekit.net/suz5epf.css");
+  src: url();
 }
 .markdown-preview.markdown-preview {
-  width: 85%;
+  width: 90%;
   font-family: adobe-caslon-pro;
   font-size: 22px;
   line-height: 1.25;
-  text-align: left;
+  text-align: left ;
   text-indent: 1em ;
-  hyphens: auto;
+  hyphens: auto ;
 }
 .markdown-preview.markdown-preview img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
   border: 2px solid #ddd;
   padding: 5px;
 }
@@ -546,10 +546,9 @@ pre[data-line] .line-highlight[data-end]:after {
   font-family: adobe-caslon-pro;
 }
 @page {
-  size: A4;
+  size: A5;
   margin: 1.25cm;
-  font-family: adobe-caslon-pro;
-  font-size: 14px;
+  font-size: 10px;
   @bottom {
     content: counter(page) " sur " counter(pages);
   }

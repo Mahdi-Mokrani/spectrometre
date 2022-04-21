@@ -12,13 +12,13 @@ ___
 [TOC]
 ___
 
-#### Prologue {ignore=true}
+#### _Prologue_ {ignore=true}
 
 Pour un physicien, la lumière est un message duquel on peut extraire de nombreuses informations.
 
 Dans des champs d'application très variés, le point de départ de l'analyse consiste à déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte.
 
-#### Introduction {ignore=true}
+#### _Introduction_ {ignore=true}
 
 _- Goniomètre et spectromètre_
 

@@ -207,7 +207,7 @@ On cherchera ici également à exprimer $\lambda$ en fonction des azimuts $\alph
 
 >$$ \lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$
 
-En effectuant deux visées, nous avons cette fois calculé l'angle ($2D_{min} $). L'incertitude expérimentale attachée à la détermination de l'angle $D_{min} $  est donc de nouveau divisée par deux !
+En effectuant deux visées, nous avons cette fois calculé l'angle $2D_{min} $. L'incertitude expérimentale attachée à la détermination de l'angle $D_{min} $  est donc de nouveau divisée par deux !
 
 _- Approche par l'exploration du modèle mathématique_
 

@@ -546,12 +546,7 @@ pre[data-line] .line-highlight[data-end]:after {
   font-family: adobe-caslon-pro;
 }
 @page {
-  size: A5;
-  margin: 1.25cm;
-  font-size: 10px;
-  @bottom {
-    content: counter(page) " sur " counter(pages);
-  }
+  size: A4;
 }
 
       </style>
@@ -577,7 +572,6 @@ pre[data-line] .line-highlight[data-end]:after {
 
 <p>Pour un physicien, la lumi&#xE8;re est un message duquel on peut extraire de nombreuses informations.</p>
 <p>Dans des champs d&apos;application tr&#xE8;s vari&#xE9;s, le point de d&#xE9;part de l&apos;analyse consiste &#xE0; d&#xE9;terminer avec pr&#xE9;cision la fr&#xE9;quence d&apos;un rayonnement, sa couleur exacte.</p>
-<p><img src="images_gonio_E01/spectro_1.png" alt="goniom&#xE8;tre"></p>
 <h4 class="mume-header undefined" id="introduction">Introduction</h4>
 
 <p><em>- Goniom&#xE8;tre et spectrom&#xE8;tre</em></p>
@@ -589,34 +583,50 @@ pre[data-line] .line-highlight[data-end]:after {
 </blockquote>
 <p>On peut obtenir un spectrom&#xE8;tre en associant le goniom&#xE8;tre avec un syst&#xE8;me dispersif comme le prisme, qui <strong>r&#xE9;fracte</strong> chaque rayon color&#xE9; selon un angle diff&#xE9;rent.<br>
 On peut aussi utiliser un r&#xE9;seau qui lui, <strong>diffracte</strong> la lumi&#xE8;re incidente dans des directions diff&#xE9;rentes et dans des ordres diff&#xE9;rents.</p>
-<p><img src="images_gonio_E01/spectro_2.png" alt="prisme et r&#xE9;seau"></p>
 <p>On a d&apos;ailleurs pris l&apos;habitude de classer les sources de lumi&#xE8;re en fonction de la <strong>nature</strong> de leur spectre : une lampe blanche poss&#xE8;de un spectre <strong>continu</strong> alors que les lampes &#xE0; vapeurs m&#xE9;talliques ont un spectre contenant un nombre <strong>discret</strong> de raies, qui sont comme la <em>signature</em> de l&apos;&#xE9;l&#xE9;ment chimique qui les a &#xE9;mis.</p>
 <h4 class="mume-header" id="i-mesurer-des-angles-pour-d%C3%A9terminer-des-longueurs-donde">I - Mesurer des angles pour d&#xE9;terminer des longueurs d&apos;onde</h4>
 
 <p>&#xC0; partir de la loi de la r&#xE9;fraction dans le cas du prisme, ou des principes de la diffraction dans le cas du r&#xE9;seau, on peut &#xE9;tablir une expression math&#xE9;matique, une formule, qui nous permet de <strong>calculer</strong> les longueurs d&apos;onde &#xE0; partir des angles que l&apos;on peut <strong>mesurer directement</strong>.</p>
+<p><em>- Approche exp&#xE9;rimentale</em></p>
+<p>En regardant directement dans l&apos;axe du collimateur &#xE0; travers le r&#xE9;seau, Jean-Luc peut voir une image de la fente source, tr&#xE8;s lumineuse.</p>
+<p>En d&#xE9;portant son regard dans des directions qui s&apos;&#xE9;loignent de l&apos;axe optique du collimateur, Jean-Luc peut voir d&apos;autres images de la fente source qui cette fois, ont des couleurs <em>pures</em>.</p>
+<p>Contrairement &#xE0; ce que l&apos;on peut observer avec un prisme ou dans un arc-en-ciel, les images rouges de la fente sont plus d&#xE9;vi&#xE9;es que les images violettes.</p>
+<p>On peut &#xE9;galement observer une seconde raie violette, d&#xE9;but d&apos;un spectre d&apos;ordre deux.</p>
+<p>Voyons comment le mod&#xE8;le math&#xE9;matique qui vous est propos&#xE9; peut rendre compte de ces observations.</p>
+<p><em>- La formule fondamentale du r&#xE9;seau</em></p>
 <div class="admonition note">
 <p class="admonition-title">Formule fondamentale du r&#xE9;seau</p>
 <p></p><div class="mathjax-exps">$$sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a}$$</div><p></p>
 </div>
-<p>On peut commencer par remarquer que pour <span class="mathjax-exps">$p=0$</span>, la formule fondamentale du r&#xE9;seau se r&#xE9;duit &#xE0; :<br>
+<p>Dans cette formule :</p>
+<ul>
+<li>
+<p><span class="mathjax-exps">$\theta_0$</span> repr&#xE9;sente <em>l&apos;angle d&apos;incidence</em>, angle sous lequel arrive la lumi&#xE8;re issue du collimateur sur le r&#xE9;seau, rep&#xE9;r&#xE9; par rapport &#xE0; <em>la normale (N)</em> au r&#xE9;seau ;</p>
+</li>
+<li>
+<p><span class="mathjax-exps">$\theta$</span> repr&#xE9;sente l&apos;angle sous lequel on peut rep&#xE9;rer une des multiples images de la fente source, une raie verte dans notre exemple ;</p>
+</li>
+<li>
+<p><em>p</em> est <em>l&apos;ordre d&apos;interf&#xE9;rence</em> consid&#xE9;r&#xE9;, c&apos;est un entier relatif qui nous permet de num&#xE9;roter les diff&#xE9;rentes images vertes de fente source par exemple ;</p>
+</li>
+<li>
+<p><span class="mathjax-exps">$a$</span> est une grandeur qui caract&#xE9;rise le r&#xE9;seau particulier que l&apos;on a utilis&#xE9;, c&apos;est la distance entre deux gravures successives (r&#xE9;seau = grating in english) ou <em>pas du r&#xE9;seau</em>. Elle est de l&apos;ordre du microm&#xE8;tre. Dans la pratique, c&apos;est l&apos;inverse du pas qui est indiqu&#xE9; sur l&apos;objet, <em>le nombre de traits par unit&#xE9; de longueur</em>, 300 traits par mm dans notre exemple.</p>
+</li>
+<li>
+<p><span class="mathjax-exps">$\lambda$</span>, enfin, est la longueur d&apos;onde dans l&apos;air du rayonnement consid&#xE9;r&#xE9;, elle caract&#xE9;rise quantitativement la couleur de la raie. Dans notre exemple, la raie verte de la lampe &#xE0; vapeur de Mercure poss&#xE8;de une teinte absolument singuli&#xE8;re, caract&#xE9;ris&#xE9;e par la longueur d&apos;onde 576 nm.</p>
+</li>
+</ul>
+<p><em>- Mesure exp&#xE9;rimentale des angles, angle de d&#xE9;viation D</em></p>
+<p>On peut commencer par remarquer que la formule fondamentale du r&#xE9;seau se r&#xE9;duit, pour <span class="mathjax-exps">$p=0$</span>, &#xE0; :<br>
 </p><div class="mathjax-exps">$$sin(\theta)=sin(\theta_0)$$</div> <div class="mathjax-exps">$$\theta = \theta_0$$</div><p></p>
 <p>Une partie de la lumi&#xE8;re incidente n&apos;est donc pas du tout d&#xE9;vi&#xE9;e, quel que soit l&apos;angle d&apos;incidence et quelle que soit la longueur d&apos;onde.</p>
-<p>L&apos;image de la fente que Jean-Luc peut voir en regardant dans l&apos;axe du collimateur et en faisant le point &#xE0; l&apos;infini, a donc la m&#xEA;me couleur que celle de la lampe regard&#xE9;e directement, qui est celle du <em>m&#xE9;lange</em>.</p>
-<p><img src="images_gonio_E01/spectro_13.png" alt="rep&#xE9;rage des angles"><br>
-<img src="images_gonio_E01/spectro_14.png" alt="rep&#xE9;rage des angles"></p>
-<p>En d&#xE9;portant son regard dans des directions qui s&apos;&#xE9;loignent de l&apos;axe optique du collimateur, Jean-Luc peut voir d&apos;autres images de la fente source qui cette fois, ont des couleurs <em>pures</em>.</p>
-<p><img src="images_gonio_E01/spectro_15.png" alt="rep&#xE9;rage des angles"><br>
-<img src="images_gonio_E01/spectro_16.png" alt="rep&#xE9;rage des angles"></p>
-<p>Contrairement &#xE0; ce que l&apos;on peut observer avec un prisme ou dans un arc-en-ciel, les longueures d&apos;onde les plus grandes, c&apos;est &#xE0; dire les images rouges de la fente, sont plus d&#xE9;vi&#xE9;es que les longueures d&apos;onde les plus courtes, c&apos;est &#xE0; dire les images violettes de la fente source.</p>
-<p>Voyons comment la <em>formule fondamentale</em> du r&#xE9;seau rend compte de cette observation.</p>
-<p></p><div class="mathjax-exps">$$sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a}$$</div><p></p>
-<p><img src="images_gonio_E01/spectro_3.png" alt="rep&#xE9;rage des angles"></p>
-<p>Dans cette formule, l&apos;angle d&apos;incidence <span class="mathjax-exps">$\theta_0$</span> et l&apos;angle <span class="mathjax-exps">$\theta$</span> sous lequel on peut voir une image color&#xE9;e donn&#xE9;e de la fente source, sont rep&#xE9;r&#xE9;s par rapport &#xE0; la <em>normale (N)</em> au r&#xE9;seau.</p>
-<p><em>En pratique</em>, nous allons rep&#xE9;rer les diff&#xE9;rentes raies color&#xE9;es par rapport &#xE0; l&apos;ordre z&#xE9;ro, direction que l&apos;on peut viser &#xE0; la lunette, plut&#xF4;t que par rapport &#xE0; la normale au r&#xE9;seau, qui est une direction dans laquelle on ne peut pas voir de lumi&#xE8;re.</p>
+<p>L&apos;image de la fente que Jean-Luc regardait dans l&apos;axe du collimateur a donc la m&#xEA;me couleur que celle de la lampe regard&#xE9;e directement, qui est donc celle du <em>m&#xE9;lange</em>.</p>
+<p><em>En pratique</em>, nous allons rep&#xE9;rer les diff&#xE9;rentes raies color&#xE9;es par rapport &#xE0; cet ordre z&#xE9;ro, direction que l&apos;on peut viser &#xE0; la lunette, plut&#xF4;t que par rapport &#xE0; la normale au r&#xE9;seau, qui est une direction dans laquelle on ne peut pas voir de lumi&#xE8;re.</p>
 <p>On consid&#xE8;rera donc dor&#xE9;navant la <em>d&#xE9;viation</em> <span class="mathjax-exps">$D$</span> d&apos;une raie color&#xE9;e, grandeur mesurable, plut&#xF4;t que son angle de sortie <span class="mathjax-exps">$\theta$</span>.</p>
 <p>Par construction, il vient :</p>
 <p></p><div class="mathjax-exps">$$D=\theta-\theta_0$$</div><p></p>
 <p>La longeur d&apos;onde <span class="mathjax-exps">$\lambda$</span> se trouvant au num&#xE9;rateur de la formule, elle rend bien compte du fait que la d&#xE9;viation augmente avec la longueur d&apos;onde.</p>
+<p><em>- Nombre de mesures n&#xE9;cessaires au calcul d&apos;une longueur d&apos;onde</em></p>
 <blockquote>
 <p>En particulier, la <em>formule fondamentale du r&#xE9;seau</em>   nous montre que pour calculer la longueur d&apos;onde <span class="mathjax-exps">$\lambda$</span>, il nous faudra, <strong>en pratique, faire la  mesure  de deux angles</strong> : <em>l&apos;angle d&apos;incidence</em> <span class="mathjax-exps">$\theta_o$</span> et l&apos;angle <span class="mathjax-exps">$\theta$</span> auquel est diffract&#xE9;e la lumi&#xE8;re color&#xE9;e consid&#xE9;r&#xE9;e dans l&apos;ordre d&apos;interf&#xE9;rence <span class="mathjax-exps">$p$</span> consid&#xE9;r&#xE9; :</p>
 </blockquote>
@@ -625,30 +635,26 @@ On peut aussi utiliser un r&#xE9;seau qui lui, <strong>diffracte</strong> la lum
 
 <p><em>- Analogie entre un rapporteur et un goniom&#xE8;tre</em></p>
 <p>On pourrait dire qu&apos;un goniom&#xE8;tre est comme le <strong>rapporteur</strong> des le&#xE7;ons de g&#xE9;om&#xE9;trie. Cette analogie va d&apos;ailleurs nous permettre de pr&#xE9;ciser un point de m&#xE9;thode et un point de vocabulaire.</p>
-<p><img src="images_gonio_E01/spectro_4.png" alt="rapporteur"></p>
-<p>Remarquons tout d&apos;abord que pour mesurer un angle, nous effectuons toujours <strong>deux vis&#xE9;es</strong>. De la m&#xEA;me mani&#xE8;re que, sur un banc d&apos;optique, on d&#xE9;termine toujours une distance en soustrayant <strong>deux abscisses</strong> ; sur un goniom&#xE8;tre, on d&#xE9;termine toujours un angle en soustrayant <strong>deux azimuts</strong>.<br>
-On &#xE9;crira par exemple : </p><div class="mathjax-exps">$$\theta_1 = (\alpha_1-\alpha_0)$$</div> en r&#xE9;servant les lettres <span class="mathjax-exps">$\theta_i$</span> pour les angles et les lettres <span class="mathjax-exps">$\alpha_i$</span> pour les azimuts.<p></p>
+<p>Remarquons tout d&apos;abord que pour mesurer un angle, nous effectuons toujours <strong>deux vis&#xE9;es</strong>. De la m&#xEA;me mani&#xE8;re que, sur un banc d&apos;optique, on d&#xE9;termine toujours une distance en soustrayant <strong>deux abscisses</strong> ; sur un goniom&#xE8;tre, on d&#xE9;termine toujours un angle en soustrayant <strong>deux azimuts</strong>.</p>
+<p>On &#xE9;crira par exemple : </p><div class="mathjax-exps">$$\theta_1 = (\alpha_1-\alpha_0)$$</div> en r&#xE9;servant les lettres <span class="mathjax-exps">$\theta_i$</span> pour les angles et les lettres <span class="mathjax-exps">$\alpha_i$</span> pour les azimuts.<p></p>
 <blockquote>
 <p>Cette <em>distinction de vocabulaire</em> nous permet de garder en t&#xEA;te que chaque mesure d&apos;angle <span class="mathjax-exps">$\theta_1$</span> est &quot;grosse&quot; des <strong>incertitudes exp&#xE9;rimentales</strong> que l&apos;on peut attacher &#xE0; chacune des <strong>deux vis&#xE9;es</strong> et &#xE0; chacune des <strong>deux lectures</strong> d&apos;azimuts <span class="mathjax-exps">$\alpha_1$</span> et <span class="mathjax-exps">$\alpha_2$</span>.</p>
 </blockquote>
 <p><em>- Diff&#xE9;rences entre un rapporteur et un goniom&#xE8;tre.</em></p>
 <p>Si le rapporteur pr&#xE9;sente bien 90 graduations pour un angle droit, 360 graduations pour un tour complet, le goniom&#xE8;tre, lui, pr&#xE9;sente ... <strong>60 fois plus de graduations</strong> ! Non pas une graduation pour chaque degr&#xE9; mais une graduation pour chaque minute d&apos;arc. Commercialement, ces instruments sont dits <strong>30 secondes</strong>, comme la <em>demie-&#xE9;tendue</em> que l&apos;on peut associer &#xE0; la lecture des graduations.</p>
-<p><img src="images_gonio_E01/spectro_5.png" alt="vernier du goniom&#xE8;tre"></p>
 <p>Pour justifier une telle ambition, le goniom&#xE8;tre est &#xE9;quip&#xE9;e d&apos;un <strong>syst&#xE8;me de vis&#xE9;e de pr&#xE9;cision</strong> qui est constitu&#xE9; d&apos;une <em>partie optique</em> (le <strong>collimateur</strong> et la <strong>lunette</strong>) et d&apos;une <em>partie m&#xE9;canique</em>. On distinguera la <strong>vis de serrage</strong>, que l&apos;on d&#xE9;sserre pour effectuer des mouvements grossiers avant de la ress&#xE9;rer, et la <strong>vis de d&#xE9;placement microm&#xE9;trique</strong> qui permet le d&#xE9;placement fin de la lunette.</p>
-<p><img src="images_gonio_E01/spectro_6.png" alt="vis lunette"></p>
 <p>On notera l&apos;existence d&apos;un syst&#xE8;me m&#xE9;canique similaire sur le plateau du goniom&#xE8;tre. Une vis de serrage permet des mouvements grossiers et, une fois cette derni&#xE8;re ress&#xE9;r&#xE9;e, la vis de d&#xE9;placement microm&#xE9;trique permet de contr&#xF4;ler des mouvements fins de rotation du plateau.</p>
-<p><img src="images_gonio_E01/spectro_7.png" alt="vis plateau"></p>
 <h4 class="mume-header" id="iii-comment-se-servir-du-goniom%C3%A8tre-le-protocole">III - Comment se servir du goniom&#xE8;tre ? Le protocole</h4>
 
 <p>La mani&#xE8;re dont il faut se servir du goniom&#xE8;tre r&#xE9;pond, bien entendu, au souci d&apos;effectuer les mesures les plus pr&#xE9;cises possibles.</p>
 <div class="admonition note">
 <p class="admonition-title">Protocole</p>
-<p>En r&#xE9;sum&#xE9;, il y a quatre &#xE9;tapes &#xE0; r&#xE9;p&#xE9;ter pour chaque mesure :</p>
+<p>En r&#xE9;sum&#xE9;, il y a quatre &#xE9;tapes &#xE0; r&#xE9;p&#xE9;ter pour chaque mesure.</p>
 <ol>
-<li><strong>d&#xE9;placer grossi&#xE8;rement la lunette</strong> pour visualiser l&apos;ordre d&apos;interf&#xE9;rence consid&#xE9;r&#xE9; ;</li>
-<li><strong>r&#xE9;gler l&apos;angle d&apos;incidence</strong> dans la situation particuli&#xE8;re du minimum de d&#xE9;viation, beaucoup plus de d&#xE9;tails sur ce sujet dans un instant ;</li>
-<li><strong>viser la raie consid&#xE9;r&#xE9;e</strong> le plus pr&#xE9;cis&#xE9;ment possible ;</li>
-<li><strong>faire la lecture de l&apos;azimut</strong> correspondant, le relever et le faire appara&#xEE;tre dans son compte-rendu.</li>
+<li><strong>D&#xE9;placer grossi&#xE8;rement la lunette</strong> pour visualiser l&apos;ordre d&apos;interf&#xE9;rence consid&#xE9;r&#xE9;.</li>
+<li><strong>R&#xE9;gler l&apos;angle d&apos;incidence</strong> dans la situation particuli&#xE8;re du minimum de d&#xE9;viation, beaucoup plus de d&#xE9;tails sur ce sujet dans un instant.</li>
+<li><strong>Viser la raie consid&#xE9;r&#xE9;e</strong> le plus pr&#xE9;cis&#xE9;ment possible.</li>
+<li><strong>Faire la lecture de l&apos;azimut</strong> correspondant, le relever et le faire appara&#xEE;tre dans son compte-rendu.</li>
 </ol>
 </div>
 <p>L&apos;enjeu principal de cette vid&#xE9;o est de comprendre que ce protocole d&#xE9;coule de la prise en compte des <strong>sym&#xE9;tries</strong> exib&#xE9;es par le ph&#xE9;nom&#xE8;ne physique exploit&#xE9;.</p>
@@ -656,12 +662,10 @@ On &#xE9;crira par exemple : </p><div class="mathjax-exps">$$\theta_1 = (\alpha_
 
 <p><em>- Approche exp&#xE9;rimentale</em></p>
 <p>Pour un r&#xE9;seau de pas donn&#xE9; et pour une longueur d&apos;onde donn&#xE9;e (celle du laser rouge ici), les angles auxquels on peut rep&#xE9;rer les diff&#xE9;rents ordres d&apos;interf&#xE9;rence sont des fonctions de l&apos;angle d&apos;incidence <span class="mathjax-exps">$\theta_0$</span>.</p>
-<p><img src="images_gonio_E01/spectro_8.png" alt="minimum de d&#xE9;viation laser"></p>
 <p>En faisant varier l&apos;angle d&apos;incidence de mani&#xE8;re monotone entre z&#xE9;ro et 90 degr&#xE9;s puis de nouveau de mani&#xE8;re monotone entre 90 degr&#xE9;s et z&#xE9;ro, on observe que, pour une raie color&#xE9;e choisie dans un ordre donn&#xE9;, <strong>l&apos;angle de d&#xE9;viation passe par un minimum</strong>.</p>
 <blockquote>
 <p>En r&#xE9;glant l&apos;angle d&apos;incidence de mani&#xE8;re <strong>&#xE0; se placer au minimum de d&#xE9;viation</strong>, on d&#xE9;couvre une situation qui pr&#xE9;sente des sym&#xE9;tries remarquables :</p>
 </blockquote>
-<p><img src="images_gonio_E01/spectro_17.png" alt="vis plateau"></p>
 <ul>
 <li>
 <p>on peut tout d&apos;abord remarquer que le plan du r&#xE9;seau se situe alors selon <strong>la bissectrice</strong> de l&apos;angle form&#xE9; par les directions du collimateur et de la lunette. Autrement dit, au minimun de d&#xE9;viation, l&apos;angle d&apos;incidence et l&apos;angle de vis&#xE9;e sont <strong>&#xE9;gaux en valeur et oppos&#xE9;s en signe</strong>.</p>
@@ -709,10 +713,7 @@ La seconde correspond bien aux sym&#xE9;tries d&#xE9;crites plus haut :<p></p>
 
 <p><em>- Approche exp&#xE9;rimentale</em></p>
 <p>Il est l&#xE9;gitime de demander &#xE0; notre <em>mod&#xE8;le physique</em> de rester pertinent que l&apos;on regarde le ph&#xE9;nom&#xE8;ne depuis <strong>le haut</strong> ... ou bien qu&apos;on le regarde depuis <strong>le bas</strong>.</p>
-<p><img src="images_gonio_E01/spectro_17.png" alt="minimum de d&#xE9;viation laser"><br>
-<img src="images_gonio_E01/spectro_19.png" alt="minimum de d&#xE9;viation laser"></p>
 <p>Il existe donc n&#xE9;cessairement une position sym&#xE9;trique du r&#xE9;seau et de la lunette qui r&#xE9;alise exactement la m&#xEA;me configuration angulaire ... de l&apos;autre c&#xF4;t&#xE9; du goniom&#xE8;tre.</p>
-<p><img src="images_gonio_E01/spectro_18.png" alt="minimum de d&#xE9;viation laser"></p>
 <div class="admonition note">
 <p class="admonition-title">Protocole</p>
 <p>R&#xE9;sum&#xE9; en trois &#xE9;tapes, nous allons :<br>

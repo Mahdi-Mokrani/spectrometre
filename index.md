@@ -18,8 +18,6 @@ Pour un physicien, la lumière est un message duquel on peut extraire de nombreu
 
 Dans des champs d'application très variés, le point de départ de l'analyse consiste à déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte.
 
-![goniomètre](/images_gonio_E01/spectro_1.png)
-
 #### Introduction {ignore=true}
 
 _- Goniomètre et spectromètre_
@@ -31,43 +29,46 @@ _- Goniomètre et spectromètre_
 On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui **réfracte** chaque rayon coloré selon un angle différent. 
 On peut aussi utiliser un réseau qui lui, **diffracte** la lumière incidente dans des directions différentes et dans des ordres différents.
 
-![prisme et réseau](/images_gonio_E01/spectro_2.png)
-
 On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la **nature** de leur spectre : une lampe blanche possède un spectre **continu** alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre **discret** de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis. 
 
 #### I - Mesurer des angles pour déterminer des longueurs d'onde
 À partir de la loi de la réfraction dans le cas du prisme, ou des principes de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de **calculer** les longueurs d'onde à partir des angles que l'on peut **mesurer directement**.
 
+_- Approche expérimentale_
+
+En regardant directement dans l'axe du collimateur à travers le réseau, Jean-Luc peut voir une image de la fente source, très lumineuse.
+
+En déportant son regard dans des directions qui s'éloignent de l'axe optique du collimateur, Jean-Luc peut voir d'autres images de la fente source qui cette fois, ont des couleurs _pures_.
+
+Contrairement à ce que l'on peut observer avec un prisme ou dans un arc-en-ciel, les images rouges de la fente sont plus déviées que les images violettes.
+
+On peut également observer une seconde raie violette, début d'un spectre d'ordre deux. 
+
+Voyons comment le modèle mathématique qui vous est proposé peut rendre compte de ces observations.
+
+_- La formule fondamentale du réseau_
+
 !!! note Formule fondamentale du réseau 
     $$ sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a} $$
 
-On peut commencer par remarquer que pour $p=0$, la formule fondamentale du réseau se réduit à : 
+Dans cette formule :
+- $\theta_0$ représente _l'angle d'incidence_, angle sous lequel arrive la lumière issue du collimateur sur le réseau, repéré par rapport à _la normale (N)_ au réseau ;
+
+- $\theta$ représente l'angle sous lequel on peut repérer une des multiples images de la fente source, une raie verte dans notre exemple ; 
+- _p_ est _l'ordre d'interférence_ considéré, c'est un entier relatif qui nous permet de numéroter les différentes images vertes de fente source par exemple ;
+- $a$ est une grandeur qui caractérise le réseau particulier que l'on a utilisé, c'est la distance entre deux gravures successives (réseau = grating in english) ou _pas du réseau_. Elle est de l'ordre du micromètre. Dans la pratique, c'est l'inverse du pas qui est indiqué sur l'objet, _le nombre de traits par unité de longueur_, 300 traits par mm dans notre exemple.
+- $\lambda$, enfin, est la longueur d'onde dans l'air du rayonnement considéré, elle caractérise quantitativement la couleur de la raie. Dans notre exemple, la raie verte de la lampe à vapeur de Mercure possède une teinte absolument singulière, caractérisée par la longueur d'onde 576 nm.
+
+_- Mesure expérimentale des angles, angle de déviation D_
+
+On peut commencer par remarquer que la formule fondamentale du réseau se réduit, pour $p=0$, à : 
 $$sin(\theta)=sin(\theta_0)$$ $$\theta = \theta_0$$
 
 Une partie de la lumière incidente n'est donc pas du tout déviée, quel que soit l'angle d'incidence et quelle que soit la longueur d'onde.
 
-L'image de la fente que Jean-Luc peut voir en regardant dans l'axe du collimateur et en faisant le point à l'infini, a donc la même couleur que celle de la lampe regardée directement, qui est celle du _mélange_.
+L'image de la fente que Jean-Luc regardait dans l'axe du collimateur a donc la même couleur que celle de la lampe regardée directement, qui est donc celle du _mélange_.
 
-![repérage des angles](/images_gonio_E01/spectro_13.png)
-![repérage des angles](/images_gonio_E01/spectro_14.png)
-
-En déportant son regard dans des directions qui s'éloignent de l'axe optique du collimateur, Jean-Luc peut voir d'autres images de la fente source qui cette fois, ont des couleurs _pures_.
-
-![repérage des angles](/images_gonio_E01/spectro_15.png)
-![repérage des angles](/images_gonio_E01/spectro_16.png)
-
-
-Contrairement à ce que l'on peut observer avec un prisme ou dans un arc-en-ciel, les longueures d'onde les plus grandes, c'est à dire les images rouges de la fente, sont plus déviées que les longueures d'onde les plus courtes, c'est à dire les images violettes de la fente source.
-
-Voyons comment la _formule fondamentale_ du réseau rend compte de cette observation.
-
-$$ sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a} $$
-
-![repérage des angles](/images_gonio_E01/spectro_3.png)
-
-Dans cette formule, l'angle d'incidence $\theta_0$ et l'angle $\theta$ sous lequel on peut voir une image colorée donnée de la fente source, sont repérés par rapport à la _normale (N)_ au réseau.
-
- _En pratique_, nous allons repérer les différentes raies colorées par rapport à l'ordre zéro, direction que l'on peut viser à la lunette, plutôt que par rapport à la normale au réseau, qui est une direction dans laquelle on ne peut pas voir de lumière.
+_En pratique_, nous allons repérer les différentes raies colorées par rapport à cet ordre zéro, direction que l'on peut viser à la lunette, plutôt que par rapport à la normale au réseau, qui est une direction dans laquelle on ne peut pas voir de lumière.
 
 On considèrera donc dorénavant la _déviation_ $D$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta$.
 
@@ -76,6 +77,8 @@ Par construction, il vient :
 $$  D=\theta-\theta_0 $$
 
 La longeur d'onde $\lambda$ se trouvant au numérateur de la formule, elle rend bien compte du fait que la déviation augmente avec la longueur d'onde.
+
+_- Nombre de mesures nécessaires au calcul d'une longueur d'onde_
 
 >En particulier, la _formule fondamentale du réseau_   nous montre que pour calculer la longueur d'onde $\lambda$, il nous faudra, **en pratique, faire la  mesure  de deux angles** : _l'angle d'incidence_ $ \theta_o $ et l'angle $ \theta $ auquel est diffractée la lumière colorée considérée dans l'ordre d'interférence $p$ considéré :
  
@@ -87,36 +90,29 @@ _- Analogie entre un rapporteur et un goniomètre_
 
 On pourrait dire qu'un goniomètre est comme le **rapporteur** des leçons de géométrie. Cette analogie va d'ailleurs nous permettre de préciser un point de méthode et un point de vocabulaire.
 
-![rapporteur](/images_gonio_E01/spectro_4.png)
-
 Remarquons tout d'abord que pour mesurer un angle, nous effectuons toujours **deux visées**. De la même manière que, sur un banc d'optique, on détermine toujours une distance en soustrayant **deux abscisses** ; sur un goniomètre, on détermine toujours un angle en soustrayant **deux azimuts**.
-On écrira par exemple : $$\theta_1 = (\alpha_1-\alpha_0)$$ en réservant les lettres $\theta_i$ pour les angles et les lettres $\alpha_i$ pour les azimuts. 
->Cette _distinction de vocabulaire_ nous permet de garder en tête que chaque mesure d'angle $\theta_1$ est "grosse" des **incertitudes expérimentales** que l'on peut attacher à chacune des **deux visées** et à chacune des **deux lectures** d'azimuts $\alpha_1$ et $\alpha_2$. 
 
+On écrira par exemple : $$\theta_1 = (\alpha_1-\alpha_0)$$ en réservant les lettres $\theta_i$ pour les angles et les lettres $\alpha_i$ pour les azimuts.
+
+>Cette _distinction de vocabulaire_ nous permet de garder en tête que chaque mesure d'angle $\theta_1$ est "grosse" des **incertitudes expérimentales** que l'on peut attacher à chacune des **deux visées** et à chacune des **deux lectures** d'azimuts $\alpha_1$ et $\alpha_2$. 
 
 _- Différences entre un rapporteur et un goniomètre._
 
 Si le rapporteur présente bien 90 graduations pour un angle droit, 360 graduations pour un tour complet, le goniomètre, lui, présente ... **60 fois plus de graduations** ! Non pas une graduation pour chaque degré mais une graduation pour chaque minute d'arc. Commercialement, ces instruments sont dits **30 secondes**, comme la _demie-étendue_ que l'on peut associer à la lecture des graduations.
 
-![vernier du goniomètre](/images_gonio_E01/spectro_5.png)
-
 Pour justifier une telle ambition, le goniomètre est équipée d'un **système de visée de précision** qui est constitué d'une _partie optique_ (le **collimateur** et la **lunette**) et d'une _partie mécanique_. On distinguera la **vis de serrage**, que l'on désserre pour effectuer des mouvements grossiers avant de la ressérer, et la **vis de déplacement micrométrique** qui permet le déplacement fin de la lunette.
 
-![vis lunette](/images_gonio_E01/spectro_6.png)
-
 On notera l'existence d'un système mécanique similaire sur le plateau du goniomètre. Une vis de serrage permet des mouvements grossiers et, une fois cette dernière ressérée, la vis de déplacement micrométrique permet de contrôler des mouvements fins de rotation du plateau.
-
-![vis plateau](/images_gonio_E01/spectro_7.png)
 
 #### III - Comment se servir du goniomètre ? Le protocole
 La manière dont il faut se servir du goniomètre répond, bien entendu, au souci d'effectuer les mesures les plus précises possibles.
 
 !!! note Protocole 
-    En résumé, il y a quatre étapes à répéter pour chaque mesure :
-    1. **déplacer grossièrement la lunette** pour visualiser l'ordre d'interférence considéré ;
-    2. **régler l'angle d'incidence** dans la situation particulière du minimum de déviation, beaucoup plus de détails sur ce sujet dans un instant ;
-    3. **viser la raie considérée** le plus précisément possible ;
-    4. **faire la lecture de l'azimut** correspondant, le relever et le faire apparaître dans son compte-rendu.
+    En résumé, il y a quatre étapes à répéter pour chaque mesure.
+    1. **Déplacer grossièrement la lunette** pour visualiser l'ordre d'interférence considéré.
+    2. **Régler l'angle d'incidence** dans la situation particulière du minimum de déviation, beaucoup plus de détails sur ce sujet dans un instant.
+    3. **Viser la raie considérée** le plus précisément possible.
+    4. **Faire la lecture de l'azimut** correspondant, le relever et le faire apparaître dans son compte-rendu.
 
 L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exibées par le phénomène physique exploité.
 
@@ -126,13 +122,9 @@ _- Approche expérimentale_
 
 Pour un réseau de pas donné et pour une longueur d'onde donnée (celle du laser rouge ici), les angles auxquels on peut repérer les différents ordres d'interférence sont des fonctions de l'angle d'incidence $\theta_0$.
 
-![minimum de déviation laser](/images_gonio_E01/spectro_8.png)
-
 En faisant varier l'angle d'incidence de manière monotone entre zéro et 90 degrés puis de nouveau de manière monotone entre 90 degrés et zéro, on observe que, pour une raie colorée choisie dans un ordre donné, **l'angle de déviation passe par un minimum**.
 
 >En réglant l'angle d'incidence de manière **à se placer au minimum de déviation**, on découvre une situation qui présente des symétries remarquables :
-
-![vis plateau](/images_gonio_E01/spectro_17.png)
 
 - on peut tout d'abord remarquer que le plan du réseau se situe alors selon **la bissectrice** de l'angle formé par les directions du collimateur et de la lunette. Autrement dit, au minimun de déviation, l'angle d'incidence et l'angle de visée sont **égaux en valeur et opposés en signe**.
 
@@ -199,12 +191,7 @@ _- Approche expérimentale_
 
 Il est légitime de demander à notre _modèle physique_ de rester pertinent que l'on regarde le phénomène depuis **le haut** ... ou bien qu'on le regarde depuis **le bas**.
 
-![minimum de déviation laser](/images_gonio_E01/spectro_17.png)
-![minimum de déviation laser](/images_gonio_E01/spectro_19.png)
-
 Il existe donc nécessairement une position symétrique du réseau et de la lunette qui réalise exactement la même configuration angulaire ... de l'autre côté du goniomètre.
-
-![minimum de déviation laser](/images_gonio_E01/spectro_18.png)
 
 !!! Note Protocole
     Résumé en trois étapes, nous allons :

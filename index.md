@@ -193,7 +193,7 @@ Il est légitime de demander à notre _modèle physique_ de rester pertinent que
 
 Il existe donc nécessairement une position symétrique du réseau et de la lunette qui réalise exactement la même configuration angulaire ... de l'autre côté du goniomètre.
 
-!!! Note Protocole
+!!! quote Protocole
     Résumé en trois étapes, nous allons :
     1- **viser la raie verte** dans l'ordre $p=-1$ et déterminer son azimut $\alpha_1$ au minimum de déviation ;
     2- **déplacer le réseau**, par rotation du plateau, approximativement dans la position symétrique à la précédente par rapport à l'axe qui est la  direction de la lumière incidente ;

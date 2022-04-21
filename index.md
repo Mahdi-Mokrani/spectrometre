@@ -48,7 +48,7 @@ Voyons comment le modèle mathématique qui vous est proposé peut rendre compte
 
 _- La formule fondamentale du réseau_
 
-!!! quote Formule fondamentale du réseau 
+!!! quote _Formule fondamentale du réseau_ 
     $$ sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a} $$
 
 Dans cette formule :
@@ -107,7 +107,7 @@ On notera l'existence d'un système mécanique similaire sur le plateau du gonio
 #### III - Comment se servir du goniomètre ? Le protocole
 La manière dont il faut se servir du goniomètre répond, bien entendu, au souci d'effectuer les mesures les plus précises possibles.
 
-!!! quote Protocole 
+!!! quote _Protocole_ 
     En résumé, il y a quatre étapes à répéter pour chaque mesure.
     1. **Déplacer grossièrement la lunette** pour visualiser l'ordre d'interférence considéré.
     2. **Régler l'angle d'incidence** dans la situation particulière du minimum de déviation, beaucoup plus de détails sur ce sujet dans un instant.
@@ -183,6 +183,7 @@ $$ cos\theta_0=cos(\theta_0+D_{min}) $$
 Cette équation admet deux solutions. 
 La première solution, $D_{min}=0$, correspond à l'ordre zéro. 
 La seconde correspond bien aux symétries décrites plus haut :
+
 >$$ D_{min}=-2\theta_0  $$
 
 #### V - Symétrie de la situation de mesure
@@ -193,7 +194,7 @@ Il est légitime de demander à notre _modèle physique_ de rester pertinent que
 
 Il existe donc nécessairement une position symétrique du réseau et de la lunette qui réalise exactement la même configuration angulaire ... de l'autre côté du goniomètre.
 
-!!! quote Protocole
+!!! quote _Protocole_
     Résumé en trois étapes, nous allons :
     1- **viser la raie verte** dans l'ordre $p=-1$ et déterminer son azimut $\alpha_1$ au minimum de déviation ;
     2- **déplacer le réseau**, par rotation du plateau, approximativement dans la position symétrique à la précédente par rapport à l'axe qui est la  direction de la lumière incidente ;

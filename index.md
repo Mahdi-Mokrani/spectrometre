@@ -48,7 +48,7 @@ Voyons comment le modèle mathématique qui vous est proposé peut rendre compte
 
 _- La formule fondamentale du réseau_
 
-!!! note Formule fondamentale du réseau 
+!!! quote Formule fondamentale du réseau 
     $$ sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a} $$
 
 Dans cette formule :
@@ -107,7 +107,7 @@ On notera l'existence d'un système mécanique similaire sur le plateau du gonio
 #### III - Comment se servir du goniomètre ? Le protocole
 La manière dont il faut se servir du goniomètre répond, bien entendu, au souci d'effectuer les mesures les plus précises possibles.
 
-!!! note Protocole 
+!!! quote Protocole 
     En résumé, il y a quatre étapes à répéter pour chaque mesure.
     1. **Déplacer grossièrement la lunette** pour visualiser l'ordre d'interférence considéré.
     2. **Régler l'angle d'incidence** dans la situation particulière du minimum de déviation, beaucoup plus de détails sur ce sujet dans un instant.

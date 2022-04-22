@@ -59,7 +59,7 @@ Dans cette formule :
 - $a$ est une grandeur qui caractérise le réseau particulier que l'on a utilisé, c'est la distance entre deux gravures successives (réseau = grating in english) ou _pas du réseau_. Elle est de l'ordre du micromètre. Dans la pratique, c'est l'inverse du pas qui est indiqué sur l'objet, _le nombre de traits par unité de longueur_, 300 traits par mm dans notre exemple.
 - $\lambda$, enfin, est la longueur d'onde dans l'air du rayonnement considéré, elle caractérise quantitativement la couleur de la raie. Dans notre exemple, la raie verte de la lampe à vapeur de Mercure possède une teinte absolument singulière, caractérisée par la longueur d'onde 576 nm.
 
-_- Mesure expérimentale des angles, angle de déviation D_
+_- Mesure expérimentale des angles, déviation D_
 
 On peut commencer par remarquer que la formule fondamentale du réseau se réduit, pour $p=0$, à : 
 $$sin(\theta)=sin(\theta_0)$$ $$\theta = \theta_0$$
@@ -84,7 +84,7 @@ _- Nombre de mesures nécessaires au calcul d'une longueur d'onde_
  
 $$ \lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)] $$
  
-#### II - Goniomètre et rapporteur
+#### II - Se servir d'un goniomètre 
 
 _- Analogie entre un rapporteur et un goniomètre_
 
@@ -104,7 +104,8 @@ Pour justifier une telle ambition, le goniomètre est équipée d'un **système 
 
 On notera l'existence d'un système mécanique similaire sur le plateau du goniomètre. Une vis de serrage permet des mouvements grossiers et, une fois cette dernière ressérée, la vis de déplacement micrométrique permet de contrôler des mouvements fins de rotation du plateau.
 
-#### III - Comment se servir du goniomètre ? Le protocole
+_- Comment se servir du goniomètre, le protocole_
+
 La manière dont il faut se servir du goniomètre répond, bien entendu, au souci d'effectuer les mesures les plus précises possibles.
 
 !!! quote _Protocole_ 
@@ -116,7 +117,7 @@ La manière dont il faut se servir du goniomètre répond, bien entendu, au souc
 
 L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exibées par le phénomène physique exploité.
 
-#### IV - Symétries des images diffractées au minimum de déviation
+#### III - Symétries des images diffractées au minimum de déviation
 
 _- Approche expérimentale_
 
@@ -186,7 +187,7 @@ La seconde correspond bien aux symétries décrites plus haut :
 
 >$$ D_{min}=-2\theta_0  $$
 
-#### V - Symétrie de la situation de mesure
+#### IV - Symétrie de la situation de mesure
 
 _- Approche expérimentale_
 
@@ -242,8 +243,3 @@ ___
 
 Dans le [prochaine épisode](/SspectroE02.html), nous nous intéresserons au problème de la précision des visées. En particulier, nous traiterons de la manière dont on règle à sa vue l'ensemble lunette et collimateur.
 Au revoir, et à très bientôt j'espère.
-
-
-
-
-        

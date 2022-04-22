@@ -227,14 +227,14 @@ Vous noterez que l'invariance observée est traduite, dans le modèle mathémati
 Les angles correspondant à la situation symétrique vérifient donc bien la formule fondamentale du réseau avec les mêmes valeurs :
 $$ sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a} $$
 ___
-#### Bilan {ignore=true}
+#### _Bilan_ {ignore=true}
 Pour calculer la valeur de la longueur d'onde $\lambda$ à partir de la formule fondamentale du réseau, nous sommes partis du constat qu'il était nécessaire de mesurer deux angles. L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts. 
 
 En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié puis, en effectuant la mesure symétrique, nous l'avons de nouveau divisé par deux. 
 
 Soit un gain de 1 à 4.
 
-#### Pour conclure {ignore=true}
+#### _Pour conclure_ {ignore=true}
 Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du **prototocole**, c'est à dire de la **manière dont on conduit les mesures**. 
 
 On a ainsi chercher à exploiter au mieux les symétries du phénomène physique mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique fourni.

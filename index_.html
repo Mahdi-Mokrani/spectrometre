@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Le spectromètre à réseau</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Le spectromètre à réseau</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+
+</nav>
+<h1 data-ignore="true" id="le-spectromètre-à-réseau">Le spectromètre à
+réseau</h1>
+<h6 data-ignore="true" id="épisode-1"><strong>Épisode 1</strong></h6>
+<h6 data-ignore="true"
+id="mesurer-des-angles-pour-déterminer-des-longueurs-donde">Mesurer des
+angles pour déterminer des longueurs d’onde</h6>
+<hr />
+<p>[TOC] ___</p>
+<h4 data-ignore="true" id="prologue"><em>Prologue</em></h4>
+<p>Pour un physicien, la lumière est un message duquel on peut extraire
+de nombreuses informations.</p>
+<p>Dans des champs d’application très variés, le point de départ de
+l’analyse consiste à déterminer avec précision la fréquence d’un
+rayonnement, sa couleur exacte.</p>
+<h4 data-ignore="true" id="introduction"><em>Introduction</em></h4>
+<p><em>- Goniomètre et spectromètre</em></p>
+<blockquote>
+<p>Un <strong>goniomètre</strong> est un instrument de précision qui
+sert à <strong>mesurer</strong> des angles.</p>
+</blockquote>
+<blockquote>
+<p>Le <strong>spectromètre</strong>, comme son nom l’indique, est
+l’instrument qui permet de <strong>décomposer</strong> le faisceau
+lumineux issu d’une source, comme un <em>mélange</em>, dans l’ensemble
+des lumières colorées <em>pures</em> qui constituent son spectre, et
+d’obtenir une <strong>mesure</strong> de leurs longueurs d’onde.</p>
+</blockquote>
+<p>On peut obtenir un spectromètre en associant le goniomètre avec un
+système dispersif comme le prisme, qui <strong>réfracte</strong> chaque
+rayon coloré selon un angle différent. On peut aussi utiliser un réseau
+qui lui, <strong>diffracte</strong> la lumière incidente dans des
+directions différentes et dans des ordres différents.</p>
+<p>On a d’ailleurs pris l’habitude de classer les sources de lumière en
+fonction de la <strong>nature</strong> de leur spectre : une lampe
+blanche possède un spectre <strong>continu</strong> alors que les lampes
+à vapeurs métalliques ont un spectre contenant un nombre
+<strong>discret</strong> de raies, qui sont comme la <em>signature</em>
+de l’élément chimique qui les a émis.</p>
+<h4 id="i---mesurer-des-angles-pour-déterminer-des-longueurs-donde">I -
+Mesurer des angles pour déterminer des longueurs d’onde</h4>
+<p>À partir de la loi de la réfraction dans le cas du prisme, ou des
+principes de la diffraction dans le cas du réseau, on peut établir une
+expression mathématique, une formule, qui nous permet de
+<strong>calculer</strong> les longueurs d’onde à partir des angles que
+l’on peut <strong>mesurer directement</strong>.</p>
+<p><em>- Approche expérimentale</em></p>
+<p>En regardant directement dans l’axe du collimateur à travers le
+réseau, Jean-Luc peut voir une image de la fente source, très
+lumineuse.</p>
+<p>En déportant son regard dans des directions qui s’éloignent de l’axe
+optique du collimateur, Jean-Luc peut voir d’autres images de la fente
+source qui cette fois, ont des couleurs <em>pures</em>.</p>
+<p>Contrairement à ce que l’on peut observer avec un prisme ou dans un
+arc-en-ciel, les images rouges de la fente sont plus déviées que les
+images violettes.</p>
+<p>On peut également observer une seconde raie violette, début d’un
+spectre d’ordre deux.</p>
+<p>Voyons comment le modèle mathématique qui vous est proposé peut
+rendre compte de ces observations.</p>
+<p><em>- La formule fondamentale du réseau</em></p>
+<p>!!! quote <em>Formule fondamentale du réseau</em> <span
+class="math display">\[sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a}\]</span></p>
+<p>Dans cette formule : - <span class="math inline">\(\theta_0\)</span>
+représente <em>l’angle d’incidence</em>, angle sous lequel arrive la
+lumière issue du collimateur sur le réseau, repéré par rapport à <em>la
+normale (N)</em> au réseau ;</p>
+<ul>
+<li><span class="math inline">\(\theta\)</span> représente l’angle sous
+lequel on peut repérer une des multiples images de la fente source, une
+raie verte dans notre exemple ;</li>
+<li><em>p</em> est <em>l’ordre d’interférence</em> considéré, c’est un
+entier relatif qui nous permet de numéroter les différentes images
+vertes de fente source par exemple ;</li>
+<li><span class="math inline">\(a\)</span> est une grandeur qui
+caractérise le réseau particulier que l’on a utilisé, c’est la distance
+entre deux gravures successives (réseau = grating in english) ou <em>pas
+du réseau</em>. Elle est de l’ordre du micromètre. Dans la pratique,
+c’est l’inverse du pas qui est indiqué sur l’objet, <em>le nombre de
+traits par unité de longueur</em>, 300 traits par mm dans notre
+exemple.</li>
+<li><span class="math inline">\(\lambda\)</span>, enfin, est la longueur
+d’onde dans l’air du rayonnement considéré, elle caractérise
+quantitativement la couleur de la raie. Dans notre exemple, la raie
+verte de la lampe à vapeur de Mercure possède une teinte absolument
+singulière, caractérisée par la longueur d’onde 576 nm.</li>
+</ul>
+<p><em>- Mesure expérimentale des angles, déviation D</em></p>
+<p>On peut commencer par remarquer que la formule fondamentale du réseau
+se réduit, pour <span class="math inline">\(p=0\)</span>, à : <span
+class="math display">\[sin(\theta)=sin(\theta_0)\]</span> <span
+class="math display">\[\theta = \theta_0\]</span></p>
+<p>Une partie de la lumière incidente n’est donc pas du tout déviée,
+quel que soit l’angle d’incidence et quelle que soit la longueur
+d’onde.</p>
+<p>L’image de la fente que Jean-Luc regardait dans l’axe du collimateur
+a donc la même couleur que celle de la lampe regardée directement, qui
+est donc celle du <em>mélange</em>.</p>
+<p><em>En pratique</em>, nous allons repérer les différentes raies
+colorées par rapport à cet ordre zéro, direction que l’on peut viser à
+la lunette, plutôt que par rapport à la normale au réseau, qui est une
+direction dans laquelle on ne peut pas voir de lumière.</p>
+<p>On considèrera donc dorénavant la <em>déviation</em> <span
+class="math inline">\(D\)</span> d’une raie colorée, grandeur mesurable,
+plutôt que son angle de sortie <span
+class="math inline">\(\theta\)</span>.</p>
+<p>Par construction, il vient :</p>
+<p><span class="math display">\[  D=\theta-\theta_0 \]</span></p>
+<p>La longeur d’onde <span class="math inline">\(\lambda\)</span> se
+trouvant au numérateur de la formule, elle rend bien compte du fait que
+la déviation augmente avec la longueur d’onde.</p>
+<p><em>- Nombre de mesures nécessaires au calcul d’une longueur
+d’onde</em></p>
+<blockquote>
+<p>En particulier, la <em>formule fondamentale du réseau</em> nous
+montre que pour calculer la longueur d’onde <span
+class="math inline">\(\lambda\)</span>, il nous faudra, <strong>en
+pratique, faire la mesure de deux angles</strong> : <em>l’angle
+d’incidence</em> $ _o $ et l’angle $ $ auquel est diffractée la lumière
+colorée considérée dans l’ordre d’interférence <span
+class="math inline">\(p\)</span> considéré :</p>
+</blockquote>
+<p><span class="math display">\[ \lambda =
+\frac{a}{p}[sin(\theta)-sin(\theta_0)] \]</span></p>
+<h4 id="ii---se-servir-dun-goniomètre">II - Se servir d’un
+goniomètre</h4>
+<p><em>- Analogie entre un rapporteur et un goniomètre</em></p>
+<p>On pourrait dire qu’un goniomètre est comme le
+<strong>rapporteur</strong> des leçons de géométrie. Cette analogie va
+d’ailleurs nous permettre de préciser un point de méthode et un point de
+vocabulaire.</p>
+<p>Remarquons tout d’abord que pour mesurer un angle, nous effectuons
+toujours <strong>deux visées</strong>. De la même manière que, sur un
+banc d’optique, on détermine toujours une distance en soustrayant
+<strong>deux abscisses</strong> ; sur un goniomètre, on détermine
+toujours un angle en soustrayant <strong>deux azimuts</strong>.</p>
+<p>On écrira par exemple : <span class="math display">\[\theta_1 =
+(\alpha_1-\alpha_0)\]</span> en réservant les lettres <span
+class="math inline">\(\theta_i\)</span> pour les angles et les lettres
+<span class="math inline">\(\alpha_i\)</span> pour les azimuts.</p>
+<blockquote>
+<p>Cette <em>distinction de vocabulaire</em> nous permet de garder en
+tête que chaque mesure d’angle <span
+class="math inline">\(\theta_1\)</span> est “grosse” des
+<strong>incertitudes expérimentales</strong> que l’on peut attacher à
+chacune des <strong>deux visées</strong> et à chacune des <strong>deux
+lectures</strong> d’azimuts <span
+class="math inline">\(\alpha_1\)</span> et <span
+class="math inline">\(\alpha_2\)</span>.</p>
+</blockquote>
+<p><em>- Différences entre un rapporteur et un goniomètre.</em></p>
+<p>Si le rapporteur présente bien 90 graduations pour un angle droit,
+360 graduations pour un tour complet, le goniomètre, lui, présente …
+<strong>60 fois plus de graduations</strong> ! Non pas une graduation
+pour chaque degré mais une graduation pour chaque minute d’arc.
+Commercialement, ces instruments sont dits <strong>30 secondes</strong>,
+comme la <em>demie-étendue</em> que l’on peut associer à la lecture des
+graduations.</p>
+<p>Pour justifier une telle ambition, le goniomètre est équipée d’un
+<strong>système de visée de précision</strong> qui est constitué d’une
+<em>partie optique</em> (le <strong>collimateur</strong> et la
+<strong>lunette</strong>) et d’une <em>partie mécanique</em>. On
+distinguera la <strong>vis de serrage</strong>, que l’on désserre pour
+effectuer des mouvements grossiers avant de la ressérer, et la
+<strong>vis de déplacement micrométrique</strong> qui permet le
+déplacement fin de la lunette.</p>
+<p>On notera l’existence d’un système mécanique similaire sur le plateau
+du goniomètre. Une vis de serrage permet des mouvements grossiers et,
+une fois cette dernière ressérée, la vis de déplacement micrométrique
+permet de contrôler des mouvements fins de rotation du plateau.</p>
+<p><em>- Comment se servir du goniomètre, le protocole</em></p>
+<p>La manière dont il faut se servir du goniomètre répond, bien entendu,
+au souci d’effectuer les mesures les plus précises possibles.</p>
+<p>!!! quote <em>Protocole</em> En résumé, il y a quatre étapes à
+répéter pour chaque mesure. 1. <strong>Déplacer grossièrement la
+lunette</strong> pour visualiser l’ordre d’interférence considéré. 2.
+<strong>Régler l’angle d’incidence</strong> dans la situation
+particulière du minimum de déviation, beaucoup plus de détails sur ce
+sujet dans un instant. 3. <strong>Viser la raie considérée</strong> le
+plus précisément possible. 4. <strong>Faire la lecture de
+l’azimut</strong> correspondant, le relever et le faire apparaître dans
+son compte-rendu.</p>
+<p>L’enjeu principal de cette vidéo est de comprendre que ce protocole
+découle de la prise en compte des <strong>symétries</strong> exibées par
+le phénomène physique exploité.</p>
+<h4
+id="iii---symétries-des-images-diffractées-au-minimum-de-déviation">III
+- Symétries des images diffractées au minimum de déviation</h4>
+<p><em>- Approche expérimentale</em></p>
+<p>Pour un réseau de pas donné et pour une longueur d’onde donnée (celle
+du laser rouge ici), les angles auxquels on peut repérer les différents
+ordres d’interférence sont des fonctions de l’angle d’incidence <span
+class="math inline">\(\theta_0\)</span>.</p>
+<p>En faisant varier l’angle d’incidence de manière monotone entre zéro
+et 90 degrés puis de nouveau de manière monotone entre 90 degrés et
+zéro, on observe que, pour une raie colorée choisie dans un ordre donné,
+<strong>l’angle de déviation passe par un minimum</strong>.</p>
+<blockquote>
+<p>En réglant l’angle d’incidence de manière <strong>à se placer au
+minimum de déviation</strong>, on découvre une situation qui présente
+des symétries remarquables :</p>
+</blockquote>
+<ul>
+<li><p>on peut tout d’abord remarquer que le plan du réseau se situe
+alors selon <strong>la bissectrice</strong> de l’angle formé par les
+directions du collimateur et de la lunette. Autrement dit, au minimun de
+déviation, l’angle d’incidence et l’angle de visée sont <strong>égaux en
+valeur et opposés en signe</strong>.</p></li>
+<li><p>On peut ensuite remarquer que l’on retrouve ce même angle entre
+la direction de la normale au réseau et la direction de la lumière qui
+n’est pas déviée dans <em>l’ordre zéro</em>. Autrement dit,
+<strong>l’angle de déviation <span
+class="math inline">\(D_{min}\)</span></strong> vaut alors exactement
+<strong>moins deux fois</strong> l’angle d’incidence.</p></li>
+</ul>
+<p>Mesurer la <em>déviation minimale</em> suffit donc à déterminer non
+seulement <span class="math inline">\(D_{min}\)</span> mais également
+<span class="math inline">\(\theta_0\)</span> et <span
+class="math inline">\(\theta\)</span> géométriquement, sans mesure
+supplémentaire.</p>
+<p>En réglant l’angle d’incidence par rotation du plateau, de manière à
+se placer au minimum de déviation, la présence d’une deuxième lunette
+n’est plus nécessaire. Nous pouvons donc faire <strong>l’économie de la
+mesure</strong> de l’angle d’incidence.</p>
+<p>L’expression permettant de calculer <span
+class="math inline">\(\lambda\)</span> se ramène alors à une fonction
+d’un seul angle et non plus de deux.</p>
+<p>En nous plaçant par exemple au minimum de déviation pour la raie
+verte de l’ordre <span class="math inline">\(p= -1\)</span>, on a :
+<span class="math display">\[\theta=\frac{D_{min}}{2}=-\theta_o\]</span>
+d’où : <span class="math display">\[ \lambda =
+-a[sin(\frac{D_{min}}{2})-sin(\frac{-D_{min}}{2})] \]</span> <span
+class="math display">\[ \lambda =
+-2a[sin(\frac{D_{min}}{2})]\]</span></p>
+<p>On cherchera enfin à exprimer <span class="math inline">\(D\)</span>
+en fonction des azimuts <span class="math inline">\(\alpha_1\)</span> et
+<span class="math inline">\(\alpha_0\)</span> qui sont les grandeurs
+mesurés directement et auxquelles on pourra attacher des incertitudes :
+&gt;<span class="math display">\[ \lambda =
+2asin(\frac{\alpha_0-\alpha_1}{2})\]</span></p>
+<p><em>- Approche par l’exploration du modèle mathématique</em></p>
+<p>En considérant la déviation plutôt que l’angle par rapport à la
+normale :</p>
+<p><span class="math display">\[  D=\theta-\theta_0 \]</span></p>
+<p>L’équation fondamentale du réseau devient : <span
+class="math display">\[
+sin(\theta_0+D)=sin(\theta_0)+p\frac{\lambda}{a}  \]</span></p>
+<p>On cherche la dérivée de cette expression par rapport à <span
+class="math inline">\(\theta_0\)</span>.</p>
+<p>Pour le membre de droite de l’égalité, il vient immédiatement : <span
+class="math display">\[
+\frac{d(sin\theta_0+p\frac{\lambda}{a})}{d\theta_0}=cos\theta_0  \]</span></p>
+<p>Pour le membre de gauche de l’égalité, comme : <span
+class="math display">\[ sin(\theta_0+D)=sin\theta_0cosD+cos\theta_0sinD
+\]</span></p>
+<p>Il vient :</p>
+<p><span class="math inline">\(\begin{align}
+\frac{d(sin(\theta_0+D))}{d\theta_0} &amp;
+=cos\theta_0cosD-sin\theta_0sinD\frac{dD}{d\theta_0} \\  &amp;
+-sin\theta_0sinD+cos\theta_0cosD\frac{dD}{d\theta_0} \\
+\end{align}\)</span></p>
+<p><span
+class="math inline">\(\begin{align}  \frac{d(sin(\theta_0+D))}{d\theta_0}
+&amp; = cos\theta_0cosD(1+\frac{dD}{d\theta_0}) \\  &amp;
+-sin\theta_0sinD(1+\frac{dD}{d\theta_0}) \end{align}\)</span></p>
+<p>Au minimum de déviation on a : <span class="math display">\[
+\frac{dD}{d\theta_0}=0 \]</span></p>
+<p>L’égalité des deux membres s’écrit alors : <span
+class="math display">\[
+cos\theta_0=cos\theta_0cosD_{min}-sin\theta_0sinD_{min}  \]</span></p>
+<p>Ce qui permet d’aboutir à l’équation : <span class="math display">\[
+cos\theta_0=cos(\theta_0+D_{min}) \]</span> Cette équation admet deux
+solutions. La première solution, <span
+class="math inline">\(D_{min}=0\)</span>, correspond à l’ordre zéro. La
+seconde correspond bien aux symétries décrites plus haut :</p>
+<blockquote>
+<p><span class="math display">\[ D_{min}=-2\theta_0  \]</span></p>
+</blockquote>
+<h4 id="iv---symétrie-de-la-situation-de-mesure">IV - Symétrie de la
+situation de mesure</h4>
+<p><em>- Approche expérimentale</em></p>
+<p>Il est légitime de demander à notre <em>modèle physique</em> de
+rester pertinent que l’on regarde le phénomène depuis <strong>le
+haut</strong> … ou bien qu’on le regarde depuis <strong>le
+bas</strong>.</p>
+<p>Il existe donc nécessairement une position symétrique du réseau et de
+la lunette qui réalise exactement la même configuration angulaire … de
+l’autre côté du goniomètre.</p>
+<p>!!! quote <em>Protocole</em> Résumé en trois étapes, nous allons : 1-
+<strong>viser la raie verte</strong> dans l’ordre <span
+class="math inline">\(p=-1\)</span> et déterminer son azimut <span
+class="math inline">\(\alpha_1\)</span> au minimum de déviation ; 2-
+<strong>déplacer le réseau</strong>, par rotation du plateau,
+approximativement dans la position symétrique à la précédente par
+rapport à l’axe qui est la direction de la lumière incidente ; 3-
+<strong>viser la raie verte</strong> une seconde fois, mais dans l’ordre
+<span class="math inline">\(p=+1\)</span> de cette nouvelle
+configuration et déterminer son azimut <span
+class="math inline">\(\alpha_2\)</span> au minimum de déviation.</p>
+<p>On obtient donc : <span class="math display">\[ \lambda =
+-2asin(\frac{(2D_{min}/2)}{2}) \]</span></p>
+<p>On cherchera ici également à exprimer <span
+class="math inline">\(\lambda\)</span> en fonction des azimuts <span
+class="math inline">\(\alpha_1\)</span> et <span
+class="math inline">\(\alpha_2\)</span> qui sont les grandeurs mesurés
+directement et auxquelles on pourra attacher des incertitudes :</p>
+<blockquote>
+<p><span class="math display">\[ \lambda =
+2asin(\frac{\alpha_2-\alpha_1}{4})\]</span></p>
+</blockquote>
+<p>En effectuant deux visées, nous avons cette fois calculé l’angle
+$2D_{min} $. L’incertitude expérimentale attachée à la détermination de
+l’angle $D_{min} $ est donc de nouveau divisée par deux !</p>
+<p><em>- Approche par l’exploration du modèle mathématique</em></p>
+<p>La transformation mathématique qui correspond au changement de point
+de vue haut/bas peut être vue comme un retournement de l’image, une
+rotation d’un demi-tour autour de l’axe qui est vertical sur la feuille
+et passe par son milieu.</p>
+<p>En gardant la même convention d’orientation des angles, cette
+transformation : - conserve <em>en norme</em> les valeurs des angles
+<span class="math inline">\(\theta_0\)</span> et <span
+class="math inline">\(\theta\)</span>, - change l’ordre <span
+class="math inline">\(p=-1\)</span> en un ordre <span
+class="math inline">\(p=+1\)</span>, - change l’angle <span
+class="math inline">\(\theta_0\)</span> en <span
+class="math inline">\(-\theta_0\)</span> et - change l’angle <span
+class="math inline">\(\theta\)</span> en <span
+class="math inline">\(-\theta\)</span>.</p>
+<p><span class="math display">\[
+sin(-\theta)-sin(-\theta_0)=(-p)\frac{\lambda}{a} \]</span></p>
+<p>Vous noterez que l’invariance observée est traduite, dans le modèle
+mathématique, par la propriété de la fonction sinus d’être une
+<strong>fonction impaire</strong>, c’est à dire telle que <span
+class="math inline">\(sin(-x)=-sin(x)\)</span>.</p>
+<p>Les angles correspondant à la situation symétrique vérifient donc
+bien la formule fondamentale du réseau avec les mêmes valeurs : <span
+class="math display">\[ sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a}
+\]</span> ___ #### <em>Bilan</em> {ignore=true} Pour calculer la valeur
+de la longueur d’onde <span class="math inline">\(\lambda\)</span> à
+partir de la formule fondamentale du réseau, nous sommes partis du
+constat qu’il était nécessaire de mesurer deux angles. L’incertitude
+expérimentale attachée à la connaissance de <span
+class="math inline">\(\lambda\)</span> se calculerait donc, <em>a
+priori</em>, à partir de celles attachées à quatre déterminations
+d’azimuts.</p>
+<p>En nous plaçant au minimum de déviation, nous avons réduit ce nombre
+de moitié puis, en effectuant la mesure symétrique, nous l’avons de
+nouveau divisé par deux.</p>
+<p>Soit un gain de 1 à 4.</p>
+<h4 data-ignore="true" id="pour-conclure"><em>Pour conclure</em></h4>
+<p>Apprendre à se servir du goniomètre c’est donc réaliser que la
+précision de la détermination d’une longueur d’onde dépend non seulement
+de la <strong>précision de la visée</strong> et de <strong>la précision
+de la lecture de l’azimut</strong> mais également du
+<strong>prototocole</strong>, c’est à dire de la <strong>manière dont on
+conduit les mesures</strong>.</p>
+<p>On a ainsi chercher à exploiter au mieux les symétries du phénomène
+physique mis en jeu, en s’aidant notamment pour cela des symétries du
+modèle mathématique fourni.</p>
+<hr />
+<p>Dans le <a href="/SspectroE02.html">prochaine épisode</a>, nous nous
+intéresserons au problème de la précision des visées. En particulier,
+nous traiterons de la manière dont on règle à sa vue l’ensemble lunette
+et collimateur. Au revoir, et à très bientôt j’espère.</p>
+</body>
+</html>

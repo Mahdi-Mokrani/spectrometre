@@ -231,11 +231,12 @@ $\begin{multline*}
 -\sin(\theta_0) \sin(D)+\cos(\theta_0) \cos(D)\frac{dD}{d\theta_0} 
 \end{multline*}$
 
-$\begin{align}
-\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D) (1+\frac{dD}{d\theta_0})-\sin(\theta_0) \sin(D) (1+\frac{dD}{d\theta_0}) 
-\end{align}$
+$\begin{multline*}
+\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D) (1+\frac{dD}{d\theta_0}) \\
+-\sin(\theta_0) \sin(D) (1+\frac{dD}{d\theta_0}) 
+\end{multline*}$
 
-Au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
+Et comme au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
 
 L'égalité des deux membres s'écrit alors : 
 $$ \cos\theta_0=\cos\theta_0 \cos D_{min}-\sin\theta_0 \sin D_{min}  $$
@@ -249,7 +250,7 @@ La première solution, $D_{min}=0$, correspond à l'ordre zéro.
 La seconde correspond bien aux symétries décrites plus haut :
 
 $$ D_{min}=-2\theta_0  $$
-Au minimum de déviation :
+
 $$ \theta = - \theta_0 = \frac{D_{min}}{2} $$
 
 ## Symétrie de la situation de mesure {#4}

@@ -89,7 +89,7 @@ Dans cette formule :
 - $a$ est une grandeur qui caractérise le réseau particulier que l'on a utilisé, c'est la distance entre deux gravures successives (réseau = grating in english) ou _pas du réseau_. Elle est de l'ordre du micromètre. Dans la pratique, c'est l'inverse du pas qui est indiqué sur l'objet, _le nombre de traits par unité de longueur_, 300 traits par mm dans notre exemple.
 - $\lambda$, enfin, est la longueur d'onde dans l'air du rayonnement considéré, elle caractérise quantitativement la couleur de la raie. Dans notre exemple, la raie verte de la lampe à vapeur de Mercure possède une teinte absolument singulière, caractérisée par la longueur d'onde 576 nm.
 
-### Mesure expérimentale des angles, déviation D {#13}
+### Mesures expérimentales, angle de déviation D {#13}
 
 On peut commencer par remarquer que la formule fondamentale du réseau se réduit, pour $p=0$, à : 
 $$ \sin(\theta) = \sin(\theta_0)$$ $$\theta = \theta_0$$

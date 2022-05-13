@@ -1,0 +1,13 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/mahdimokrani/Movies/Github/spectrometre'
+pandoc -s -o index.html index.md \
+                --mathjax \
+                --section-divs \
+                --from markdown+tex_math_single_backslash \
+                --filter pandoc-sidenote \
+                --to html5+smart \
+                --template=tufte \
+                --css tufte.css --css pandoc.css --css pandoc-solarized.css --css tufte-extra.css \
+
+make: Leaving directory `/Users/mahdimokrani/Movies/Github/spectrometre'
+ 

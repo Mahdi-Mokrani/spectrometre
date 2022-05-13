@@ -2,16 +2,8 @@
 title: Le spectromètre à réseau
 subtitle: Mesurer des angles pour déterminer des longueurs d'onde
 author: 
-date: 
+date:
 ---
-
->Pour un physicien, la lumière est un message [^mn1] duquel on peut extraire de nombreuses informations.
-
-[^mn1]:
-    {-} ![](images/Sidereus_nuncius_2.jpg)  Double page intérieure, première édition du _Sidereus nuncius_ de Galilée, Venise, 1610.
-
->Dans des champs d'application très variés, le point de départ de l'analyse consiste à déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte.
-
 ___
 
 _Table des matières_
@@ -23,32 +15,43 @@ _Table des matières_
 
 ___
 
-## Introduction
+### Prologue
+
+Pour un physicien, la lumière est un message [^mnp] duquel on peut extraire de nombreuses informations.
+
+[^mnp]:
+    {-} ![](images/Sidereus_nuncius_2.jpg) Double page intérieure, première édition du _sidereus nuncius_ de Galilée, Venise 1610.
+
+Dans des champs d'application très variés, le point de départ de l'analyse consiste à déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte.
+
+### Introduction
 
 >Un _goniomètre_ est un instrument de précision qui sert à _mesurer_ des angles.
 
-![](images/spectro_1.png) [^mn2]
+![](images/spectro_1.png)[^mni1] 
 
-[^mn2]:
-    {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._
+[^mni1]:
+     {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._
 
->Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau lumineux issu d'une source, comme un _mélange_, dans l'ensemble des lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_  de leurs longueurs d'onde. 
+>Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau lumineux issu d'une source, comme _mélange_ de lumières colorées, dans l'ensemble des lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_  de leurs longueurs d'onde. 
     
-On peut obtenir un spectromètre en associant le goniomètre [^mn3] avec un système dispersif comme le prisme, qui _réfracte_ chaque rayon coloré selon un angle différent.
-
-[^mn3]:
-    {-} ![](images/spectro_2.png) Un prisme ou un réseau de diffraction peuvent _décomposer_ un mélange de lumières colorées.
+[^mn3] On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui _réfracte_ chaque rayon coloré selon un angle différent.
 
 On peut aussi utiliser un réseau qui lui, _diffracte_ la lumière incidente dans des directions différentes et dans des ordres différents.
 
 On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la _nature_ de leur spectre [^mn4] : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
 
+[^mn3]:
+    {-} ![](images/spectro_2.png) Un prisme ou un réseau de diffraction peuvent _décomposer_ un mélange de lumières colorées.
+
 [^mn4]:
     {-} ![](images/spectro_03.png) Une lampe à vapeur de Mercure présente _un spectre de raies_.
 
+___
+
 ## Mesurer des angles pour déterminer des longueurs d'onde {#1}
 
-À partir de la loi de la réfraction dans le cas du prisme, ou des principes de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de _calculer_ les longueurs d'onde à partir des angles que l'on peut _mesurer directement_.
+À partir de la loi de la réfraction dans le cas du prisme, ou à partir des principes de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de _calculer_ les longueurs d'onde, à partir des angles que l'on _mesure directement_.
 
 ### Approche expérimentale {#11}
 
@@ -66,15 +69,16 @@ En déportant son regard dans des directions qui s'éloignent de l'axe optique d
 [^mn12]:
     {-} Images colorées de la fente source à travers le réseau _à l'ordre 1_, dans une direction différente de celle de la lumière incidente, mise au point à l'infini.
 
-Contrairement à ce que l'on peut observer avec un prisme ou dans un arc-en-ciel, les images rouges de la fente sont plus déviées que les images violettes.
+On peut également observer une seconde raie violette, début d'un spectre d'ordre deux. Contrairement à ce que l'on peut observer avec un prisme ou dans un arc-en-ciel, les images rouges de la fente sont plus déviées que les images violettes.
 
-On peut également observer une seconde raie violette, début d'un spectre d'ordre deux. 
-
-Voyons comment le modèle mathématique qui vous est proposé peut rendre compte de ces observations.
 
 ### La formule fondamentale du réseau {#12}
 
-$$sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a}$$
+Voyons comment le modèle mathématique que l'on vous propose peut rendre compte de ces observations.
+
+$$ \sin(\theta)- \sin(\theta_0)=p\frac{\lambda}{a}$$
+
+Les grandeurs qui apparaissent comme les arguments ou les variables des fonctions dans cette formule sont définies par rapport à une certaine _mise en place_ théorique.
 
 Dans cette formule :
 
@@ -88,7 +92,7 @@ Dans cette formule :
 ### Mesure expérimentale des angles, déviation D {#13}
 
 On peut commencer par remarquer que la formule fondamentale du réseau se réduit, pour $p=0$, à : 
-$$sin(\theta)=sin(\theta_0)$$ $$\theta = \theta_0$$
+$$ \sin(\theta) = \sin(\theta_0)$$ $$\theta = \theta_0$$
 
 Une partie de la lumière incidente n'est donc pas du tout déviée, quel que soit l'angle d'incidence et quelle que soit la longueur d'onde.
 
@@ -108,7 +112,7 @@ La longeur d'onde $\lambda$ se trouvant au numérateur de la formule, elle rend 
 
 En particulier, la _formule fondamentale du réseau_   nous montre que pour calculer la longueur d'onde $\lambda$, il nous faudra, **en pratique, faire la  mesure  de deux angles** : _l'angle d'incidence_ $\theta_o$ et l'angle $\theta$ auquel est diffractée la lumière colorée considérée dans l'ordre d'interférence $p$ considéré :
  
-$$ \lambda = \frac{a}{p}[sin(\theta)-sin(\theta_0)] $$
+$$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
  
 ## Comment se servir d'un goniomètre {#2}
 
@@ -137,15 +141,20 @@ Si le rapporteur présente bien 90 graduations pour un angle droit, 360 graduati
 
 </figure>
 
-[^mn5]Pour justifier une telle ambition, le goniomètre est équipée d'un **système de visée de précision** qui est constitué d'une **partie optique** (le _collimateur_ et la _lunette_) et d'une **partie mécanique**. [^mn6]On distinguera la _vis de serrage_, que l'on désserre pour effectuer des mouvements grossiers avant de la ressérer, et la _vis de déplacement micrométrique_ qui permet le déplacement fin de la lunette.
+[^mn5] Pour justifier une telle ambition, le goniomètre est équipé d'un **système de visée de précision** qui est constitué d'une **partie optique** (le _collimateur_ et la _lunette_) et d'une **partie mécanique**. On distinguera la _vis de serrage_, que l'on désserre pour effectuer des mouvements grossiers avant de la ressérer, et la _vis de déplacement micrométrique_ qui permet le déplacement fin de la lunette.
+
+![](images/spectro_6.png) [^mn6]
 
 [^mn5]:
     {-} ![](images/spectro_12.png) Le _collimateur_ et la _lunette_ permettent de _viser_ avec précision.
 
 [^mn6]:
-    {-} ![](images/spectro_6.png) Le système mécanique _à deux vis_ permet de contrôler des _déplacements très fins_ de la lunette et du plateau.
+    {-} Un système mécanique _à deux vis_ permet de contrôler des _rotations très fines_ de la lunette.
 
-On notera l'existence d'un système mécanique similaire sur le plateau du goniomètre. Une vis de serrage permet des mouvements grossiers et, une fois cette dernière ressérée, la vis de déplacement micrométrique permet de contrôler des mouvements fins de rotation du plateau.
+[^mn7] On notera l'existence d'un système mécanique similaire sur le plateau du goniomètre. Une vis de serrage permet des mouvements grossiers et, une fois cette dernière ressérée, la vis de déplacement micrométrique permet de contrôler des mouvements fins de rotation du plateau.
+
+[^mn7]:
+    {-} ![](images/spectro_7.png) Un système mécanique _à deux vis_ permet également de contrôler des _rotations très fines_ du plateau.
 
 ### Comment se servir du goniomètre, le protocole
 
@@ -196,11 +205,11 @@ L'expression permettant de calculer $\lambda$ se ramène alors à une fonction d
 
 En nous plaçant par exemple au minimum de déviation pour la raie verte de l'ordre $p= -1$, on a :
 $$\theta=\frac{D_{min}}{2}=-\theta_o$$ d'où :
-$$ \lambda = -a[sin(\frac{D_{min}}{2})-sin(\frac{-D_{min}}{2})] $$
-$$ \lambda = -2a[sin(\frac{D_{min}}{2})]$$
+$$ \lambda = -a[\sin(\frac{D_{min}}{2})-\sin(\frac{-D_{min}}{2})] $$
+$$ \lambda = -2a[\sin(\frac{D_{min}}{2})]$$
 
 On cherchera enfin à exprimer $D$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
-$$ \lambda = 2asin(\frac{\alpha_0-\alpha_1}{2})$$
+$$ \lambda = 2a \sin(\frac{\alpha_0-\alpha_1}{2})$$
 
 ### Approche par l'exploration du modèle mathématique
 
@@ -209,35 +218,34 @@ En considérant la déviation plutôt que l'angle par rapport à la normale :
 $$  D=\theta-\theta_0 $$
 
 L'équation fondamentale du réseau devient : 
-$$ sin(\theta_0+D)=sin(\theta_0)+p\frac{\lambda}{a}  $$
+$$ \sin(\theta_0+D)=\sin(\theta_0)+p\frac{\lambda}{a}  $$
 
 On cherche la dérivée de cette expression par rapport à $\theta_0$. 
 
 Pour le membre de droite de l'égalité, il vient immédiatement :
-$$ \frac{d(sin\theta_0+p\frac{\lambda}{a})}{d\theta_0}=cos\theta_0  $$
+$$ \frac{d(\sin\theta_0+p\frac{\lambda}{a})}{d\theta_0}=\cos\theta_0  $$
 
 Pour le membre de gauche de l'égalité, comme :
-$$ sin(\theta_0+D)=sin\theta_0cosD+cos\theta_0sinD $$
+$$ \sin(\theta_0+D)=\sin\theta_0 \cos D+ \cos\theta_0 \sin D $$
 
 Il vient :
 
 $\begin{align}
-\frac{d(sin(\theta_0+D))}{d\theta_0} & =cos\theta_0cosD-sin\theta_0sinD\frac{dD}{d\theta_0} \\
- & -sin\theta_0sinD+cos\theta_0cosD\frac{dD}{d\theta_0} \\ 
+\frac{d(\sin(\theta_0+D))}{d\theta_0}=\cos(\theta_0) \cos(D)-\sin(\theta_0)\sin(D)\frac{dD}{d\theta_0}-\sin(\theta_0) \sin(D)+\cos(\theta_0) \cos(D)\frac{dD}{d\theta_0} \\ 
 \end{align}$
 
 $\begin{align} 
-    \frac{d(sin(\theta_0+D))}{d\theta_0} & = cos\theta_0cosD(1+\frac{dD}{d\theta_0}) \\
-    & -sin\theta_0sinD(1+\frac{dD}{d\theta_0})
+    = \cos(\theta_0) \cos(D) (1+\frac{dD}{d\theta_0})-\sin(\theta_0) \sin(D) (1+\frac{dD}{d\theta_0})
 \end{align}$
 
 Au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
 
 L'égalité des deux membres s'écrit alors : 
-$$ cos\theta_0=cos\theta_0cosD_{min}-sin\theta_0sinD_{min}  $$
+$$ \cos\theta_0=\cos\theta_0 \cos D_{min}-\sin\theta_0 \sin D_{min}  $$
+
 
 Ce qui permet d'aboutir à l'équation :
-$$ cos\theta_0=cos(\theta_0+D_{min}) $$
+$$ \cos\theta_0=\cos(\theta_0+D_{min}) $$
 Cette équation admet deux solutions. 
 La première solution, $D_{min}=0$, correspond à l'ordre zéro. 
 La seconde correspond bien aux symétries décrites plus haut :
@@ -254,31 +262,46 @@ Il existe donc nécessairement une position symétrique du réseau et de la lune
 
 ___
 
- _Protocole_
+ _Protocole_ [^mn41] [^mn42]
 
  Résumé en trois étapes, nous allons :
 
-1. Viser la raie verte dans l'ordre p=-1 et déterminer son azimut $\alpha_1$ au minimum de déviation ;
+1. **Viser la raie verte dans l'ordre $p=-1$** et déterminer son azimut $\alpha_1$ au minimum de déviation ; 
 
-2. Déplacer le réseau, par rotation du plateau, approximativement dans la position symétrique à la précédente par rapport à l'axe qui est la  direction de la lumière incidente ;
+2. Déplacer le réseau, **par rotation du plateau**, approximativement dans la position symétrique à la précédente par rapport à l'axe qui est la  direction de la lumière incidente ;
 
-3. Viser la raie verte une seconde fois, mais dans l'ordre p=+1 de cette nouvelle configuration et déterminer son azimut $\alpha_2$ au minimum de déviation.
+3. **Viser la raie verte une seconde fois, mais dans l'ordre $p=+1$** de cette nouvelle configuration et déterminer son azimut $\alpha_2$ au minimum de déviation.
+
+[^mn41]:
+    {-} ![](images/spectro_17.png) _Visée_ de la raie verte dans l'ordre $p=-1$.
+
+  [^mn42]:
+    {-} ![](images/spectro_18.png) _Visée_ de la raie verte dans l'ordre $p=+1$ de la situation symétrique, de l'autre côté de l'axe du collimateur.
 
 ___
 
 On obtient donc :
 
-$$ \lambda = -2asin(\frac{(2D_{min}/2)}{2}) $$
+$$ \lambda = -2a \sin(\frac{(2D_{min}/2)}{2}) $$
 
 On cherchera ici également à exprimer $\lambda$ en fonction des azimuts $\alpha_1$ et $\alpha_2$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
 
-$$ \lambda = 2asin(\frac{\alpha_2-\alpha_1}{4})$$
+$$ \lambda = 2a \sin(\frac{\alpha_2-\alpha_1}{4})$$
 
 En effectuant deux visées, nous avons cette fois calculé l'angle $2D_{min}$. L'incertitude expérimentale attachée à la détermination de l'angle $D_{min}$  est donc de nouveau divisée par deux !
 
 ### Approche par l'exploration du modèle mathématique
 
-La transformation mathématique qui correspond au changement de point de vue haut/bas peut être vue comme un retournement de l'image, une rotation d'un demi-tour autour de l'axe qui est vertical sur la feuille et passe par son milieu.
+La transformation mathématique [^mn43] [^mn44] [^mn45] qui correspond au changement de point de vue haut/bas peut être vue comme un retournement de l'image, une rotation d'un demi-tour autour de l'axe qui est vertical sur la feuille et passe par son milieu.
+
+[^mn43]:
+    {-} ![](images/spectro_17.png) _Visée_ de la raie verte dans l'ordre $p=-1$.
+
+[^mn44]:
+    {-} ![](images/spectro_17_bis.jpeg) Image précédente _retournée_, comme _vue de dessous_.
+
+[^mn45]:
+    {-} ![](images/spectro_18.png) _Visée_ de la raie verte dans l'ordre $p=+1$ de la situation symétrique, de l'autre côté de l'axe du collimateur.
 
 En gardant la même convention d'orientation des angles, cette transformation :
 
@@ -290,17 +313,17 @@ En gardant la même convention d'orientation des angles, cette transformation :
 
 - change l'angle $\theta$ en $-\theta$.
 
-$$ sin(-\theta)-sin(-\theta_0)=(-p)\frac{\lambda}{a} $$
+$$ \sin(-\theta) - \sin(-\theta_0) = (-p)\frac{\lambda}{a} $$
 
 Vous noterez que l'invariance observée est traduite, dans le modèle mathématique, par la propriété de la fonction sinus d'être une **fonction impaire**, c'est à dire telle que : 
-$$sin(-x)=-sin(x)$$
+$$ \sin(-x) = - \sin(x)$$
 
 Les angles correspondant à la situation symétrique vérifient donc bien la formule fondamentale du réseau avec les mêmes valeurs :
-$$ sin(\theta)-sin(\theta_0)=p\frac{\lambda}{a} $$
+$$ \sin(\theta) - \sin(\theta_0) = p\frac{\lambda}{a} $$
 
 ___
 
-## Bilan
+### Bilan
 
 Pour calculer la valeur de la longueur d'onde $\lambda$ à partir de la formule fondamentale du réseau, nous sommes partis du constat qu'il était nécessaire de mesurer deux angles. L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts. 
 
@@ -310,7 +333,7 @@ Soit un gain de 1 à 4.
 
 ___
 
-## Pour conclure
+### Pour conclure
 
 Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du **prototocole**, c'est à dire de la **manière dont on conduit les mesures**. 
 

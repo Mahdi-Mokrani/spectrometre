@@ -139,15 +139,13 @@ Si le rapporteur présente bien 90 graduations pour un angle droit, 360 graduati
 
 </figure>
 
-[^mn5] Pour justifier une telle ambition, le goniomètre est équipé d'un **système de visée de précision** qui est constitué d'une **partie optique** (le _collimateur_ et la _lunette_) et d'une **partie mécanique**. On distinguera la _vis de serrage_, que l'on désserre pour effectuer des mouvements grossiers avant de la ressérer, et la _vis de déplacement micrométrique_ qui permet le déplacement fin de la lunette.
-
-![](images/spectro_6.png) [^mn6]
+[^mn5] Pour justifier une telle ambition, le goniomètre est équipé d'un **système de visée de précision** qui est constitué d'une **partie optique** (le _collimateur_ et la _lunette_) et d'une **partie mécanique**. On distinguera la _vis de serrage_, que l'on désserre pour effectuer des mouvements grossiers avant de la ressérer, et la _vis de déplacement micrométrique_ qui permet le déplacement fin de la lunette.[^mn6]
 
 [^mn5]:
     {-} ![](images/spectro_12.png) Le _collimateur_ et la _lunette_ permettent de _viser_ avec précision.
 
 [^mn6]:
-    {-} Un système mécanique _à deux vis_ permet de contrôler des _rotations très fines_ de la lunette.
+    {-} ![](images/spectro_6.png) Un système mécanique _à deux vis_ permet de contrôler des _rotations très fines_ de la lunette.
 
 [^mn7] On notera l'existence d'un système mécanique similaire sur le plateau du goniomètre. Une vis de serrage permet des mouvements grossiers et, une fois cette dernière ressérée, la vis de déplacement micrométrique permet de contrôler des mouvements fins de rotation du plateau.
 

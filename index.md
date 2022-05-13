@@ -6,8 +6,6 @@ date:
 ---
 ___
 
-_Table des matières_
-
 >1. [_Mesurer des angles pour déterminer des longueurs d'onde_](#1)
 >2. [_Comment se servir d'un goniomètre_](#2)
 >3. [_Symétries des images diffractées au minimum de déviation_](#3)

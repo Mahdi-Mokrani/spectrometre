@@ -76,9 +76,7 @@ Voyons comment le modèle mathématique que l'on vous propose peut rendre compte
 
 $$ \sin(\theta)- \sin(\theta_0)=p\frac{\lambda}{a}$$
 
-Les grandeurs qui apparaissent comme les arguments ou les variables des fonctions dans cette formule sont définies par rapport à une certaine _mise en place_ théorique.
-
-Dans cette formule :
+Les grandeurs qui apparaissent comme les arguments ou les variables des fonctions dans cette formule sont définies par rapport à une certaine _mise en place théorique_. Dans cette formule :
 
 - $\theta_0$ représente _l'angle d'incidence_, angle sous lequel arrive la lumière issue du collimateur sur le réseau, repéré par rapport à _la normale (N)_ au réseau ;
 
@@ -98,12 +96,10 @@ Une partie de la lumière incidente n'est donc pas du tout déviée, quel que so
 
 _En pratique_, nous allons repérer les différentes raies colorées par rapport à cet ordre zéro, direction que l'on peut viser à la lunette, plutôt que par rapport à la normale au réseau, qui est une direction dans laquelle on ne peut pas voir de lumière. 
 
-On considèrera donc dorénavant la _déviation_ $D$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta$. 
-
-Par construction, il vient : 
+On considèrera donc, dorénavant, la _déviation_ $D$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta$. Par construction, il vient : 
 $$  D=\theta-\theta_0 $$
 
-La longeur d'onde $\lambda$ se trouvant au numérateur de la formule, elle rend bien compte du fait que la déviation augmente avec la longueur d'onde.
+La longeur d'onde $\lambda$ se trouvant au numérateur de la formule du réseau, elle rend bien compte du fait que la déviation augmente avec la longueur d'onde et que les images rouges de la fente sont plus déviées que les images violettes.
 
 ### Nombre de mesures nécessaires au calcul d'une longueur d'onde {#14}
 
@@ -177,16 +173,16 @@ L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de
 
 ### Approche expérimentale
 
-Sur le dispositif présenté ici, on peut faire tourner le plateau sur lequel se trouve le réseau pour modifier l'angle d'incidence $\theta_0$ et observer les angles auxquels on peut repérer les différents ordres d'interférence.
+Sur le dispositif présenté ici, on peut faire tourner le plateau sur lequel se trouve le réseau pour modifier l'angle d'incidence $\theta_0$ et observer comment évoluent les angles auxquels on peut repérer les différents ordres d'interférence.
 
-Pour un réseau de pas donné et pour une longueur d'onde donnée (celle du laser rouge ici), on fait varier l'angle d'incidence de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro :
+Plus précisément, on fait varier l'angle d'incidence de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro.
 
->on observe que l'angle de déviation $D$, pour une tâche de diffraction donnée ou pour ordre donné, _passe par un minimum_.
+>On observe que l'angle de déviation $D$, pour une tâche de diffraction donnée ou pour ordre donné, _passe par un minimum_.
 
 ![](images/spectro_8.png) [^mn31]
 
 [^mn31]:
-    {-} Lorsque l'on fait varier _l'angle d'incidence_ $\theta_0$, l'angle de déviation $D$ passe par un minimum $D_{min}$.
+    {-} Lorsque l'on fait varier _l'angle d'incidence_ $\theta_0$, l'angle de déviation $D$ passe par un minimum $D_{min}$.s
 
 En réglant l'angle d'incidence de manière **à se placer au minimum de déviation**, on découvre une situation qui présente des symétries remarquables :
 
@@ -330,7 +326,7 @@ $$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
 
 L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts $\alpha_i$ :
 
-$$ \lambda = \frac{a}{p}[ \sin(\alpha_1-\alpha_0)- \sin(\alpha_2-\alpha_0)] $$
+$$ \lambda = \frac{a}{p}[ \sin(\alpha_1-\alpha_0)- \sin(\alpha_3-\alpha_0)] $$
 
 En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié :
 

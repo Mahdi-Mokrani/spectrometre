@@ -336,7 +336,7 @@ En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moiti
 
 $$ \lambda = -2\frac{a}{p}[\sin(\frac{D_{min}}{2})]= -2\frac{a}{p} \sin(\frac{\alpha_0-\alpha_1}{2})  $$
 
-Enfin, en effectuant la mesure symétrique, nous avons de nouveau divisé par deux l'incertitude :
+Enfin, en effectuant la mesure symétrique, nous avons de nouveau divisé par deux le facteur devant les grandeurs auxquelles on attache une incertitude expérimentale de mesure :
 
 $$ \lambda = -2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) = -2\frac{a}{p} \sin(\frac{\alpha_2-\alpha_1}{4})$$
 

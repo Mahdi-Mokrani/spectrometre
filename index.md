@@ -177,11 +177,11 @@ L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de
 
 ### Approche expérimentale
 
-Les angles auxquels on peut repérer les différents ordres d'interférence sont des fonctions de l'angle d'incidence $\theta_0$, donc, sur le dispositif, de l'angle dont on fait tourner le plateau sur lequel se trouve le réseau.
+Sur le dispositif présenté ici, on peut faire tourner le plateau sur lequel se trouve le réseau pour modifier l'angle d'incidence $\theta_0$ et observer les angles auxquels on peut repérer les différents ordres d'interférence.
 
-Pour un réseau de pas donné et pour une longueur d'onde donnée (celle du laser rouge ici), on fait varier l'angle d'incidence de manière monotone entre zéro et 90 degrés puis de nouveau de manière monotone entre 90 degrés et zéro.
+Pour un réseau de pas donné et pour une longueur d'onde donnée (celle du laser rouge ici), on fait varier l'angle d'incidence de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro :
 
->On observe que l'angle de déviation $D$, pour une tâche de diffraction donnée ou pour ordre donné, _passe par un minimum_.
+>on observe que l'angle de déviation $D$, pour une tâche de diffraction donnée ou pour ordre donné, _passe par un minimum_.
 
 ![](images/spectro_8.png) [^mn31]
 

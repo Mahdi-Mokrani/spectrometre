@@ -326,7 +326,7 @@ $$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
 
 L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts $\alpha_i$ :
 
-$$ \lambda = \frac{a}{p}[ \sin(\alpha_1-\alpha_0)- \sin(\alpha_3-\alpha_0)] $$
+$$ \lambda = \frac{a}{p}[ \sin(\alpha_6-\alpha_5)- \sin(\alpha_4-\alpha_3)] $$
 
 En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié :
 

@@ -94,21 +94,20 @@ $$ \sin(\theta) = \sin(\theta_0)$$ $$\theta = \theta_0$$
 
 Une partie de la lumière incidente n'est donc pas du tout déviée, quel que soit l'angle d'incidence et quelle que soit la longueur d'onde.
 
-L'image de la fente que Jean-Luc regardait dans l'axe du collimateur a donc la même couleur que celle de la lampe regardée directement, qui est donc celle du _mélange_.
+>L'image de la fente que Jean-Luc regardait dans l'axe du collimateur a donc la même couleur que celle de la lampe regardée directement, qui est donc celle du _mélange_.
 
-_En pratique_, nous allons repérer les différentes raies colorées par rapport à cet ordre zéro, direction que l'on peut viser à la lunette, plutôt que par rapport à la normale au réseau, qui est une direction dans laquelle on ne peut pas voir de lumière.
+_En pratique_, nous allons repérer les différentes raies colorées par rapport à cet ordre zéro, direction que l'on peut viser à la lunette, plutôt que par rapport à la normale au réseau, qui est une direction dans laquelle on ne peut pas voir de lumière. 
 
-On considèrera donc dorénavant la _déviation_ $D$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta$.
+On considèrera donc dorénavant la _déviation_ $D$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta$. 
 
 Par construction, il vient : 
-
 $$  D=\theta-\theta_0 $$
 
 La longeur d'onde $\lambda$ se trouvant au numérateur de la formule, elle rend bien compte du fait que la déviation augmente avec la longueur d'onde.
 
 ### Nombre de mesures nécessaires au calcul d'une longueur d'onde {#14}
 
-En particulier, la _formule fondamentale du réseau_   nous montre que pour calculer la longueur d'onde $\lambda$, il nous faudra, **en pratique, faire la  mesure  de deux angles** : _l'angle d'incidence_ $\theta_o$ et l'angle $\theta$ auquel est diffractée la lumière colorée considérée dans l'ordre d'interférence $p$ considéré :
+En particulier, la formule fondamentale du réseau nous montre que pour calculer la longueur d'onde $\lambda$, il nous faudra, _en pratique_, faire la  mesure  de _deux angles_ : l'angle d'incidence $\theta_o$ et l'angle $\theta$ auquel est diffractée la lumière colorée considérée dans l'ordre d'interférence $p$ considéré :
  
 $$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
  
@@ -172,15 +171,17 @@ En résumé, il y a quatre étapes à répéter pour chaque mesure.
 
 ___
 
-L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exibées par le phénomène physique exploité.
+L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exhibées par le phénomène physique exploité.
 
 ## Symétries des images diffractées au minimum de déviation {#3}
 
 ### Approche expérimentale
 
-Pour un réseau de pas donné et pour une longueur d'onde donnée (celle du laser rouge ici), les angles auxquels on peut repérer les différents ordres d'interférence sont des fonctions de l'angle d'incidence $\theta_0$.
+Les angles auxquels on peut repérer les différents ordres d'interférence sont des fonctions de l'angle d'incidence $\theta_0$, donc, sur le dispositif, de l'angle dont on fait tourner le plateau sur lequel se trouve le réseau.
 
-En faisant varier l'angle d'incidence de manière monotone entre zéro et 90 degrés puis de nouveau de manière monotone entre 90 degrés et zéro, on observe que, pour une raie colorée choisie dans un ordre donné, **l'angle de déviation passe par un minimum**.
+Pour un réseau de pas donné et pour une longueur d'onde donnée (celle du laser rouge ici), on fait varier l'angle d'incidence de manière monotone entre zéro et 90 degrés puis de nouveau de manière monotone entre 90 degrés et zéro.
+
+>On observe que l'angle de déviation $D$, pour une tâche de diffraction donnée ou pour ordre donné, _passe par un minimum_.
 
 ![](images/spectro_8.png) [^mn31]
 
@@ -193,29 +194,26 @@ En réglant l'angle d'incidence de manière **à se placer au minimum de déviat
 
 - On peut ensuite remarquer que l'on retrouve ce même angle entre la direction de la normale au réseau et la direction de la lumière qui n'est pas déviée dans _l'ordre zéro_. Autrement dit, **l'angle de déviation $D_{min}$** vaut alors exactement **moins deux fois** l'angle d'incidence.
 
-Mesurer la _déviation minimale_ suffit donc à déterminer non seulement $D_{min}$ mais également $\theta_0$ et $\theta$ géométriquement, sans mesure supplémentaire. 
+Mesurer la _déviation minimale_ $D_{min}$ suffit donc à déterminer $\theta_0$ et $\theta$ géométriquement, _sans mesure supplémentaire_. Nous pouvons donc faire l'économie de la mesure de l'angle d'incidence et surtout _l'économie des incertitudes qui lui sont attachées_.
 
-En réglant l'angle d'incidence par rotation du plateau, de manière à se placer au minimum de déviation, la présence d'une deuxième lunette n'est plus nécessaire. Nous pouvons donc faire **l'économie de la mesure** de l'angle d'incidence.
+L'expression permettant de calculer $\lambda$ se ramène alors à une fonction d'un seul angle et non plus de deux :
 
-L'expression permettant de calculer $\lambda$ se ramène alors à une fonction d'un seul angle et non plus de deux.
+$$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
+$$\theta=\frac{D_{min}}{2}=-\theta_o$$ 
+$$ \lambda = \frac{a}{p}[\sin(\frac{D_{min}}{2})-\sin(\frac{-D_{min}}{2})] $$
+$$ \lambda = -2\frac{a}{p}[\sin(\frac{D_{min}}{2})]$$
 
-En nous plaçant par exemple au minimum de déviation pour la raie verte de l'ordre $p= -1$, on a :
-$$\theta=\frac{D_{min}}{2}=-\theta_o$$ d'où :
-$$ \lambda = -a[\sin(\frac{D_{min}}{2})-\sin(\frac{-D_{min}}{2})] $$
+En nous plaçant par exemple au minimum de déviation pour la raie verte de l'ordre $p= -1$, on obtient :
+
 $$ \lambda = -2a[\sin(\frac{D_{min}}{2})]$$
 
-On cherchera enfin à exprimer $D$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
+On cherchera enfin à exprimer $D_{min}$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
 $$ \lambda = 2a \sin(\frac{\alpha_0-\alpha_1}{2})$$
 
 ### Approche par l'exploration du modèle mathématique
 
-En considérant la déviation plutôt que l'angle par rapport à la normale : 
-
-$$  D=\theta-\theta_0 $$
-
-L'équation fondamentale du réseau devient : 
+En considérant la déviation $D = (\theta-\theta_0)$ plutôt que l'angle par rapport à la normale, l'équation fondamentale du réseau devient :
 $$ \sin(\theta_0+D)=\sin(\theta_0)+p\frac{\lambda}{a}  $$
-
 On cherche la dérivée de cette expression par rapport à $\theta_0$. 
 
 Pour le membre de droite de l'égalité, il vient immédiatement :
@@ -267,11 +265,11 @@ ___
 
  Résumé en trois étapes, nous allons :
 
-1. **Viser la raie verte dans l'ordre $p=-1$** et déterminer son azimut $\alpha_1$ au minimum de déviation ; 
+1. **Viser la raie** verte dans l'ordre $p=-1$ et déterminer son azimut $\alpha_1$ au minimum de déviation ; 
 
 2. Déplacer le réseau, **par rotation du plateau**, approximativement dans la position symétrique à la précédente par rapport à l'axe qui est la  direction de la lumière incidente ;
 
-3. **Viser la raie verte une seconde fois, mais dans l'ordre $p=+1$** de cette nouvelle configuration et déterminer son azimut $\alpha_2$ au minimum de déviation.
+3. **Viser la même raie une seconde fois**, mais dans l'ordre $p=+1$ de cette nouvelle configuration et déterminer son azimut $\alpha_2$ au minimum de déviation.
 
 [^mn41]:
     {-} ![](images/spectro_17.png) _Visée_ de la raie verte dans l'ordre $p=-1$.
@@ -310,13 +308,13 @@ En gardant la même convention d'orientation des angles, cette transformation :
 
 - change l'ordre $p=-1$ en un ordre $p=+1$,
 
-- change l'angle $\theta_0$ en $-\theta_0$ et
+- change l'angle $\theta_0$ en $-\theta_0$
 
-- change l'angle $\theta$ en $-\theta$.
+- et change l'angle $\theta$ en $-\theta$.
 
 $$ \sin(-\theta) - \sin(-\theta_0) = (-p)\frac{\lambda}{a} $$
 
-Vous noterez que l'invariance observée est traduite, dans le modèle mathématique, par la propriété de la fonction sinus d'être une **fonction impaire**, c'est à dire telle que : 
+Vous noterez que l'invariance observée est traduite, dans le modèle mathématique, par la propriété de la fonction sinus d'être une _fonction impaire_, c'est à dire telle que : 
 $$ \sin(-x) = - \sin(x)$$
 
 Les angles correspondant à la situation symétrique vérifient donc bien la formule fondamentale du réseau avec les mêmes valeurs :
@@ -326,21 +324,37 @@ ___
 
 ### Bilan
 
-Pour calculer la valeur de la longueur d'onde $\lambda$ à partir de la formule fondamentale du réseau, nous sommes partis du constat qu'il était nécessaire de mesurer deux angles. L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts. 
+Pour calculer la valeur de la longueur d'onde $\lambda$ à partir de la formule fondamentale du réseau, nous sommes partis du constat qu'il était nécessaire de mesurer deux angles.
 
-En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié puis, en effectuant la mesure symétrique, nous l'avons de nouveau divisé par deux. 
+$$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
 
-Soit un gain de 1 à 4.
+L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts $\alpha_i$ :
+
+$$ \lambda = \frac{a}{p}[ \sin(\alpha_1-\alpha_0)- \sin(\alpha_2-\alpha_0)] $$
+
+En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié :
+
+$$ \lambda = -2\frac{a}{p}[\sin(\frac{D_{min}}{2})]= -2\frac{a}{p} \sin(\frac{\alpha_0-\alpha_1}{2})  $$
+
+Enfin, en effectuant la mesure symétrique, nous avons de nouveau divisé par deux l'incertitude :
+
+$$ \lambda = -2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) = -2\frac{a}{p} \sin(\frac{\alpha_2-\alpha_1}{4})$$
+
+
+Soit au total un gain de l'ordre de 1 à 4.
 
 ___
 
 ### Pour conclure
 
-Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du **prototocole**, c'est à dire de la **manière dont on conduit les mesures**. 
+Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du _prototocole_, c'est à dire de la _manière dont on conduit les mesures_. 
 
 On a ainsi chercher à exploiter au mieux les symétries du phénomène physique mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique fourni.
 
 ___
 
-Dans le [prochaine épisode](/SspectroE02.html), nous nous intéresserons au problème de la précision des visées. En particulier, nous traiterons de la manière dont on règle à sa vue l'ensemble lunette et collimateur.
+Dans le [prochaine épisode](/SspectroE02.html), nous nous intéresserons au problème de la précision des visées. 
+
+En particulier, nous traiterons de la manière dont on règle à sa vue l'ensemble lunette et collimateur.
+
 Au revoir, et à très bientôt j'espère.

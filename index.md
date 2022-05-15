@@ -15,7 +15,7 @@ ___
 
 ### Prologue
 
-Pour un physicien, la lumière est un message [^mnp] duquel on peut extraire de nombreuses informations.
+Pour un physicien, la lumière est un message duquel on peut extraire de nombreuses informations.
 
 [^mnp]:
     {-} ![](images/Sidereus_nuncius_2.jpg) Double page intérieure, première édition du _sidereus nuncius_ de Galilée, Venise 1610.

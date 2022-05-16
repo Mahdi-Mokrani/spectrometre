@@ -60,9 +60,9 @@ personnelle de l’auteur.</em><br />
 <blockquote>
 <p>Le <em>spectromètre</em>, comme son nom l’indique, est l’instrument
 qui permet de <em>décomposer</em> le faisceau lumineux issu d’une
-source, comme <em>mélange</em> de lumières colorées, dans l’ensemble des
-lumières colorées <em>pures</em> qui constituent son spectre, et
-d’obtenir une <em>mesure</em> de leurs longueurs d’onde.</p>
+source, considéré comme un <em>mélange</em> de lumières colorées, dans
+l’ensemble des lumières colorées <em>pures</em> qui constituent son
+spectre, et d’obtenir une <em>mesure</em> de leurs longueurs d’onde.</p>
 </blockquote>
 <p><span
 class="sidenote-wrapper"><label for="sn-1" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-1" class="margin-toggle"/><span
@@ -324,17 +324,29 @@ ou pour ordre donné, <em>passe par un minimum</em>.</p>
 </blockquote>
 <p><img src="images/spectro_8.png" /> <span
 class="sidenote-wrapper"><label for="sn-9" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-9" class="margin-toggle"/><span
-class="marginnote">Lorsque l’on fait varier <em>l’angle d’incidence</em>
-<span class="math inline">\(\theta_0\)</span>, l’angle de déviation
-<span class="math inline">\(D\)</span> passe par un minimum <span
-class="math inline">\(D_{min}\)</span>.s<br />
+class="marginnote">On fait varier <em>l’angle d’incidence</em> <span
+class="math inline">\(\theta_0\)</span> en faisant tourner le réseau sur
+le plateau de bois. Pour une tâche de diffraction donnée, l’angle de
+déviation <span class="math inline">\(D\)</span> passe par un minimum
+<span class="math inline">\(D_{min}\)</span>.<br />
 <br />
 </span></span></p>
 <p>En réglant l’angle d’incidence de manière <strong>à se placer au
 minimum de déviation</strong>, on découvre une situation qui présente
-des symétries remarquables :</p>
+des symétries remarquables.</p>
+<p><img src="images/spectro_36.png" /> <span
+class="sidenote-wrapper"><label for="sn-10" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-10" class="margin-toggle"/><span
+class="marginnote"><img src="images/spectro_37.jpeg" /> Sur le
+goniomètre, on fait varier l’angle d’incidence en faisant tourner le
+plateau sans toucher au réseau. Pour la raie de couleur considérée (raie
+verte) dans l’ordre considéré (<span
+class="math inline">\(p=-1\)</span>), on cherche la position du plateau
+telle que la raie soit la plus “à gauche” possible, c’est à dire telle
+que sa déviation soit minimale, .<br />
+<br />
+</span></span></p>
 <ul>
-<li><p>on peut tout d’abord remarquer que le plan du réseau se situe
+<li><p>On peut tout d’abord remarquer que le plan du réseau se situe
 alors selon <strong>la bissectrice</strong> de l’angle formé par les
 directions du collimateur et de la lunette. Autrement dit, au minimun de
 déviation, l’angle d’incidence et l’angle de visée sont <strong>égaux en
@@ -350,10 +362,7 @@ class="math inline">\(D_{min}\)</span></strong> vaut alors exactement
 class="math inline">\(D_{min}\)</span> suffit donc à déterminer <span
 class="math inline">\(\theta_0\)</span> et <span
 class="math inline">\(\theta\)</span> géométriquement, <em>sans mesure
-supplémentaire</em>. Nous pouvons donc faire l’économie de la mesure de
-l’angle d’incidence et surtout <em>l’économie des incertitudes qui lui
-sont attachées</em>.</p>
-<p>L’expression permettant de calculer <span
+supplémentaire</em>. L’expression permettant de calculer <span
 class="math inline">\(\lambda\)</span> se ramène alors à une fonction
 d’un seul angle et non plus de deux :</p>
 <p><span class="math display">\[ \lambda = \frac{a}{p}[ \sin(\theta)-
@@ -363,18 +372,22 @@ class="math display">\[ \lambda =
 \frac{a}{p}[\sin(\frac{D_{min}}{2})-\sin(\frac{-D_{min}}{2})] \]</span>
 <span class="math display">\[ \lambda =
 -2\frac{a}{p}[\sin(\frac{D_{min}}{2})]\]</span></p>
+<p>On cherchera ensuite à exprimer <span
+class="math inline">\(D_{min}\)</span> en fonction des azimuts <span
+class="math inline">\(\alpha_1\)</span> et <span
+class="math inline">\(\alpha_0\)</span> qui sont les grandeurs mesurés
+directement et auxquelles on peut attacher des incertitudes
+expérimentales.</p>
 <p>En nous plaçant par exemple au minimum de déviation pour la raie
 verte de l’ordre <span class="math inline">\(p= -1\)</span>, on obtient
 :</p>
 <p><span class="math display">\[ \lambda =
 -2a[\sin(\frac{D_{min}}{2})]\]</span></p>
-<p>On cherchera enfin à exprimer <span
-class="math inline">\(D_{min}\)</span> en fonction des azimuts <span
-class="math inline">\(\alpha_1\)</span> et <span
-class="math inline">\(\alpha_0\)</span> qui sont les grandeurs mesurés
-directement et auxquelles on pourra attacher des incertitudes : <span
-class="math display">\[ \lambda = 2a
+<p><span class="math display">\[ \lambda = 2a
 \sin(\frac{\alpha_0-\alpha_1}{2})\]</span></p>
+<p>Bilan : en faisant l’économie de la mesure de l’angle d’incidence,
+nous avons fait <em>l’économie des incertitudes qui sont attachées</em>
+à la détermination des deux azimuts correspondants.</p>
 </section>
 <section id="approche-par-lexploration-du-modèle-mathématique"
 class="level3">
@@ -431,13 +444,13 @@ la lunette qui réalise exactement la même configuration angulaire … de
 l’autre côté du goniomètre.</p>
 <hr />
 <p><em>Protocole</em> <span
-class="sidenote-wrapper"><label for="sn-10" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-10" class="margin-toggle"/><span
+class="sidenote-wrapper"><label for="sn-11" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-11" class="margin-toggle"/><span
 class="marginnote"><img src="images/spectro_17.png" /> <em>Visée</em> de
 la raie verte dans l’ordre <span
 class="math inline">\(p=-1\)</span>.<br />
 <br />
 </span></span> <span
-class="sidenote-wrapper"><label for="sn-11" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-11" class="margin-toggle"/><span
+class="sidenote-wrapper"><label for="sn-12" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-12" class="margin-toggle"/><span
 class="marginnote"><img src="images/spectro_18.png" /> <em>Visée</em> de
 la raie verte dans l’ordre <span class="math inline">\(p=+1\)</span> de
 la situation symétrique, de l’autre côté de l’axe du collimateur.<br />
@@ -479,18 +492,18 @@ deux !</p>
 class="level3">
 <h3>Approche par l’exploration du modèle mathématique</h3>
 <p>La transformation mathématique <span
-class="sidenote-wrapper"><label for="sn-12" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-12" class="margin-toggle"/><span
+class="sidenote-wrapper"><label for="sn-13" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-13" class="margin-toggle"/><span
 class="marginnote"><img src="images/spectro_17.png" /> <em>Visée</em> de
 la raie verte dans l’ordre <span
 class="math inline">\(p=-1\)</span>.<br />
 <br />
 </span></span> <span
-class="sidenote-wrapper"><label for="sn-13" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-13" class="margin-toggle"/><span
+class="sidenote-wrapper"><label for="sn-14" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-14" class="margin-toggle"/><span
 class="marginnote"><img src="images/spectro_17_bis.jpeg" /> Image
 précédente <em>retournée</em>, comme <em>vue de dessous</em>.<br />
 <br />
 </span></span> <span
-class="sidenote-wrapper"><label for="sn-14" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-14" class="margin-toggle"/><span
+class="sidenote-wrapper"><label for="sn-15" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-15" class="margin-toggle"/><span
 class="marginnote"><img src="images/spectro_18.png" /> <em>Visée</em> de
 la raie verte dans l’ordre <span class="math inline">\(p=+1\)</span> de
 la situation symétrique, de l’autre côté de l’axe du collimateur.<br />
@@ -560,9 +573,9 @@ de la <strong>précision de la visée</strong> et de <strong>la précision
 de la lecture de l’azimut</strong> mais également du
 <em>prototocole</em>, c’est à dire de la <em>manière dont on conduit les
 mesures</em>.</p>
-<p>On a ainsi chercher à exploiter au mieux les symétries du phénomène
-physique mis en jeu, en s’aidant notamment pour cela des symétries du
-modèle mathématique fourni.</p>
+<p>On a ainsi chercher à exploiter au mieux <em>les symétries du
+phénomène physique</em> mis en jeu, en s’aidant notamment pour cela des
+symétries du modèle mathématique fourni.</p>
 <hr />
 <p>Dans le <a href="/SspectroE02.html">prochaine épisode</a>, nous nous
 intéresserons au problème de la précision des visées.</p>

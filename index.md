@@ -31,7 +31,7 @@ Dans des champs d'application très variés, le point de départ de l'analyse co
 [^mni1]:
      {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._
 
->Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau lumineux issu d'une source, comme _mélange_ de lumières colorées, dans l'ensemble des lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_  de leurs longueurs d'onde. 
+>Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau lumineux issu d'une source, considéré comme un _mélange_ de lumières colorées, dans l'ensemble des lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_  de leurs longueurs d'onde. 
     
 [^mn3] On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui _réfracte_ chaque rayon coloré selon un angle différent.
 
@@ -182,29 +182,35 @@ Plus précisément, on fait varier l'angle d'incidence de manière _monotone_ en
 ![](images/spectro_8.png) [^mn31]
 
 [^mn31]:
-    {-} Lorsque l'on fait varier _l'angle d'incidence_ $\theta_0$, l'angle de déviation $D$ passe par un minimum $D_{min}$.s
+    {-} On fait varier _l'angle d'incidence_ $\theta_0$ en faisant tourner le réseau sur le plateau de bois. Pour une tâche de diffraction donnée, l'angle de déviation $D$ passe par un minimum $D_{min}$.
 
-En réglant l'angle d'incidence de manière **à se placer au minimum de déviation**, on découvre une situation qui présente des symétries remarquables :
+En réglant l'angle d'incidence de manière **à se placer au minimum de déviation**, on découvre une situation qui présente des symétries remarquables.
 
-- on peut tout d'abord remarquer que le plan du réseau se situe alors selon **la bissectrice** de l'angle formé par les directions du collimateur et de la lunette. Autrement dit, au minimun de déviation, l'angle d'incidence et l'angle de visée sont **égaux en valeur et opposés en signe**.
+![](images/spectro_36.png) [^mn36]
+
+[^mn36]:
+    {-} ![](images/spectro_37.jpeg) Sur le goniomètre, on fait varier l'angle d'incidence en faisant tourner le plateau sans toucher au réseau. Pour la raie de couleur considérée (raie verte) dans l'ordre considéré ($p=-1$), on cherche la position du plateau telle que la raie soit la plus "à gauche" possible, c'est à dire telle que sa déviation soit minimale, .
+
+- On peut tout d'abord remarquer que le plan du réseau se situe alors selon **la bissectrice** de l'angle formé par les directions du collimateur et de la lunette. Autrement dit, au minimun de déviation, l'angle d'incidence et l'angle de visée sont **égaux en valeur et opposés en signe**.
 
 - On peut ensuite remarquer que l'on retrouve ce même angle entre la direction de la normale au réseau et la direction de la lumière qui n'est pas déviée dans _l'ordre zéro_. Autrement dit, **l'angle de déviation $D_{min}$** vaut alors exactement **moins deux fois** l'angle d'incidence.
 
-Mesurer la _déviation minimale_ $D_{min}$ suffit donc à déterminer $\theta_0$ et $\theta$ géométriquement, _sans mesure supplémentaire_. Nous pouvons donc faire l'économie de la mesure de l'angle d'incidence et surtout _l'économie des incertitudes qui lui sont attachées_.
-
-L'expression permettant de calculer $\lambda$ se ramène alors à une fonction d'un seul angle et non plus de deux :
+Mesurer la _déviation minimale_ $D_{min}$ suffit donc à déterminer $\theta_0$ et $\theta$ géométriquement, _sans mesure supplémentaire_. L'expression permettant de calculer $\lambda$ se ramène alors à une fonction d'un seul angle et non plus de deux :
 
 $$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
 $$\theta=\frac{D_{min}}{2}=-\theta_o$$ 
 $$ \lambda = \frac{a}{p}[\sin(\frac{D_{min}}{2})-\sin(\frac{-D_{min}}{2})] $$
 $$ \lambda = -2\frac{a}{p}[\sin(\frac{D_{min}}{2})]$$
 
+On cherchera ensuite à exprimer $D_{min}$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on peut attacher des incertitudes expérimentales.
+
 En nous plaçant par exemple au minimum de déviation pour la raie verte de l'ordre $p= -1$, on obtient :
 
 $$ \lambda = -2a[\sin(\frac{D_{min}}{2})]$$
 
-On cherchera enfin à exprimer $D_{min}$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
 $$ \lambda = 2a \sin(\frac{\alpha_0-\alpha_1}{2})$$
+
+Bilan : en faisant l'économie de la mesure de l'angle d'incidence, nous avons fait _l'économie des incertitudes qui sont attachées_ à la détermination des deux azimuts correspondants.
 
 ### Approche par l'exploration du modèle mathématique
 
@@ -345,7 +351,7 @@ ___
 
 Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du _prototocole_, c'est à dire de la _manière dont on conduit les mesures_. 
 
-On a ainsi chercher à exploiter au mieux les symétries du phénomène physique mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique fourni.
+On a ainsi chercher à exploiter au mieux _les symétries du phénomène physique_ mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique fourni.
 
 ___
 

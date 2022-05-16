@@ -200,17 +200,13 @@ Mesurer la _déviation minimale_ $D_{min}$ suffit donc à déterminer $\theta_0$
 $$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
 $$\theta=\frac{D_{min}}{2}=-\theta_o$$ 
 $$ \lambda = \frac{a}{p}[\sin(\frac{D_{min}}{2})-\sin(\frac{-D_{min}}{2})] $$
-$$ \lambda = -2\frac{a}{p}[\sin(\frac{D_{min}}{2})]$$
+$$ \lambda = 2\frac{a}{p}[\sin(\frac{D_{min}}{2})]$$
 
 On cherchera ensuite à exprimer $D_{min}$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on peut attacher des incertitudes expérimentales.
 
-En nous plaçant par exemple au minimum de déviation pour la raie verte de l'ordre $p= -1$, on obtient :
+$$ \lambda = 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert) $$
 
-$$ \lambda = -2a[\sin(\frac{D_{min}}{2})]$$
-
-$$ \lambda = 2a \sin(\frac{\alpha_0-\alpha_1}{2})$$
-
-Bilan : en faisant l'économie de la mesure de l'angle d'incidence, nous avons fait _l'économie des incertitudes qui sont attachées_ à la détermination des deux azimuts correspondants.
+**Bilan** : en faisant l'économie de la mesure de l'angle d'incidence, nous avons fait _l'économie des incertitudes qui sont attachées_ à la détermination des deux azimuts correspondants.
 
 ### Approche par l'exploration du modèle mathématique
 
@@ -283,13 +279,13 @@ ___
 
 On obtient donc :
 
-$$ \lambda = -2a \sin(\frac{(2D_{min}/2)}{2}) $$
+$$ \lambda = 2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) $$
 
 On cherchera ici également à exprimer $\lambda$ en fonction des azimuts $\alpha_1$ et $\alpha_2$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
 
-$$ \lambda = 2a \sin(\frac{\alpha_2-\alpha_1}{4})$$
+$$ \lambda = 2\frac{a}{p} \sin(\vert \frac{\alpha_2-\alpha_1}{4} \vert)$$
 
-En effectuant deux visées, nous avons cette fois calculé l'angle $2D_{min}$. L'incertitude expérimentale attachée à la détermination de l'angle $D_{min}$  est donc de nouveau divisée par deux !
+**Bilan** : en effectuant les deux visées, nous avons cette fois déterminé l'angle $(2D_{min})$. L'incertitude expérimentale attachée à la détermination de l'angle $D_{min}$  est donc divisée par deux !
 
 ### Approche par l'exploration du modèle mathématique
 
@@ -336,11 +332,11 @@ $$ \lambda = \frac{a}{p}[ \sin(\alpha_6-\alpha_5)- \sin(\alpha_4-\alpha_3)] $$
 
 En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié :
 
-$$ \lambda = -2\frac{a}{p}[\sin(\frac{D_{min}}{2})]= -2\frac{a}{p} \sin(\frac{\alpha_0-\alpha_1}{2})  $$
+$$ \lambda = 2\frac{a}{p} [\sin(\frac{D_{min}}{2})]= 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert)  $$
 
 Enfin, en effectuant la mesure symétrique, nous avons de nouveau divisé par deux le facteur devant les grandeurs auxquelles on attache une incertitude expérimentale de mesure :
 
-$$ \lambda = -2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) = -2\frac{a}{p} \sin(\frac{\alpha_2-\alpha_1}{4})$$
+$$ \lambda = 2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) = 2\frac{a}{p} \sin(\vert \frac{\alpha_2-\alpha_1}{4} \vert)$$
 
 
 Soit au total un gain de l'ordre de 1 à 4.

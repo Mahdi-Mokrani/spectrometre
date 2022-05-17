@@ -31,7 +31,7 @@ Dans des champs d'application très variés, le point de départ de l'analyse co
 [^mni1]:
      {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._
 
->Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau lumineux issu d'une source, considéré comme un _mélange_ de lumières colorées, dans l'ensemble des lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_  de leurs longueurs d'onde. 
+>Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un _mélange_ de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_ de leurs longueurs d'onde. 
     
 [^mn3] On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui _réfracte_ chaque rayon coloré selon un angle différent.
 

@@ -4,6 +4,8 @@ subtitle: Mesurer des angles pour déterminer des longueurs d'onde
 author: 
 date:
 ---
+\
+
 ___
 
 >1. [_Mesurer des angles pour déterminer des longueurs d'onde_](#1)
@@ -29,15 +31,15 @@ Dans des champs d'application très variés, le point de départ de l'analyse co
 ![](images/spectro_1.png)[^mni1] 
 
 [^mni1]:
-     {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._
+     {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._ De droite à gauche, on distingue : la fente source, le collimateur, le plateau et la lunette de visée.
 
->Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau lumineux issu d'une source, comme _mélange_ de lumières colorées, dans l'ensemble des lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_  de leurs longueurs d'onde. 
+>[^mn3] [^mn4] Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un _mélange_ de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_ de leurs longueurs d'onde. 
     
-[^mn3] On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui _réfracte_ chaque rayon coloré selon un angle différent.
+On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui _réfracte_ chaque rayon coloré selon un angle différent.
 
 On peut aussi utiliser un réseau qui lui, _diffracte_ la lumière incidente dans des directions différentes et dans des ordres différents.
 
-On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la _nature_ de leur spectre [^mn4] : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
+On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la _nature_ de leur spectre : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
 
 [^mn3]:
     {-} ![](images/spectro_2.png) Un prisme ou un réseau de diffraction peuvent _décomposer_ un mélange de lumières colorées.
@@ -182,29 +184,31 @@ Plus précisément, on fait varier l'angle d'incidence de manière _monotone_ en
 ![](images/spectro_8.png) [^mn31]
 
 [^mn31]:
-    {-} Lorsque l'on fait varier _l'angle d'incidence_ $\theta_0$, l'angle de déviation $D$ passe par un minimum $D_{min}$.s
+    {-} On fait varier _l'angle d'incidence_ $\theta_0$ en faisant tourner le réseau sur le plateau de bois. Pour une tâche de diffraction donnée, l'angle de déviation $D$ passe par un minimum $D_{min}$.
 
-En réglant l'angle d'incidence de manière **à se placer au minimum de déviation**, on découvre une situation qui présente des symétries remarquables :
+En réglant l'angle d'incidence de manière **à se placer au minimum de déviation**, on découvre une situation qui présente des symétries remarquables.
 
-- on peut tout d'abord remarquer que le plan du réseau se situe alors selon **la bissectrice** de l'angle formé par les directions du collimateur et de la lunette. Autrement dit, au minimun de déviation, l'angle d'incidence et l'angle de visée sont **égaux en valeur et opposés en signe**.
+![](images/spectro_36.png) [^mn36]
+
+[^mn36]:
+    {-} ![](images/spectro_37.jpeg) Sur le goniomètre, on fait varier l'angle d'incidence en faisant tourner le plateau sans toucher au réseau. Pour la raie de couleur considérée (raie verte) dans l'ordre considéré ($p=-1$), on cherche la position du plateau telle que la raie soit la plus "à gauche" possible, c'est à dire telle que sa déviation soit minimale, .
+
+- On peut tout d'abord remarquer que le plan du réseau se situe alors selon **la bissectrice** de l'angle formé par les directions du collimateur et de la lunette. Autrement dit, au minimun de déviation, l'angle d'incidence et l'angle de visée sont **égaux en valeur et opposés en signe**.
 
 - On peut ensuite remarquer que l'on retrouve ce même angle entre la direction de la normale au réseau et la direction de la lumière qui n'est pas déviée dans _l'ordre zéro_. Autrement dit, **l'angle de déviation $D_{min}$** vaut alors exactement **moins deux fois** l'angle d'incidence.
 
-Mesurer la _déviation minimale_ $D_{min}$ suffit donc à déterminer $\theta_0$ et $\theta$ géométriquement, _sans mesure supplémentaire_. Nous pouvons donc faire l'économie de la mesure de l'angle d'incidence et surtout _l'économie des incertitudes qui lui sont attachées_.
-
-L'expression permettant de calculer $\lambda$ se ramène alors à une fonction d'un seul angle et non plus de deux :
+Mesurer la _déviation minimale_ $D_{min}$ suffit donc à déterminer $\theta_0$ et $\theta$ géométriquement, _sans mesure supplémentaire_. L'expression permettant de calculer $\lambda$ se ramène alors à une fonction d'un seul angle et non plus de deux :
 
 $$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
 $$\theta=\frac{D_{min}}{2}=-\theta_o$$ 
 $$ \lambda = \frac{a}{p}[\sin(\frac{D_{min}}{2})-\sin(\frac{-D_{min}}{2})] $$
-$$ \lambda = -2\frac{a}{p}[\sin(\frac{D_{min}}{2})]$$
+$$ \lambda = 2\frac{a}{p}[\sin(\frac{D_{min}}{2})]$$
 
-En nous plaçant par exemple au minimum de déviation pour la raie verte de l'ordre $p= -1$, on obtient :
+On cherchera ensuite à exprimer $D_{min}$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on peut attacher des incertitudes expérimentales.
 
-$$ \lambda = -2a[\sin(\frac{D_{min}}{2})]$$
+$$ \lambda = 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert) $$
 
-On cherchera enfin à exprimer $D_{min}$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
-$$ \lambda = 2a \sin(\frac{\alpha_0-\alpha_1}{2})$$
+**Bilan** : en faisant l'économie de la mesure de l'angle d'incidence, nous avons fait _l'économie des incertitudes qui sont attachées_ à la détermination des deux azimuts correspondants.
 
 ### Approche par l'exploration du modèle mathématique
 
@@ -230,11 +234,11 @@ $\begin{multline*}
 -\sin(\theta_0) \sin(D) (1+\frac{dD}{d\theta_0}) 
 \end{multline*}$
 
+
 Et comme au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
 
 L'égalité des deux membres s'écrit alors : 
 $$ \cos\theta_0=\cos\theta_0 \cos D_{min}-\sin\theta_0 \sin D_{min}  $$
-
 
 Ce qui permet d'aboutir à l'équation :
 $$ \cos\theta_0=\cos(\theta_0+D_{min}) $$
@@ -277,13 +281,13 @@ ___
 
 On obtient donc :
 
-$$ \lambda = -2a \sin(\frac{(2D_{min}/2)}{2}) $$
+$$ \lambda = 2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) $$
 
 On cherchera ici également à exprimer $\lambda$ en fonction des azimuts $\alpha_1$ et $\alpha_2$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
 
-$$ \lambda = 2a \sin(\frac{\alpha_2-\alpha_1}{4})$$
+$$ \lambda = 2\frac{a}{p} \sin(\vert \frac{\alpha_2-\alpha_1}{4} \vert)$$
 
-En effectuant deux visées, nous avons cette fois calculé l'angle $2D_{min}$. L'incertitude expérimentale attachée à la détermination de l'angle $D_{min}$  est donc de nouveau divisée par deux !
+**Bilan** : en effectuant les deux visées, nous avons cette fois déterminé l'angle $(2D_{min})$. L'incertitude expérimentale attachée à la détermination de l'angle $D_{min}$  est donc divisée par deux !
 
 ### Approche par l'exploration du modèle mathématique
 
@@ -330,11 +334,11 @@ $$ \lambda = \frac{a}{p}[ \sin(\alpha_6-\alpha_5)- \sin(\alpha_4-\alpha_3)] $$
 
 En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié :
 
-$$ \lambda = -2\frac{a}{p}[\sin(\frac{D_{min}}{2})]= -2\frac{a}{p} \sin(\frac{\alpha_0-\alpha_1}{2})  $$
+$$ \lambda = 2\frac{a}{p} [\sin(\frac{D_{min}}{2})]= 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert)  $$
 
 Enfin, en effectuant la mesure symétrique, nous avons de nouveau divisé par deux le facteur devant les grandeurs auxquelles on attache une incertitude expérimentale de mesure :
 
-$$ \lambda = -2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) = -2\frac{a}{p} \sin(\frac{\alpha_2-\alpha_1}{4})$$
+$$ \lambda = 2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) = 2\frac{a}{p} \sin(\vert \frac{\alpha_2-\alpha_1}{4} \vert)$$
 
 
 Soit au total un gain de l'ordre de 1 à 4.
@@ -345,7 +349,7 @@ ___
 
 Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du _prototocole_, c'est à dire de la _manière dont on conduit les mesures_. 
 
-On a ainsi chercher à exploiter au mieux les symétries du phénomène physique mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique fourni.
+On a ainsi chercher à exploiter au mieux _les symétries du phénomène physique_ mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique fourni.
 
 ___
 

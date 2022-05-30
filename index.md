@@ -4,6 +4,8 @@ subtitle: Mesurer des angles pour déterminer des longueurs d'onde
 author: 
 date:
 ---
+\
+
 ___
 
 >1. [_Mesurer des angles pour déterminer des longueurs d'onde_](#1)
@@ -29,15 +31,15 @@ Dans des champs d'application très variés, le point de départ de l'analyse co
 ![](images/spectro_1.png)[^mni1] 
 
 [^mni1]:
-     {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._
+     {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._ De droite à gauche, on distingue : la fente source, le collimateur, le plateau et la lunette de visée.
 
 >Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un _mélange_ de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_ de leurs longueurs d'onde. 
     
-[^mn3] On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui _réfracte_ chaque rayon coloré selon un angle différent.
+On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui _réfracte_ chaque rayon coloré selon un angle différent.
 
 On peut aussi utiliser un réseau qui lui, _diffracte_ la lumière incidente dans des directions différentes et dans des ordres différents.
 
-On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la _nature_ de leur spectre [^mn4] : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
+On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la _nature_ de leur spectre : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
 
 [^mn3]:
     {-} ![](images/spectro_2.png) Un prisme ou un réseau de diffraction peuvent _décomposer_ un mélange de lumières colorées.
@@ -232,11 +234,11 @@ $\begin{multline*}
 -\sin(\theta_0) \sin(D) (1+\frac{dD}{d\theta_0}) 
 \end{multline*}$
 
+
 Et comme au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
 
 L'égalité des deux membres s'écrit alors : 
 $$ \cos\theta_0=\cos\theta_0 \cos D_{min}-\sin\theta_0 \sin D_{min}  $$
-
 
 Ce qui permet d'aboutir à l'équation :
 $$ \cos\theta_0=\cos(\theta_0+D_{min}) $$

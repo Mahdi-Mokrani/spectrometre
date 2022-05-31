@@ -82,16 +82,20 @@ Les grandeurs qui apparaissent comme les arguments ou les variables des fonction
 
 - [^mn22] $\theta_0$ représente _l'angle d'incidence_, angle sous lequel arrive la lumière issue du collimateur sur le réseau, repéré par rapport à _la normale (N)_ au réseau ;
 
-- [^mn23] $\theta$ représente l'angle sous lequel on peut repérer une des multiples images de la fente source, une raie verte dans notre exemple ; 
+- $\theta$ représente l'angle sous lequel on peut repérer une des multiples images de la fente source, une raie verte dans notre exemple ; 
 - _p_ est _l'ordre d'interférence_ considéré, c'est un entier relatif qui nous permet de numéroter les différentes images vertes de fente source par exemple ;
+
+![](images/spectro_3_2.png)[^mn23] 
+
 - $a$ est une grandeur qui caractérise le réseau particulier que l'on a utilisé, c'est la distance entre deux gravures successives (réseau = grating in english) ou _pas du réseau_. Elle est de l'ordre du micromètre. Dans la pratique, c'est l'inverse du pas qui est indiqué sur l'objet, _le nombre de traits par unité de longueur_, 300 traits par mm dans notre exemple.
+
 - $\lambda$, enfin, est la longueur d'onde dans l'air du rayonnement considéré, elle caractérise quantitativement la couleur de la raie. Dans notre exemple, la raie verte de la lampe à vapeur de Mercure possède une teinte absolument singulière, caractérisée par la longueur d'onde 576 nm.
 
 [^mn22]:
     {-} ![](images/spectro_3_0.png)Dans la formule du réseau, les angles sont repérés par rapport à la normale (N) au réseau.
 
 [^mn23]:
-    {-} ![](images/spectro_3_2.png)Cas particulier de la composante verte de la lampe spectrale à vapeur de mercure.
+    {-} Cas particulier de la composante verte de la lampe spectrale à vapeur de mercure. On considère l'image de la fente source à l'orde $p=-1$. C'est l'image que l'on peut observer à l'angle $\theta_{p=-1}$ repéré par rapport à la normale $(N)$ au réseau.
 
 ### Mesures expérimentales, angle de déviation D {#13}
 
@@ -107,7 +111,12 @@ _En pratique_, nous allons repérer les différentes raies colorées par rapport
 On considèrera donc, dorénavant, la _déviation_ $D$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta$. Par construction, il vient : 
 $$  D=\theta-\theta_0 $$
 
-La longeur d'onde $\lambda$ se trouvant au numérateur de la formule du réseau, elle rend bien compte du fait que la déviation augmente avec la longueur d'onde et que les images rouges de la fente sont plus déviées que les images violettes.
+![](images/spectro_3_4.png) [^mn24]
+
+>La longeur d'onde $\lambda$ se trouvant au numérateur de la formule du réseau, elle rend bien compte du fait que la déviation augmente avec la longueur d'onde et que les images rouges de la fente sont plus déviées que les images violettes.
+
+[^mn24]:
+    {-} $\theta_p$, mesuré par rapport à la normale $(N)$ est l'angle tel que définit dans la mise en place théorique. En pratique, on repère les angles par rapport à l'ordre zéro, et on définit l'angle de déviation $D_p$.
 
 ### Nombre de mesures nécessaires au calcul d'une longueur d'onde {#14}
 

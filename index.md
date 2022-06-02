@@ -33,10 +33,10 @@ Dans des champs d'application très variés, le point de départ de l'analyse co
 [^mni1]:
      {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._ De droite à gauche, on distingue : la fente source, le collimateur, le plateau et la lunette de visée.
 
->Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un _mélange_ de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_ de leurs longueurs d'onde. 
+>[^mn3] Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un _mélange_ de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_ de leurs longueurs d'onde. [^mn4] 
     
 On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui _réfracte_ chaque rayon coloré selon un angle différent.
-
+ 
 On peut aussi utiliser un réseau qui lui, _diffracte_ la lumière incidente dans des directions différentes et dans des ordres différents.
 
 On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la _nature_ de leur spectre : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
@@ -80,12 +80,22 @@ $$ \sin(\theta)- \sin(\theta_0)=p\frac{\lambda}{a}$$
 
 Les grandeurs qui apparaissent comme les arguments ou les variables des fonctions dans cette formule sont définies par rapport à une certaine _mise en place théorique_. Dans cette formule :
 
-- $\theta_0$ représente _l'angle d'incidence_, angle sous lequel arrive la lumière issue du collimateur sur le réseau, repéré par rapport à _la normale (N)_ au réseau ;
+- [^mn22] $\theta_0$ représente _l'angle d'incidence_, angle sous lequel arrive la lumière issue du collimateur sur le réseau, repéré par rapport à _la normale (N)_ au réseau ;
 
 - $\theta$ représente l'angle sous lequel on peut repérer une des multiples images de la fente source, une raie verte dans notre exemple ; 
 - _p_ est _l'ordre d'interférence_ considéré, c'est un entier relatif qui nous permet de numéroter les différentes images vertes de fente source par exemple ;
+
+![](images/spectro_3_2.png)[^mn23] 
+
 - $a$ est une grandeur qui caractérise le réseau particulier que l'on a utilisé, c'est la distance entre deux gravures successives (réseau = grating in english) ou _pas du réseau_. Elle est de l'ordre du micromètre. Dans la pratique, c'est l'inverse du pas qui est indiqué sur l'objet, _le nombre de traits par unité de longueur_, 300 traits par mm dans notre exemple.
+
 - $\lambda$, enfin, est la longueur d'onde dans l'air du rayonnement considéré, elle caractérise quantitativement la couleur de la raie. Dans notre exemple, la raie verte de la lampe à vapeur de Mercure possède une teinte absolument singulière, caractérisée par la longueur d'onde 576 nm.
+
+[^mn22]:
+    {-} ![](images/spectro_3_0.png)Dans la formule du réseau, les angles sont repérés par rapport à la normale (N) au réseau.
+
+[^mn23]:
+    {-} Cas particulier de la composante verte de la lampe spectrale à vapeur de mercure. On considère l'image de la fente source à l'orde $p=-1$. C'est l'image que l'on peut observer à l'angle $\theta_{p=-1}$ repéré par rapport à la normale $(N)$ au réseau.
 
 ### Mesures expérimentales, angle de déviation D {#13}
 
@@ -101,7 +111,12 @@ _En pratique_, nous allons repérer les différentes raies colorées par rapport
 On considèrera donc, dorénavant, la _déviation_ $D$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta$. Par construction, il vient : 
 $$  D=\theta-\theta_0 $$
 
-La longeur d'onde $\lambda$ se trouvant au numérateur de la formule du réseau, elle rend bien compte du fait que la déviation augmente avec la longueur d'onde et que les images rouges de la fente sont plus déviées que les images violettes.
+![](images/spectro_3_4.png) [^mn24]
+
+>La longeur d'onde $\lambda$ se trouvant au numérateur de la formule du réseau, elle rend bien compte du fait que la déviation augmente avec la longueur d'onde et que les images rouges de la fente sont plus déviées que les images violettes.
+
+[^mn24]:
+    {-} $\theta_p$, mesuré par rapport à la normale $(N)$ est l'angle tel que définit dans la mise en place théorique. En pratique, on repère les angles par rapport à l'ordre zéro, et on définit l'angle de déviation $D_p$.
 
 ### Nombre de mesures nécessaires au calcul d'une longueur d'onde {#14}
 
@@ -191,7 +206,7 @@ En réglant l'angle d'incidence de manière **à se placer au minimum de déviat
 ![](images/spectro_36.png) [^mn36]
 
 [^mn36]:
-    {-} ![](images/spectro_37.jpeg) Sur le goniomètre, on fait varier l'angle d'incidence en faisant tourner le plateau sans toucher au réseau. Pour la raie de couleur considérée (raie verte) dans l'ordre considéré ($p=-1$), on cherche la position du plateau telle que la raie soit la plus "à gauche" possible, c'est à dire telle que sa déviation soit minimale, .
+    {-} ![](images/spectro_37.jpeg) ![](images/image_4%20copie.png)Sur le goniomètre, on fait varier l'angle d'incidence en faisant tourner le plateau sans toucher au réseau. Pour la raie de couleur considérée (raie verte) dans l'ordre considéré ($p=-1$), on cherche la position du plateau telle que la raie soit la plus "à gauche" possible, c'est à dire telle que sa déviation soit minimale.
 
 - On peut tout d'abord remarquer que le plan du réseau se situe alors selon **la bissectrice** de l'angle formé par les directions du collimateur et de la lunette. Autrement dit, au minimun de déviation, l'angle d'incidence et l'angle de visée sont **égaux en valeur et opposés en signe**.
 

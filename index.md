@@ -82,12 +82,18 @@ Les grandeurs qui apparaissent comme les arguments ou les variables des fonction
 
 - [^mn22] $\theta_0$ [^mn221] représente _l'angle d'incidence_, angle sous lequel arrive la lumière issue du collimateur sur le réseau, repéré par rapport à _la normale (N)_ au réseau ;
 
-- $\theta$ représente l'angle sous lequel on peut repérer une des multiples images de la fente source, une raie verte dans notre exemple ; 
 - _p_ est _l'ordre d'interférence_ considéré, c'est un entier relatif qui nous permet de numéroter les différentes images vertes de fente source par exemple ;
+
+- $\theta$ représente l'angle sous lequel on peut repérer une des multiples images de la fente source, une raie verte dans notre exemple ; 
+
 
 ![](images/spectro_3_2.png)[^mn23] 
 
 - $a$ est une grandeur qui caractérise le réseau particulier que l'on a utilisé, c'est la distance entre deux gravures successives (réseau = grating in english) ou _pas du réseau_. Elle est de l'ordre du micromètre. Dans la pratique, c'est l'inverse du pas qui est indiqué sur l'objet, _le nombre de traits par unité de longueur_, 300 traits par mm dans notre exemple.
+
+![](images/spectro_3_5.png) [^mn223]
+
+
 
 - $\lambda$, enfin, est la longueur d'onde dans l'air du rayonnement considéré, elle caractérise quantitativement la couleur de la raie. Dans notre exemple, la raie verte de la lampe à vapeur de Mercure possède une teinte absolument singulière, caractérisée par la longueur d'onde 576 nm.
 
@@ -99,6 +105,12 @@ Les grandeurs qui apparaissent comme les arguments ou les variables des fonction
 
 [^mn23]:
     {-} Cas particulier de la composante verte de la lampe spectrale à vapeur de mercure. On considère l'image de la fente source à l'orde $p=-1$. C'est l'image que l'on peut observer à l'angle $\theta_{p=-1}$ repéré par rapport à la normale $(N)$ au réseau.
+
+[^mn222]:
+    {-} ![](images/spectro_3_5.png)
+
+[^mn223]:
+    {-} L'indication $300$ traits par mm permet de calculer une estimation de la valeur du pas du réseau.
 
 ### Mesures expérimentales, angle de déviation D {#13}
 

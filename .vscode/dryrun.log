@@ -9,5 +9,6 @@ pandoc -s -o index.html index.md \
                 --template=tufte \
                 --css tufte.css --css pandoc.css --css pandoc-solarized.css --css tufte-extra.css \
 
+ 
 make: Leaving directory `/Users/mahdimokrani/Movies/Github/spectrometre'
  

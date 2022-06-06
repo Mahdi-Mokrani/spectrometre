@@ -254,15 +254,15 @@ $$ \sin(\theta_0+D)=\sin\theta_0 \cos D+ \cos\theta_0 \sin D $$
 
 Il vient :
 
-$\begin{multline*}
-\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D)-\sin(\theta_0)\sin(D)\frac{dD}{d\theta_0} \\
--\sin(\theta_0) \sin(D)+\cos(\theta_0) \cos(D)\frac{dD}{d\theta_0} 
-\end{multline*}$
+$\begin{split}
+\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D)-\sin(\theta_0)\sin(D)\frac{dD}{d\theta_0}\\
+-\sin(\theta_0) \sin(D)+\cos(\theta_0) \cos(D)\frac{dD}{d\theta_0}
+\end{split}$
 
-$\begin{multline*}
+$\begin{split}
 \frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D) (1+\frac{dD}{d\theta_0}) \\
 -\sin(\theta_0) \sin(D) (1+\frac{dD}{d\theta_0}) 
-\end{multline*}$
+\end{split}$
 
 
 Et comme au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$

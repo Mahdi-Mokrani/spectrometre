@@ -1,6 +1,6 @@
 ---
 title: Le spectromètre à réseau
-subtitle: Mesurer des angles pour déterminer des longueurs d'onde
+subtitle: I - Mesurer des angles pour déterminer des longueurs d'onde
 author: 
 date:
 ---
@@ -8,10 +8,10 @@ date:
 
 ___
 
->1. [_Mesurer des angles pour déterminer des longueurs d'onde_](#1)
->2. [_Comment se servir d'un goniomètre_](#2)
+>1. [_Images d'une fente source à travers un réseau de diffraction_](#1)
+>2. [_La formule fondamentale du réseau_](#2)
 >3. [_Symétries des images diffractées au minimum de déviation_](#3)
->4. [_Symétrie de la situation de mesure_](#4)
+>4. [_Comment se servir d'un goniomètre ?_](#4)
 
 ___
 
@@ -49,9 +49,7 @@ On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction d
 
 ___
 
-## Mesurer des angles pour déterminer des longueurs d'onde {#1}
-
-À partir de la loi de la réfraction dans le cas du prisme, ou à partir des principes de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de _calculer_ les longueurs d'onde, à partir des angles que l'on _mesure directement_.
+## Images d'une fente source à travers un réseau de diffraction {#1}
 
 ### Approche expérimentale {#11}
 
@@ -72,7 +70,9 @@ En déportant son regard dans des directions qui s'éloignent de l'axe optique d
 On peut également observer une seconde raie violette, début d'un spectre d'ordre deux. Contrairement à ce que l'on peut observer avec un prisme ou dans un arc-en-ciel, les images rouges de la fente sont plus déviées que les images violettes.
 
 
-### La formule fondamentale du réseau {#12}
+## La formule fondamentale du réseau {#2}
+
+À partir de la loi de la réfraction dans le cas du prisme, ou à partir des principes de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de _calculer_ les longueurs d'onde, à partir des angles que l'on _mesure directement_.
 
 Voyons comment le modèle mathématique que l'on vous propose peut rendre compte de ces observations.
 
@@ -117,14 +117,83 @@ $$  D=\theta-\theta_0 $$
 
 [^mn24]:
     {-} $\theta_p$, mesuré par rapport à la normale $(N)$ est l'angle tel que définit dans la mise en place théorique. En pratique, on repère les angles par rapport à l'ordre zéro, et on définit l'angle de déviation $D_p$.
-
-### Nombre de mesures nécessaires au calcul d'une longueur d'onde {#14}
-
-En particulier, la formule fondamentale du réseau nous montre que pour calculer la longueur d'onde $\lambda$, il nous faudra, _en pratique_, faire la  mesure  de _deux angles_ : l'angle d'incidence $\theta_o$ et l'angle $\theta$ auquel est diffractée la lumière colorée considérée dans l'ordre d'interférence $p$ considéré :
  
+
+## Symétries des images diffractées au minimum de déviation {#3}
+
+### Approche expérimentale
+
+Sur le dispositif présenté ici, on peut faire tourner le plateau sur lequel se trouve le réseau pour modifier l'angle d'incidence $\theta_0$ et observer comment évoluent les angles auxquels on peut repérer les différents ordres d'interférence.
+
+Plus précisément, on fait varier l'angle d'incidence de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro.
+
+>On observe que l'angle de déviation $D$, pour une tâche de diffraction donnée ou pour ordre donné, _passe par un minimum_.
+
+![](images/spectro_8.png) [^mn31]
+
+[^mn31]:
+    {-} On fait varier _l'angle d'incidence_ $\theta_0$ en faisant tourner le réseau sur le plateau de bois. Pour une tâche de diffraction donnée, l'angle de déviation $D$ passe par un minimum $D_{min}$.
+
+En réglant l'angle d'incidence de manière **à se placer au minimum de déviation**, on découvre une situation qui présente des symétries remarquables.
+
+![](images/spectro_36.png) [^mn36]
+
+[^mn36]:
+    {-} ![](images/spectro_37.jpeg) ![](images/image_4%20copie.png)Sur le goniomètre, on fait varier l'angle d'incidence en faisant tourner le plateau sans toucher au réseau. Pour la raie de couleur considérée (raie verte) dans l'ordre considéré ($p=-1$), on cherche la position du plateau telle que la raie soit la plus "à gauche" possible, c'est à dire telle que sa déviation soit minimale.
+
+- On peut tout d'abord remarquer que le plan du réseau se situe alors selon **la bissectrice** de l'angle formé par les directions du collimateur et de la lunette. Autrement dit, au minimun de déviation, l'angle d'incidence et l'angle de visée sont **égaux en valeur et opposés en signe**.
+
+- On peut ensuite remarquer que l'on retrouve ce même angle entre la direction de la normale au réseau et la direction de la lumière qui n'est pas déviée dans _l'ordre zéro_. Autrement dit, **l'angle de déviation $D_{min}$** vaut alors exactement **moins deux fois** l'angle d'incidence.
+
+Mesurer la _déviation minimale_ $D_{min}$ suffit donc à déterminer $\theta_0$ et $\theta$ géométriquement, _sans mesure supplémentaire_. L'expression permettant de calculer $\lambda$ se ramène alors à une fonction d'un seul angle et non plus de deux :
+
 $$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
- 
-## Comment se servir d'un goniomètre {#2}
+$$\theta=\frac{D_{min}}{2}=-\theta_o$$ 
+$$ \lambda = \frac{a}{p}[\sin(\frac{D_{min}}{2})-\sin(\frac{-D_{min}}{2})] $$
+$$ \lambda = 2\frac{a}{p}[\sin(\frac{D_{min}}{2})]$$
+
+### Approche par l'exploration du modèle mathématique
+
+En considérant la déviation $D = (\theta-\theta_0)$ plutôt que l'angle par rapport à la normale, l'équation fondamentale du réseau devient :
+$$ \sin(\theta_0+D)=\sin(\theta_0)+p\frac{\lambda}{a}  $$
+On cherche la dérivée de cette expression par rapport à $\theta_0$. 
+
+Pour le membre de droite de l'égalité, il vient immédiatement :
+$$ \frac{d(\sin\theta_0+p\frac{\lambda}{a})}{d\theta_0}=\cos\theta_0  $$
+
+Pour le membre de gauche de l'égalité, comme :
+$$ \sin(\theta_0+D)=\sin\theta_0 \cos D+ \cos\theta_0 \sin D $$
+
+Il vient :
+
+$\begin{multline*}
+\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D)-\sin(\theta_0)\sin(D)\frac{dD}{d\theta_0} \\
+-\sin(\theta_0) \sin(D)+\cos(\theta_0) \cos(D)\frac{dD}{d\theta_0} 
+\end{multline*}$
+
+$\begin{multline*}
+\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D) (1+\frac{dD}{d\theta_0}) \\
+-\sin(\theta_0) \sin(D) (1+\frac{dD}{d\theta_0}) 
+\end{multline*}$
+
+
+Et comme au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
+
+L'égalité des deux membres s'écrit alors : 
+$$ \cos\theta_0=\cos\theta_0 \cos D_{min}-\sin\theta_0 \sin D_{min}  $$
+
+Ce qui permet d'aboutir à l'équation :
+$$ \cos\theta_0=\cos(\theta_0+D_{min}) $$
+Cette équation admet deux solutions.
+
+La première solution, $D_{min}=0$, correspond à l'ordre zéro. 
+La seconde correspond bien aux symétries décrites plus haut :
+
+$$ D_{min}=-2\theta_0  $$
+
+$$ \theta = - \theta_0 = \frac{D_{min}}{2} $$
+
+## Comment se servir d'un goniomètre {#4}
 
 ### Analogie entre un rapporteur et un goniomètre
 
@@ -185,88 +254,23 @@ En résumé, il y a quatre étapes à répéter pour chaque mesure.
 ___
 
 L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exhibées par le phénomène physique exploité.
+___
 
-## Symétries des images diffractées au minimum de déviation {#3}
+### Bilan
 
-### Approche expérimentale
-
-Sur le dispositif présenté ici, on peut faire tourner le plateau sur lequel se trouve le réseau pour modifier l'angle d'incidence $\theta_0$ et observer comment évoluent les angles auxquels on peut repérer les différents ordres d'interférence.
-
-Plus précisément, on fait varier l'angle d'incidence de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro.
-
->On observe que l'angle de déviation $D$, pour une tâche de diffraction donnée ou pour ordre donné, _passe par un minimum_.
-
-![](images/spectro_8.png) [^mn31]
-
-[^mn31]:
-    {-} On fait varier _l'angle d'incidence_ $\theta_0$ en faisant tourner le réseau sur le plateau de bois. Pour une tâche de diffraction donnée, l'angle de déviation $D$ passe par un minimum $D_{min}$.
-
-En réglant l'angle d'incidence de manière **à se placer au minimum de déviation**, on découvre une situation qui présente des symétries remarquables.
-
-![](images/spectro_36.png) [^mn36]
-
-[^mn36]:
-    {-} ![](images/spectro_37.jpeg) ![](images/image_4%20copie.png)Sur le goniomètre, on fait varier l'angle d'incidence en faisant tourner le plateau sans toucher au réseau. Pour la raie de couleur considérée (raie verte) dans l'ordre considéré ($p=-1$), on cherche la position du plateau telle que la raie soit la plus "à gauche" possible, c'est à dire telle que sa déviation soit minimale.
-
-- On peut tout d'abord remarquer que le plan du réseau se situe alors selon **la bissectrice** de l'angle formé par les directions du collimateur et de la lunette. Autrement dit, au minimun de déviation, l'angle d'incidence et l'angle de visée sont **égaux en valeur et opposés en signe**.
-
-- On peut ensuite remarquer que l'on retrouve ce même angle entre la direction de la normale au réseau et la direction de la lumière qui n'est pas déviée dans _l'ordre zéro_. Autrement dit, **l'angle de déviation $D_{min}$** vaut alors exactement **moins deux fois** l'angle d'incidence.
-
-Mesurer la _déviation minimale_ $D_{min}$ suffit donc à déterminer $\theta_0$ et $\theta$ géométriquement, _sans mesure supplémentaire_. L'expression permettant de calculer $\lambda$ se ramène alors à une fonction d'un seul angle et non plus de deux :
-
+La formule fondamentale du réseau nous montre que pour calculer la longueur d'onde $\lambda$, il nous faut en pratique faire la  mesure  de _deux angles_ : l'angle d'incidence $\theta_o$ et l'angle $\theta$ auquel est diffractée la lumière colorée considérée dans l'ordre d'interférence $p$ considéré :
+ 
 $$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
-$$\theta=\frac{D_{min}}{2}=-\theta_o$$ 
-$$ \lambda = \frac{a}{p}[\sin(\frac{D_{min}}{2})-\sin(\frac{-D_{min}}{2})] $$
-$$ \lambda = 2\frac{a}{p}[\sin(\frac{D_{min}}{2})]$$
 
-On cherchera ensuite à exprimer $D_{min}$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on peut attacher des incertitudes expérimentales.
+L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts $\alpha_i$ :
 
-$$ \lambda = 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert) $$
+$$ \lambda = \frac{a}{p}[ \sin(\alpha_6-\alpha_5)- \sin(\alpha_4-\alpha_3)] $$
 
-**Bilan** : en faisant l'économie de la mesure de l'angle d'incidence, nous avons fait _l'économie des incertitudes qui sont attachées_ à la détermination des deux azimuts correspondants.
+En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié :
 
-### Approche par l'exploration du modèle mathématique
+$$ \lambda = 2\frac{a}{p} [\sin(\frac{D_{min}}{2})]= 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert)  $$
 
-En considérant la déviation $D = (\theta-\theta_0)$ plutôt que l'angle par rapport à la normale, l'équation fondamentale du réseau devient :
-$$ \sin(\theta_0+D)=\sin(\theta_0)+p\frac{\lambda}{a}  $$
-On cherche la dérivée de cette expression par rapport à $\theta_0$. 
-
-Pour le membre de droite de l'égalité, il vient immédiatement :
-$$ \frac{d(\sin\theta_0+p\frac{\lambda}{a})}{d\theta_0}=\cos\theta_0  $$
-
-Pour le membre de gauche de l'égalité, comme :
-$$ \sin(\theta_0+D)=\sin\theta_0 \cos D+ \cos\theta_0 \sin D $$
-
-Il vient :
-
-$\begin{multline*}
-\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D)-\sin(\theta_0)\sin(D)\frac{dD}{d\theta_0} \\
--\sin(\theta_0) \sin(D)+\cos(\theta_0) \cos(D)\frac{dD}{d\theta_0} 
-\end{multline*}$
-
-$\begin{multline*}
-\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D) (1+\frac{dD}{d\theta_0}) \\
--\sin(\theta_0) \sin(D) (1+\frac{dD}{d\theta_0}) 
-\end{multline*}$
-
-
-Et comme au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
-
-L'égalité des deux membres s'écrit alors : 
-$$ \cos\theta_0=\cos\theta_0 \cos D_{min}-\sin\theta_0 \sin D_{min}  $$
-
-Ce qui permet d'aboutir à l'équation :
-$$ \cos\theta_0=\cos(\theta_0+D_{min}) $$
-Cette équation admet deux solutions.
-
-La première solution, $D_{min}=0$, correspond à l'ordre zéro. 
-La seconde correspond bien aux symétries décrites plus haut :
-
-$$ D_{min}=-2\theta_0  $$
-
-$$ \theta = - \theta_0 = \frac{D_{min}}{2} $$
-
-## Symétrie de la situation de mesure {#4}
+## Symétrie de la situation de mesure {}
 
 ### Approche expérimentale
 
@@ -337,21 +341,9 @@ $$ \sin(\theta) - \sin(\theta_0) = p\frac{\lambda}{a} $$
 
 ___
 
-### Bilan
+### Bilan :
 
-Pour calculer la valeur de la longueur d'onde $\lambda$ à partir de la formule fondamentale du réseau, nous sommes partis du constat qu'il était nécessaire de mesurer deux angles.
-
-$$ \lambda = \frac{a}{p}[ \sin(\theta)- \sin(\theta_0)] $$
-
-L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calculerait donc, _a priori_, à partir de celles attachées à quatre déterminations d'azimuts $\alpha_i$ :
-
-$$ \lambda = \frac{a}{p}[ \sin(\alpha_6-\alpha_5)- \sin(\alpha_4-\alpha_3)] $$
-
-En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié :
-
-$$ \lambda = 2\frac{a}{p} [\sin(\frac{D_{min}}{2})]= 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert)  $$
-
-Enfin, en effectuant la mesure symétrique, nous avons de nouveau divisé par deux le facteur devant les grandeurs auxquelles on attache une incertitude expérimentale de mesure :
+En effectuant la mesure symétrique, nous avons de nouveau divisé par deux le facteur devant les grandeurs auxquelles on attache une incertitude expérimentale de mesure :
 
 $$ \lambda = 2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) = 2\frac{a}{p} \sin(\vert \frac{\alpha_2-\alpha_1}{4} \vert)$$
 
@@ -359,6 +351,13 @@ $$ \lambda = 2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) = 2\frac{a}{p} \sin(\vert
 Soit au total un gain de l'ordre de 1 à 4.
 
 ___
+
+
+On cherchera ensuite à exprimer $D_{min}$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on peut attacher des incertitudes expérimentales.
+
+$$ \lambda = 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert) $$
+
+**Bilan** : en faisant l'économie de la mesure de l'angle d'incidence, nous avons fait _l'économie des incertitudes qui sont attachées_ à la détermination des deux azimuts correspondants.
 
 ### Pour conclure
 

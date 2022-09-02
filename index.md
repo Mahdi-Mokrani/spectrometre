@@ -80,22 +80,37 @@ $$ \sin(\theta)- \sin(\theta_0)=p\frac{\lambda}{a}$$
 
 Les grandeurs qui apparaissent comme les arguments ou les variables des fonctions dans cette formule sont définies par rapport à une certaine _mise en place théorique_. Dans cette formule :
 
-- [^mn22] $\theta_0$ représente _l'angle d'incidence_, angle sous lequel arrive la lumière issue du collimateur sur le réseau, repéré par rapport à _la normale (N)_ au réseau ;
+- [^mn22] $\theta_0$ [^mn221] représente _l'angle d'incidence_, angle sous lequel arrive la lumière issue du collimateur sur le réseau, repéré par rapport à _la normale (N)_ au réseau ;
+
+- _p_ est _l'ordre d'interférence_ considéré, c'est un entier relatif qui nous permet de numéroter les différentes images vertes de fente source par exemple ;
 
 - $\theta$ représente l'angle sous lequel on peut repérer une des multiples images de la fente source, une raie verte dans notre exemple ; 
-- _p_ est _l'ordre d'interférence_ considéré, c'est un entier relatif qui nous permet de numéroter les différentes images vertes de fente source par exemple ;
+
 
 ![](images/spectro_3_2.png)[^mn23] 
 
 - $a$ est une grandeur qui caractérise le réseau particulier que l'on a utilisé, c'est la distance entre deux gravures successives (réseau = grating in english) ou _pas du réseau_. Elle est de l'ordre du micromètre. Dans la pratique, c'est l'inverse du pas qui est indiqué sur l'objet, _le nombre de traits par unité de longueur_, 300 traits par mm dans notre exemple.
 
+![](images/spectro_3_5.png) [^mn223]
+
+
+
 - $\lambda$, enfin, est la longueur d'onde dans l'air du rayonnement considéré, elle caractérise quantitativement la couleur de la raie. Dans notre exemple, la raie verte de la lampe à vapeur de Mercure possède une teinte absolument singulière, caractérisée par la longueur d'onde 576 nm.
 
 [^mn22]:
-    {-} ![](images/spectro_3_0.png)Dans la formule du réseau, les angles sont repérés par rapport à la normale (N) au réseau.
+    {-} ![](images/spectro_3_0.png)
+    
+[^mn221]:
+    {-} Dans la formule du réseau, les angles sont repérés par rapport à la normale $(N)$ au réseau.
 
 [^mn23]:
     {-} Cas particulier de la composante verte de la lampe spectrale à vapeur de mercure. On considère l'image de la fente source à l'orde $p=-1$. C'est l'image que l'on peut observer à l'angle $\theta_{p=-1}$ repéré par rapport à la normale $(N)$ au réseau.
+
+[^mn222]:
+    {-} ![](images/spectro_3_5.png)
+
+[^mn223]:
+    {-} L'indication $300$ traits par mm permet de calculer une estimation de la valeur du pas du réseau.
 
 ### Mesures expérimentales, angle de déviation D {#13}
 
@@ -270,7 +285,50 @@ En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moiti
 
 $$ \lambda = 2\frac{a}{p} [\sin(\frac{D_{min}}{2})]= 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert)  $$
 
+<<<<<<< HEAD
 ## Symétrie de la situation de mesure {}
+=======
+En considérant la déviation $D = (\theta-\theta_0)$ plutôt que l'angle par rapport à la normale, l'équation fondamentale du réseau devient :
+$$ \sin(\theta_0+D)=\sin(\theta_0)+p\frac{\lambda}{a}  $$
+On cherche la dérivée de cette expression par rapport à $\theta_0$. 
+
+Pour le membre de droite de l'égalité, il vient immédiatement :
+$$ \frac{d(\sin\theta_0+p\frac{\lambda}{a})}{d\theta_0}=\cos\theta_0  $$
+
+Pour le membre de gauche de l'égalité, comme :
+$$ \sin(\theta_0+D)=\sin\theta_0 \cos D+ \cos\theta_0 \sin D $$
+
+Il vient :
+
+$\begin{split}
+\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D)-\sin(\theta_0)\sin(D)\frac{dD}{d\theta_0}\\
+-\sin(\theta_0) \sin(D)+\cos(\theta_0) \cos(D)\frac{dD}{d\theta_0}
+\end{split}$
+
+$\begin{split}
+\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D) (1+\frac{dD}{d\theta_0}) \\
+-\sin(\theta_0) \sin(D) (1+\frac{dD}{d\theta_0}) 
+\end{split}$
+
+
+Et comme au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
+
+L'égalité des deux membres s'écrit alors : 
+$$ \cos\theta_0=\cos\theta_0 \cos D_{min}-\sin\theta_0 \sin D_{min}  $$
+
+Ce qui permet d'aboutir à l'équation :
+$$ \cos\theta_0=\cos(\theta_0+D_{min}) $$
+Cette équation admet deux solutions.
+
+La première solution, $D_{min}=0$, correspond à l'ordre zéro. 
+La seconde correspond bien aux symétries décrites plus haut :
+
+$$ D_{min}=-2\theta_0  $$
+
+$$ \theta = - \theta_0 = \frac{D_{min}}{2} $$
+
+## Symétrie de la situation de mesure {#4}
+>>>>>>> 5d061b3e2aec930dedba1fa6fc85d04b1d789e5f
 
 ### Approche expérimentale
 

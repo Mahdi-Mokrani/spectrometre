@@ -26,20 +26,21 @@ Dans des champs d'application très variés, le point de départ de l'analyse co
 
 ### Introduction
 
->Un _goniomètre_ est un instrument de précision qui sert à _mesurer_ des angles.
+>Un _goniomètre_ est un instrument de précision qui sert à mesurer des angles.
 
 ![](images/spectro_1.png)[^mni1] 
 
 [^mni1]:
      {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._ De droite à gauche, on distingue : la fente source, le collimateur, le plateau et la lunette de visée.
 
->[^mn3] Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de _décomposer_ le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un _mélange_ de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées _pures_ qui constituent son spectre, et d'obtenir une _mesure_ de leurs longueurs d'onde. [^mn4] 
+>[^mn3] Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de décomposer le 
+faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un mélange de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_, et d'obtenir une mesure de leurs longueurs d'onde. [^mn4] 
     
 On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme, qui _réfracte_ chaque rayon coloré selon un angle différent.
  
 On peut aussi utiliser un réseau qui lui, _diffracte_ la lumière incidente dans des directions différentes et dans des ordres différents.
 
-On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la _nature_ de leur spectre : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
+On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la nature de leur spectre : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
 
 [^mn3]:
     {-} ![](images/spectro_2.png) Un prisme ou un réseau de diffraction peuvent _décomposer_ un mélange de lumières colorées.
@@ -51,23 +52,39 @@ ___
 
 ## Images d'une fente source à travers un réseau de diffraction {#1}
 
-### Approche expérimentale {#11}
+### Approche expérimentale 1 {#11}
 
-En regardant directement dans l'axe du collimateur à travers le réseau, Jean-Luc peut voir une image de la fente source, très lumineuse.
+La fente du collimateur est éclairée par la lumière issue d'une lampe spectrale à vapeur de mercure.
+
+En regardant, à travers le réseau, directement dans l'axe du collimateur, Jean-Luc peut voir une image de la fente source, très lumineuse, et dont la couleur gris-bleuté est celle du mélange issu de la source .
 
 ![](images/spectro_14.png) [^mn11]
 
 [^mn11]:
     {-} Image de la fente source à travers le réseau _à l'ordre zéro_, dans la direction de la lumière incidente, mise au point à l'infini.
 
-En déportant son regard dans des directions qui s'éloignent de l'axe optique du collimateur, Jean-Luc peut voir d'autres images de la fente source qui cette fois, ont des couleurs _pures_.
+En déportant le regard perpendiculairement à la direction des fentes du réseau, on peut voir un ensemble d'autres images de la fente source, qui ont chacune une couleur pure, et dont l'ensemble constitue le _spectre de raies_ de la lampe au mercure.
 
 ![](images/spectro_16.png) [^mn12]
 
 [^mn12]:
     {-} Images colorées de la fente source à travers le réseau _à l'ordre 1_, dans une direction différente de celle de la lumière incidente, mise au point à l'infini.
 
-On peut également observer une seconde raie violette, début d'un spectre d'ordre deux. Contrairement à ce que l'on peut observer avec un prisme ou dans un arc-en-ciel, les images rouges de la fente sont plus déviées que les images violettes.
+En nous éloignant encore plus de l'axe optique, dans un sens comme dans l'autre, on peut observer les images d'un second spectre. En séance de travaux pratiques, vous pourrez vérifier qu'il est même possible d'en apercevoir un troisième.
+
+### Approche expérimentale 2
+
+Dans la nouvelle configuration présentée ci-dessous, le même réseau est éclairé par le faisceau quasiment _monochromatique_ d'un laser. 
+
+En faisant tourner le plateau, on peut faire varier l'angle sous lequel le réseau est éclairé. 
+Plus précisément, on fait varier l'angle d'incidence $\theta_0$ de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro.
+
+>L'angle auquel on peut repéré la tâche de diffraction d'un ordre donné diminue, _passe par un minimum_ et augmente de nouveau.
+
+![](images/spectro_8.png) [^mn31]
+
+[^mn31]:
+    {-} On fait varier _l'angle d'incidence_ $\theta_0$ en faisant tourner le réseau sur le plateau de bois. Pour une tâche de diffraction donnée, l'angle de déviation $D$ passe par un minimum $D_{min}$.
 
 
 ## La formule fondamentale du réseau {#2}
@@ -135,19 +152,6 @@ $$  D=\theta-\theta_0 $$
  
 
 ## Symétries des images diffractées au minimum de déviation {#3}
-
-### Approche expérimentale
-
-Sur le dispositif présenté ici, on peut faire tourner le plateau sur lequel se trouve le réseau pour modifier l'angle d'incidence $\theta_0$ et observer comment évoluent les angles auxquels on peut repérer les différents ordres d'interférence.
-
-Plus précisément, on fait varier l'angle d'incidence de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro.
-
->On observe que l'angle de déviation $D$, pour une tâche de diffraction donnée ou pour ordre donné, _passe par un minimum_.
-
-![](images/spectro_8.png) [^mn31]
-
-[^mn31]:
-    {-} On fait varier _l'angle d'incidence_ $\theta_0$ en faisant tourner le réseau sur le plateau de bois. Pour une tâche de diffraction donnée, l'angle de déviation $D$ passe par un minimum $D_{min}$.
 
 En réglant l'angle d'incidence de manière **à se placer au minimum de déviation**, on découvre une situation qui présente des symétries remarquables.
 
@@ -268,9 +272,6 @@ En résumé, il y a quatre étapes à répéter pour chaque mesure.
 
 ___
 
-L'enjeu principal de cette vidéo est de comprendre que ce protocole découle de la prise en compte des **symétries** exhibées par le phénomène physique exploité.
-___
-
 ### Bilan
 
 La formule fondamentale du réseau nous montre que pour calculer la longueur d'onde $\lambda$, il nous faut en pratique faire la  mesure  de _deux angles_ : l'angle d'incidence $\theta_o$ et l'angle $\theta$ auquel est diffractée la lumière colorée considérée dans l'ordre d'interférence $p$ considéré :
@@ -281,55 +282,25 @@ L'incertitude expérimentale attachée à la connaissance de $\lambda$ se calcul
 
 $$ \lambda = \frac{a}{p}[ \sin(\alpha_6-\alpha_5)- \sin(\alpha_4-\alpha_3)] $$
 
-En nous plaçant au minimum de déviation, nous avons réduit ce nombre de moitié :
+En nous plaçant au minimum de déviation, nous avons de moitié le nombre d'angles à mesurer pour calculer $\lambda$ :
 
-$$ \lambda = 2\frac{a}{p} [\sin(\frac{D_{min}}{2})]= 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert)  $$
+$$ \lambda = 2\frac{a}{p} [\sin(\frac{D_{min}}{2})] $$
 
-<<<<<<< HEAD
-## Symétrie de la situation de mesure {}
-=======
-En considérant la déviation $D = (\theta-\theta_0)$ plutôt que l'angle par rapport à la normale, l'équation fondamentale du réseau devient :
-$$ \sin(\theta_0+D)=\sin(\theta_0)+p\frac{\lambda}{a}  $$
-On cherche la dérivée de cette expression par rapport à $\theta_0$. 
+On cherchera ensuite à exprimer $D_{min}$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on peut attacher des incertitudes expérimentales.
 
-Pour le membre de droite de l'égalité, il vient immédiatement :
-$$ \frac{d(\sin\theta_0+p\frac{\lambda}{a})}{d\theta_0}=\cos\theta_0  $$
+$$ \lambda = 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert) $$
 
-Pour le membre de gauche de l'égalité, comme :
-$$ \sin(\theta_0+D)=\sin\theta_0 \cos D+ \cos\theta_0 \sin D $$
+En faisant l'économie de la mesure de l'angle d'incidence, nous avons fait _l'économie des incertitudes qui sont attachées_ à la détermination des deux azimuts correspondants.
 
-Il vient :
+## Pour conclure
 
-$\begin{split}
-\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D)-\sin(\theta_0)\sin(D)\frac{dD}{d\theta_0}\\
--\sin(\theta_0) \sin(D)+\cos(\theta_0) \cos(D)\frac{dD}{d\theta_0}
-\end{split}$
+Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du _prototocole_, c'est à dire de la _manière dont on conduit les mesures_. 
 
-$\begin{split}
-\frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D) (1+\frac{dD}{d\theta_0}) \\
--\sin(\theta_0) \sin(D) (1+\frac{dD}{d\theta_0}) 
-\end{split}$
+On a ainsi chercher à exploiter au mieux _les symétries du phénomène physique_ mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique fourni.
 
+___
 
-Et comme au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
-
-L'égalité des deux membres s'écrit alors : 
-$$ \cos\theta_0=\cos\theta_0 \cos D_{min}-\sin\theta_0 \sin D_{min}  $$
-
-Ce qui permet d'aboutir à l'équation :
-$$ \cos\theta_0=\cos(\theta_0+D_{min}) $$
-Cette équation admet deux solutions.
-
-La première solution, $D_{min}=0$, correspond à l'ordre zéro. 
-La seconde correspond bien aux symétries décrites plus haut :
-
-$$ D_{min}=-2\theta_0  $$
-
-$$ \theta = - \theta_0 = \frac{D_{min}}{2} $$
-
-## Symétrie de la situation de mesure {#4}
->>>>>>> 5d061b3e2aec930dedba1fa6fc85d04b1d789e5f
-
+## Prolongement: symétrie de la situation de mesure
 ### Approche expérimentale
 
 Il est légitime de demander à notre _modèle physique_ de rester pertinent que l'on regarde le phénomène depuis **le haut** ... ou bien qu'on le regarde depuis **le bas**.
@@ -410,20 +381,6 @@ Soit au total un gain de l'ordre de 1 à 4.
 
 ___
 
-
-On cherchera ensuite à exprimer $D_{min}$ en fonction des azimuts $\alpha_1$ et $\alpha_0$  qui sont les grandeurs mesurés directement et auxquelles on peut attacher des incertitudes expérimentales.
-
-$$ \lambda = 2\frac{a}{p} \sin(\vert \frac{\alpha_0-\alpha_1}{2} \vert) $$
-
-**Bilan** : en faisant l'économie de la mesure de l'angle d'incidence, nous avons fait _l'économie des incertitudes qui sont attachées_ à la détermination des deux azimuts correspondants.
-
-### Pour conclure
-
-Apprendre à se servir du goniomètre c'est donc réaliser que la précision de la détermination d'une longueur d'onde dépend non seulement de la **précision de la visée** et de **la précision de la lecture de l'azimut** mais également du _prototocole_, c'est à dire de la _manière dont on conduit les mesures_. 
-
-On a ainsi chercher à exploiter au mieux _les symétries du phénomène physique_ mis en jeu, en s'aidant notamment pour cela des symétries du modèle mathématique fourni.
-
-___
 
 Dans le [prochaine épisode](/SspectroE02.html), nous nous intéresserons au problème de la précision des visées. 
 

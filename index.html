@@ -81,10 +81,10 @@ vapeur de Mercure présente <em>un spectre de raies</em>.<br />
 </span></span></p>
 </blockquote>
 <p>On peut obtenir un spectromètre en associant le goniomètre avec un
-système dispersif comme le prisme, qui <em>réfracte</em> chaque rayon
+système dispersif comme le prisme qui <em>réfracte</em> chaque rayon
 coloré selon un angle différent.</p>
-<p>On peut aussi utiliser un réseau qui lui, <em>diffracte</em> la
-lumière incidente dans des directions différentes et dans des ordres
+<p>On peut aussi utiliser un réseau qui <em>diffracte</em> la lumière
+incidente dans des directions différentes et dans des ordres
 différents.</p>
 <p>On a d’ailleurs pris l’habitude de classer les sources de lumière en
 fonction de la nature de leur spectre : une lampe blanche possède un
@@ -97,12 +97,12 @@ la <em>signature</em> de l’élément chimique qui les a émis.</p>
 <h2>Images d’une fente source à travers un réseau de diffraction</h2>
 <section id="11" class="level3">
 <h3>Approche expérimentale 1</h3>
-<p>La fente du collimateur est éclairée par la lumière issue d’une lampe
-spectrale à vapeur de mercure.</p>
+<p>La fente du collimateur est éclairée par une lampe spectrale à vapeur
+de mercure.</p>
 <p>En regardant, à travers le réseau, directement dans l’axe du
 collimateur, Jean-Luc peut voir une image de la fente source, très
 lumineuse, et dont la couleur gris-bleuté est celle du mélange issu de
-la source .</p>
+la lampe.</p>
 <p><img src="images/spectro_14.png" /> <span
 class="sidenote-wrapper"><label for="sn-3" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-3" class="margin-toggle"/><span
 class="marginnote">Image de la fente source à travers le réseau <em>à
@@ -110,10 +110,11 @@ l’ordre zéro</em>, dans la direction de la lumière incidente, mise au
 point à l’infini.<br />
 <br />
 </span></span></p>
-<p>En déportant le regard perpendiculairement à la direction des fentes
-du réseau, on peut voir un ensemble d’autres images de la fente source,
-qui ont chacune une couleur pure, et dont l’ensemble constitue le
-<em>spectre de raies</em> de la lampe au mercure.</p>
+<p>En déportant le regard horizontalement, c’est à dire
+perpendiculairement à la direction des fentes du réseau, on peut voir
+d’autres images de la fente source, qui ont chacune une couleur pure, et
+dont l’ensemble constitue le <em>spectre de raies</em> de la lampe au
+mercure.</p>
 <p><img src="images/spectro_16.png" /> <span
 class="sidenote-wrapper"><label for="sn-4" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-4" class="margin-toggle"/><span
 class="marginnote">Images colorées de la fente source à travers le
@@ -121,10 +122,10 @@ réseau <em>à l’ordre 1</em>, dans une direction différente de celle de
 la lumière incidente, mise au point à l’infini.<br />
 <br />
 </span></span></p>
-<p>En nous éloignant encore plus de l’axe optique, dans un sens comme
-dans l’autre, on peut observer les images d’un second spectre. En séance
-de travaux pratiques, vous pourrez vérifier qu’il est même possible d’en
-apercevoir un troisième.</p>
+<p>En déportant le regard encore plus loin de l’axe optique, on peut
+observer d’autres images colorées de la fente former un second spectre.
+En séance de travaux pratiques, vous pourrez vérifier qu’il est même
+possible d’en apercevoir un troisième.</p>
 </section>
 <section id="approche-expérimentale-2" class="level3">
 <h3>Approche expérimentale 2</h3>
@@ -136,9 +137,13 @@ lequel le réseau est éclairé. Plus précisément, on fait varier l’angle
 d’incidence <span class="math inline">\(\theta_0\)</span> de manière
 <em>monotone</em> entre zéro et 90 degrés puis de nouveau de manière
 <em>monotone</em> entre 90 degrés et zéro.</p>
+<p>La tâche centrale correspond à la partie de la lumière qui n’est pas
+déviée par le réseau. Elle reste immobile quel que soit l’angle
+d’incidence.</p>
 <blockquote>
-<p>L’angle auquel on peut repéré la tâche de diffraction d’un ordre
-donné diminue, <em>passe par un minimum</em> et augmente de nouveau.</p>
+<p>En revanche, les autres tâches de diffraction se rapprochent de la
+tâche centrale puis s’en éloignent. Autrement dit, leur distance à la
+tâche centrale <em>passe par un minimum</em>.</p>
 </blockquote>
 <p><img src="images/spectro_8.png" /> <span
 class="sidenote-wrapper"><label for="sn-5" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-5" class="margin-toggle"/><span
@@ -156,38 +161,31 @@ déviation <span class="math inline">\(D\)</span> passe par un minimum
 <p>À partir de la loi de la réfraction dans le cas du prisme, ou à
 partir des principes de la diffraction dans le cas du réseau, on peut
 établir une expression mathématique, une formule, qui nous permet de
-<em>calculer</em> les longueurs d’onde, à partir des angles que l’on
-<em>mesure directement</em>.</p>
-<p>Voyons comment le modèle mathématique que l’on vous propose peut
-rendre compte de ces observations.</p>
+<em>calculer</em> les longueurs d’onde à partir des angles que l’on peut
+<em>mesurer</em> directement.</p>
+<p>La <em>formule fondamentale du réseau</em>, <span
+class="sidenote-wrapper"><label for="sn-6" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-6" class="margin-toggle"/><span
+class="marginnote"><img src="images/spectro_3_0.png" />Dans la formule
+du réseau, les angles sont repérés par rapport à la normale <span
+class="math inline">\((N)\)</span> au réseau.<br />
+<br />
+</span></span> dont nous admettrons la validité dans une première
+approche, permet de lier toutes les grandeurs pertinentes pour rendre
+compte des observations précédentes.</p>
 <p><span class="math display">\[ \sin(\theta)-
 \sin(\theta_0)=p\frac{\lambda}{a}\]</span></p>
-<p>Les grandeurs qui apparaissent comme les arguments ou les variables
-des fonctions dans cette formule sont définies par rapport à une
-certaine <em>mise en place théorique</em>. Dans cette formule :</p>
 <ul>
-<li><p><span
-class="sidenote-wrapper"><label for="sn-6" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-6" class="margin-toggle"/><span
-class="marginnote"><img src="images/spectro_3_0.png" /><br />
-<br />
-</span></span> <span class="math inline">\(\theta_0\)</span> <span
-class="sidenote-wrapper"><label for="sn-7" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-7" class="margin-toggle"/><span
-class="marginnote">Dans la formule du réseau, les angles sont repérés
-par rapport à la normale <span class="math inline">\((N)\)</span> au
-réseau.<br />
-<br />
-</span></span> représente <em>l’angle d’incidence</em>, angle sous
-lequel arrive la lumière issue du collimateur sur le réseau, repéré par
+<li><p><span class="math inline">\(\theta_0\)</span> représente
+<em>l’angle d’incidence</em>, angle sous lequel arrive la lumière issue
+du collimateur sur le réseau. Bien noter que cet angle est repéré par
 rapport à <em>la normale (N)</em> au réseau ;</p></li>
-<li><p><em>p</em> est <em>l’ordre d’interférence</em> considéré, c’est
-un entier relatif qui nous permet de numéroter les différentes images
-vertes de fente source par exemple ;</p></li>
-<li><p><span class="math inline">\(\theta\)</span> représente l’angle
-sous lequel on peut repérer une des multiples images de la fente source,
-une raie verte dans notre exemple ;</p></li>
+<li><p><em>p</em> est <em>l’ordre d’interférence</em> considéré. C’est
+un entier relatif qui nous permet de numéroter les différentes images de
+la fente source d’une même couleur, les différentes raies du même vert
+par exemple ;</p></li>
 </ul>
 <p><img src="images/spectro_3_2.png" /><span
-class="sidenote-wrapper"><label for="sn-8" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-8" class="margin-toggle"/><span
+class="sidenote-wrapper"><label for="sn-7" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-7" class="margin-toggle"/><span
 class="marginnote">Cas particulier de la composante verte de la lampe
 spectrale à vapeur de mercure. On considère l’image de la fente source à
 l’orde <span class="math inline">\(p=-1\)</span>. C’est l’image que l’on
@@ -197,16 +195,20 @@ normale <span class="math inline">\((N)\)</span> au réseau.<br />
 <br />
 </span></span></p>
 <ul>
-<li><span class="math inline">\(a\)</span> est une grandeur qui
-caractérise le réseau particulier que l’on a utilisé, c’est la distance
+<li><p><span class="math inline">\(\theta_p\)</span> représente l’angle
+sous lequel on peut repérer l’image de la fente source d’ordre p de la
+couleur considérée. Cet angle est également défini par rapport à la
+normale (N) au réseau ;</p></li>
+<li><p><span class="math inline">\(a\)</span> est une grandeur qui
+caractérise le réseau particulier que l’on a utilisé. C’est la distance
 entre deux gravures successives (réseau = grating in english) ou <em>pas
 du réseau</em>. Elle est de l’ordre du micromètre. Dans la pratique,
 c’est l’inverse du pas qui est indiqué sur l’objet, <em>le nombre de
 traits par unité de longueur</em>, 300 traits par mm dans notre
-exemple.</li>
+exemple.</p></li>
 </ul>
 <p><img src="images/spectro_3_5.png" /> <span
-class="sidenote-wrapper"><label for="sn-9" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-9" class="margin-toggle"/><span
+class="sidenote-wrapper"><label for="sn-8" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-8" class="margin-toggle"/><span
 class="marginnote">L’indication <span class="math inline">\(300\)</span>
 traits par mm permet de calculer une estimation de la valeur du pas du
 réseau.<br />
@@ -214,13 +216,13 @@ réseau.<br />
 </span></span></p>
 <ul>
 <li><span class="math inline">\(\lambda\)</span>, enfin, est la longueur
-d’onde dans l’air du rayonnement considéré, elle caractérise
+d’onde dans l’air du rayonnement considéré. Elle caractérise
 quantitativement la couleur de la raie. Dans notre exemple, la raie
 verte de la lampe à vapeur de Mercure possède une teinte absolument
 singulière, caractérisée par la longueur d’onde 576 nm.</li>
 </ul>
 <section id="13" class="level3">
-<h3>Mesures expérimentales, angle de déviation D</h3>
+<h3>Angle de déviation D</h3>
 <p>On peut commencer par remarquer que la formule fondamentale du réseau
 se réduit, pour <span class="math inline">\(p=0\)</span>, à : <span
 class="math display">\[ \sin(\theta) = \sin(\theta_0)\]</span> <span
@@ -243,7 +245,7 @@ plutôt que son angle de sortie <span
 class="math inline">\(\theta\)</span>. Par construction, il vient :
 <span class="math display">\[  D=\theta-\theta_0 \]</span></p>
 <p><img src="images/spectro_3_4.png" /> <span
-class="sidenote-wrapper"><label for="sn-10" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-10" class="margin-toggle"/><span
+class="sidenote-wrapper"><label for="sn-9" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-9" class="margin-toggle"/><span
 class="marginnote"><span class="math inline">\(\theta_p\)</span>, mesuré
 par rapport à la normale <span class="math inline">\((N)\)</span> est
 l’angle tel que définit dans la mise en place théorique. En pratique, on
@@ -251,28 +253,31 @@ repère les angles par rapport à l’ordre zéro, et on définit l’angle de
 déviation <span class="math inline">\(D_p\)</span>.<br />
 <br />
 </span></span></p>
-<blockquote>
-<p>La longeur d’onde <span class="math inline">\(\lambda\)</span> se
-trouvant au numérateur de la formule du réseau, elle rend bien compte du
-fait que la déviation augmente avec la longueur d’onde et que les images
-rouges de la fente sont plus déviées que les images violettes.</p>
-</blockquote>
 </section>
 </section>
 <section id="3" class="level2">
 <h2>Symétries des images diffractées au minimum de déviation</h2>
-<p>En réglant l’angle d’incidence de manière <strong>à se placer au
-minimum de déviation</strong>, on découvre une situation qui présente
+<section id="approche-expérimentale" class="level3">
+<h3>Approche expérimentale</h3>
+<p><span
+class="sidenote-wrapper"><label for="sn-10" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-10" class="margin-toggle"/><span
+class="marginnote"><img src="images/spectro_7.png" /> Un système
+mécanique <em>à deux vis</em> permet de contrôler des <em>rotations très
+fines</em> du plateau.<br />
+<br />
+</span></span>Sur le goniomètre, on peut faire varier l’angle
+d’incidence en faisant tourner le plateau sans toucher au réseau. Pour
+la raie de couleur considérée (raie verte) dans l’ordre considéré (<span
+class="math inline">\(p=-1\)</span>), on cherche la position du plateau
+telle que la raie soit la plus “à gauche” possible, c’est à dire telle
+que sa déviation soit minimale.</p>
+<p>En réglant ainsi l’angle d’incidence de manière <strong>à se placer
+au minimum de déviation</strong>, on découvre une situation qui présente
 des symétries remarquables.</p>
 <p><img src="images/spectro_36.png" /> <span
 class="sidenote-wrapper"><label for="sn-11" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-11" class="margin-toggle"/><span
 class="marginnote"><img src="images/spectro_37.jpeg" /> <img
-src="images/image_4%20copie.png" />Sur le goniomètre, on fait varier
-l’angle d’incidence en faisant tourner le plateau sans toucher au
-réseau. Pour la raie de couleur considérée (raie verte) dans l’ordre
-considéré (<span class="math inline">\(p=-1\)</span>), on cherche la
-position du plateau telle que la raie soit la plus “à gauche” possible,
-c’est à dire telle que sa déviation soit minimale.<br />
+src="images/image_4%20copie.png" /><br />
 <br />
 </span></span></p>
 <ul>
@@ -302,6 +307,7 @@ class="math display">\[ \lambda =
 \frac{a}{p}[\sin(\frac{D_{min}}{2})-\sin(\frac{-D_{min}}{2})] \]</span>
 <span class="math display">\[ \lambda =
 2\frac{a}{p}[\sin(\frac{D_{min}}{2})]\]</span></p>
+</section>
 <section id="approche-par-lexploration-du-modèle-mathématique"
 class="level3">
 <h3>Approche par l’exploration du modèle mathématique</h3>
@@ -417,8 +423,8 @@ fines</em> de la lunette.<br />
 <p><span
 class="sidenote-wrapper"><label for="sn-15" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-15" class="margin-toggle"/><span
 class="marginnote"><img src="images/spectro_7.png" /> Un système
-mécanique <em>à deux vis</em> permet également de contrôler des
-<em>rotations très fines</em> du plateau.<br />
+mécanique <em>à deux vis</em> permet de contrôler des <em>rotations très
+fines</em> du plateau.<br />
 <br />
 </span></span> On notera l’existence d’un système mécanique similaire
 sur le plateau du goniomètre. Une vis de serrage permet des mouvements
@@ -498,7 +504,7 @@ symétries du modèle mathématique fourni.</p>
 <section id="prolongement-symétrie-de-la-situation-de-mesure"
 class="level2">
 <h2>Prolongement: symétrie de la situation de mesure</h2>
-<section id="approche-expérimentale" class="level3">
+<section id="approche-expérimentale-1" class="level3">
 <h3>Approche expérimentale</h3>
 <p>Il est légitime de demander à notre <em>modèle physique</em> de
 rester pertinent que l’on regarde le phénomène depuis <strong>le

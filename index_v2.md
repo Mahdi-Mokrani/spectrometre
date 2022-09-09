@@ -14,7 +14,8 @@ ___
 >4. [_Comment se servir d'un goniomètre ?_](#4)
 
 ___
-
+[^mn0]:
+    {-} ![](images/O_03_mn_0.png) De la prise de vue à la projection finale, s'assurer d'une reproducion fidèle des couleurs suppose des _mesures physiques_ précises, tout le long de la chaîne de production de l'image.
 [^mni1]:
      {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._ De droite à gauche, on distingue : la fente source, le collimateur, le plateau et la lunette de visée.
 [^mn3]:
@@ -61,9 +62,9 @@ ___
 
 ### Prologue
 
-Pour un physicien, la lumière est un message duquel on peut extraire de nombreuses informations.
+[^mn0] Pour un physicien, la lumière est un message duquel on peut extraire de nombreuses informations.
 
-Dans des champs d'application très variés, le point de départ de l'analyse consiste à déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte.
+Déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte, est le point de départ de nombreuses analyses, dans des champs d'application très variés.
 
 ### Introduction
 
@@ -115,7 +116,7 @@ La tâche centrale correspond à la partie de la lumière qui n'est pas déviée
 
 À partir de la loi de la réfraction dans le cas du prisme, ou à partir des principes de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de _calculer_ les longueurs d'onde à partir des angles que l'on peut _mesurer_ directement.
 
-La _formule fondamentale du réseau_, [^mn22] dont nous admettrons la validité dans une première approche, permet de lier toutes les grandeurs pertinentes pour rendre compte des observations précédentes.
+La _formule fondamentale du réseau_, [^mn22] dont nous admettrons la validité dans une première approche, permet de déterminer les directions dans lesquelles on peut trouver les maxima d'éclairement, en fonction des autres grandeurs pertinentes.
 
 $$ \sin(\theta)- \sin(\theta_0)=p\frac{\lambda}{a}$$ 
 
@@ -125,7 +126,7 @@ $$ \sin(\theta)- \sin(\theta_0)=p\frac{\lambda}{a}$$
 
 ![](images/spectro_3_2.png)[^mn23] 
 
-- $\theta_p$ représente l'angle sous lequel on peut repérer l'image de la fente source d'ordre p de la couleur considérée. Cet angle est également défini par rapport à la normale (N) au réseau ; 
+- $\theta_p$ représente l'angle sous lequel on peut repérer l'image de la fente source d'ordre p de la couleur considérée. Cet angle est également défini par rapport à la normale $(N)$ au réseau ; 
 
 - $a$ est une grandeur qui caractérise le réseau particulier que l'on a utilisé. C'est la distance entre deux gravures successives (réseau = grating in english) ou _pas du réseau_. Elle est de l'ordre du micromètre. Dans la pratique, c'est l'inverse du pas qui est indiqué sur l'objet, _le nombre de traits par unité de longueur_, 300 traits par mm dans notre exemple.
 
@@ -135,16 +136,18 @@ $$ \sin(\theta)- \sin(\theta_0)=p\frac{\lambda}{a}$$
 
 ### Angle de déviation D {#13}
 
-On peut commencer par remarquer que la formule fondamentale du réseau se réduit, pour $p=0$, à : 
+Pour $p=0$, on peut remarquer que la formule fondamentale du réseau se réduit à : 
 $$ \sin(\theta) = \sin(\theta_0)$$ $$\theta = \theta_0$$
 
 Une partie de la lumière incidente n'est donc pas du tout déviée, quel que soit l'angle d'incidence et quelle que soit la longueur d'onde.
 
->L'image de la fente que Jean-Luc regardait dans l'axe du collimateur a donc la même couleur que celle de la lampe regardée directement, qui est donc celle du _mélange_.
+>L'image de la fente d'ordre zéro, que l'on peut voir directement dans l'axe du collimateur, a donc la même couleur que le _mélange_ directement issu de la source.
 
-_En pratique_, nous allons repérer les différentes raies colorées par rapport à cet ordre zéro, direction que l'on peut viser à la lunette, plutôt que par rapport à la normale au réseau, qui est une direction dans laquelle on ne peut pas voir de lumière. 
+_En pratique_, nous allons repérer les différentes raies colorées par rapport à cet ordre zéro, direction que l'on peut viser à la lunette, plutôt que par rapport à la normale $(N)$ au réseau, qui est une direction dans laquelle on ne peut pas voir de lumière. 
 
-On considèrera donc, dorénavant, la _déviation_ $D$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta$. Par construction, il vient : 
+On considèrera donc, dorénavant, la _déviation_ $D$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta_p$ tel qu'il est défini dans la mise en place théorique de la formule fondamentale du réseau. 
+
+Par construction, il vient : 
 $$  D=\theta-\theta_0 $$
 
 ![](images/spectro_3_4.png) [^mn24]

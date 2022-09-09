@@ -15,7 +15,7 @@ ___
 
 ___
 [^mn0]:
-    {-} ![](images/O_03_mn_0.png) De la prise de vue à la projection finale, s'assurer d'une reproducion fidèle des couleurs suppose des _mesures physiques_ précises, tout le long de la chaîne de production de l'image.
+    {-} ![](images/O_03_mn_0.png) En photographie ou en vidéo, s'assurer d'une reproducion fidèle des couleurs suppose des _mesures physiques_ précises, tout le long de la chaîne de production, de la prise de vue à la projection finale.
 [^mni1]:
      {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._ De droite à gauche, on distingue : la fente source, le collimateur, le plateau et la lunette de visée.
 [^mn3]:

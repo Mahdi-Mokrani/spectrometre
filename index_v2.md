@@ -15,9 +15,9 @@ ___
 
 ___
 [^mn0]:
-    {-} ![](images/O_03_mn_0.png) En photographie ou en vidéo, s'assurer d'une reproducion fidèle des couleurs suppose des _mesures physiques_ précises, tout le long de la chaîne de production, de la prise de vue à la projection finale.
+    {-} ![](images/O_03_mn_0.png) En colorimétrie, on utilise différentes représentations du signal issu du capteur ou _scopes_, pour effectuer les corrections nécessaires à une reproduction consistante des couleurs.
 [^mni1]:
-     {-} Un goniomètre de type Bouty, _photos collection personnelle de l'auteur._ De droite à gauche, on distingue : la fente source, le collimateur, le plateau et la lunette de visée.
+     {-} Un goniomètre de type Bouty. De droite à gauche, on distingue : la fente source, le collimateur, le plateau et la lunette de visée.
 [^mn3]:
     {-} ![](images/spectro_2.png) Un prisme ou un réseau de diffraction peuvent _décomposer_ un mélange de lumières colorées.
 [^mn4]:
@@ -66,53 +66,57 @@ ___
 
 Déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte, est le point de départ de nombreuses analyses, dans des champs d'application très variés.
 
+S'assurer d'une reproducion fidèle des couleurs en photographie ou en vidéo suppose, par exemple, des _mesures physiques_ précises, tout le long de la chaîne de production, de la prise de vue à la projection finale.
+
 ### Introduction
 
 >Un _goniomètre_ est un instrument de précision qui sert à mesurer des angles.
 
 ![](images/spectro_1.png)[^mni1] 
 
->[^mn3] Le _spectromètre_, comme son nom l'indique, est l'instrument qui permet de décomposer le 
-faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un mélange de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_, et d'obtenir une mesure de leurs longueurs d'onde. [^mn4] 
+>Le _spectromètre_ est l'instrument qui permet de décomposer le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un mélange de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_, et d'obtenir une mesure de leurs longueurs d'onde.
     
-On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme qui _réfracte_ chaque rayon coloré selon un angle différent.
+[^mn3] On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme qui _réfracte_ chaque rayon coloré selon un angle différent.
  
 On peut aussi utiliser un réseau qui _diffracte_ la lumière incidente dans des directions différentes et dans des ordres différents.
 
-On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la nature de leur spectre : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
+[^mn4] On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la nature de leur spectre : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
 
 ___
 
-## Images d'une fente source à travers un réseau de diffraction {#1}
+## 1 - Images d'une fente source à travers un réseau de diffraction {#1}
 
 ### Approche expérimentale 1 {#11}
 
 La fente du collimateur est éclairée par une lampe spectrale à vapeur de mercure.
 
-En regardant, à travers le réseau, directement dans l'axe du collimateur, Jean-Luc peut voir une image de la fente source, très lumineuse, et dont la couleur gris-bleuté est celle du mélange issu de la lampe.
+>En regardant, à travers le réseau, directement dans l'axe du collimateur, on peut voir une image de la fente source, très lumineuse, et dont la couleur gris-bleuté est celle du mélange issu de la lampe.
 
 ![](images/spectro_14.png) [^mn11]
 
-En déportant le regard horizontalement, c'est à dire perpendiculairement à la direction des fentes du réseau, on peut voir d'autres images de la fente source, qui ont chacune une couleur pure, et dont l'ensemble constitue le _spectre de raies_ de la lampe au mercure.
+>En déportant le regard horizontalement, c'est à dire perpendiculairement à la direction des fentes du réseau, on peut voir d'autres images de la fente source, qui ont chacune une couleur pure, et dont l'ensemble constitue le _spectre de raies_ de la lampe au mercure.
 
 ![](images/spectro_16.png) [^mn12]
 
-En déportant le regard encore plus loin de l'axe optique, on peut observer d'autres images colorées de la fente former un second spectre. En séance de travaux pratiques, vous pourrez vérifier qu'il est même possible d'en apercevoir un troisième.
+En déportant le regard encore plus loin de l'axe optique, on peut observer d'autres images colorées de la fente former un second spectre. 
+
+En séance de travaux pratiques, vous pourrez vérifier qu'il est même possible d'en apercevoir un troisième.
 
 ### Approche expérimentale 2
 
 Dans la nouvelle configuration présentée ci-dessous, le même réseau est éclairé par le faisceau quasiment _monochromatique_ d'un laser. 
 
 En faisant tourner le plateau, on peut faire varier l'angle sous lequel le réseau est éclairé. 
+
 Plus précisément, on fait varier l'angle d'incidence $\theta_0$ de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro.
 
-La tâche centrale correspond à la partie de la lumière qui n'est pas déviée par le réseau. Elle reste immobile quel que soit l'angle d'incidence.
+>La tâche centrale reste immobile quel que soit l'angle d'incidence ; elle correspond à la partie de la lumière qui n'est pas déviée par le réseau.
 
 >En revanche, les autres tâches de diffraction se rapprochent de la tâche centrale puis s'en éloignent. Autrement dit, leur distance à la tâche centrale _passe par un minimum_.
 
 ![](images/spectro_8.png) [^mn31]
 
-## La formule fondamentale du réseau {#2}
+## 2 - La formule fondamentale du réseau {#2}
 
 À partir de la loi de la réfraction dans le cas du prisme, ou à partir des principes de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de _calculer_ les longueurs d'onde à partir des angles que l'on peut _mesurer_ directement.
 
@@ -145,14 +149,14 @@ Une partie de la lumière incidente n'est donc pas du tout déviée, quel que so
 
 _En pratique_, nous allons repérer les différentes raies colorées par rapport à cet ordre zéro, direction que l'on peut viser à la lunette, plutôt que par rapport à la normale $(N)$ au réseau, qui est une direction dans laquelle on ne peut pas voir de lumière. 
 
-On considèrera donc, dorénavant, la _déviation_ $D$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta_p$ tel qu'il est défini dans la mise en place théorique de la formule fondamentale du réseau. 
+On considèrera donc, dorénavant, la _déviation_ $D_p$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta_p$ tel qu'il est défini dans la mise en place théorique de la formule fondamentale du réseau. 
 
 Par construction, il vient : 
-$$  D=\theta-\theta_0 $$
+$$  D_p=\theta_p-\theta_0 $$
 
 ![](images/spectro_3_4.png) [^mn24]
  
-## Symétries des images diffractées au minimum de déviation {#3}
+## 3 - Symétries des images diffractées au minimum de déviation {#3}
 
 ### Approche expérimentale
 
@@ -214,7 +218,7 @@ $$ D_{min}=-2\theta_0  $$
 
 $$ \theta = - \theta_0 = \frac{D_{min}}{2} $$
 
-## Comment se servir d'un goniomètre {#4}
+## 4 - Comment se servir d'un goniomètre {#4}
 
 ### Analogie entre un rapporteur et un goniomètre
 

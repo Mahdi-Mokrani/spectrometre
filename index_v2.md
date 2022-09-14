@@ -66,7 +66,7 @@ ___
 
 Déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte, est le point de départ de nombreuses analyses, dans des champs d'application très variés.
 
-S'assurer d'une reproducion fidèle des couleurs en photographie ou en vidéo suppose, par exemple, des _mesures physiques_ précises, tout le long de la chaîne de production, de la prise de vue à la projection finale.
+Pour s'assurer d'une reproducion fidèle des couleurs en photographie ou en vidéo, par exemple, on effectue des _mesures physiques_ précises, tout le long de la chaîne de production, de la prise de vue à la projection finale.
 
 ### Introduction
 

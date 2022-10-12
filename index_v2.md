@@ -19,7 +19,7 @@ ___
 [^mni1]:
      {-} Un goniomètre de type Bouty. De droite à gauche, on distingue : la fente source, le collimateur, le plateau et la lunette de visée.
 [^mn3]:
-    {-} ![](images/spectro_2.png) Un prisme ou un réseau de diffraction peuvent _décomposer_ un mélange de lumières colorées.
+    {-} ![](images/spectro_2.png) Un prisme ou un réseau de diffraction peuvent _séparer_ le mélange de lumières colorées issu d'une source polychromatique.
 [^mn4]:
     {-} ![](images/spectro_03.png) Une lampe à vapeur de Mercure présente _un spectre de raies_.
 [^mn11]:
@@ -32,8 +32,6 @@ ___
     {-} ![](images/spectro_3_0.png)Dans la formule du réseau, les angles sont repérés par rapport à la normale $(N)$ au réseau.
 [^mn23]:
     {-} Cas particulier de la composante verte de la lampe spectrale à vapeur de mercure. On considère l'image de la fente source à l'orde $p=-1$. C'est l'image que l'on peut observer à l'angle $\theta_{p=-1}$ repéré par rapport à la normale $(N)$ au réseau.
-[^mn222]:
-    {-} ![](images/spectro_3_5.png)
 [^mn223]:
     {-} L'indication $300$ traits par mm permet de calculer une estimation de la valeur du pas du réseau.
 [^mn24]:
@@ -75,7 +73,7 @@ Pour s'assurer d'une reproducion fidèle des couleurs en photographie ou en vid�
 ![](images/spectro_1.png)[^mni1]
 
 
->[^mn3] Le _spectromètre_ est l'instrument qui permet de décomposer le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un mélange de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_, et d'obtenir une mesure de leurs longueurs d'onde.
+>[^mn3] Le _spectromètre_ est l'instrument qui permet de séparer le faisceau de lumière issu d'une source _polychromatique_, c'est-à-dire considérée comme un mélange de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_, et d'obtenir une mesure de leurs longueurs d'onde.
     
 On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme qui _réfracte_ chaque rayon coloré selon un angle différent.
  

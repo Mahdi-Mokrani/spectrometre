@@ -72,11 +72,12 @@ Pour s'assurer d'une reproducion fidèle des couleurs en photographie ou en vid�
 
 >Un _goniomètre_ est un instrument de précision qui sert à mesurer des angles.
 
-![](images/spectro_1.png)[^mni1] 
+![](images/spectro_1.png)[^mni1]
 
->Le _spectromètre_ est l'instrument qui permet de décomposer le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un mélange de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_, et d'obtenir une mesure de leurs longueurs d'onde.
+
+>[^mn3] Le _spectromètre_ est l'instrument qui permet de décomposer le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un mélange de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_, et d'obtenir une mesure de leurs longueurs d'onde.
     
-[^mn3] On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme qui _réfracte_ chaque rayon coloré selon un angle différent.
+On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme qui _réfracte_ chaque rayon coloré selon un angle différent.
  
 On peut aussi utiliser un réseau qui _diffracte_ la lumière incidente dans des directions différentes et dans des ordres différents.
 

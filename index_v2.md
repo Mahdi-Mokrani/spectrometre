@@ -103,7 +103,7 @@ En séance de travaux pratiques, dans le noir, vous pourrez vérifier qu'il est 
 
 ### Approche expérimentale 2
 
-Dans cette nouvelle configuration, le même réseau est placé sur un plateau. En faisant tourner le plateau, on peut faire varier l'angle sous lequel le réseau est éclairé. 
+Dans cette nouvelle configuration, le réseau est placé sur un plateau. En faisant tourner le plateau, on peut faire varier l'angle sous lequel le réseau est éclairé. 
 
 Le réseau est éclairé par le faisceau quasiment _monochromatique_ d'un laser.
 

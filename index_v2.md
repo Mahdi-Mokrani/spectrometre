@@ -99,13 +99,13 @@ La fente du collimateur est éclairée par une lampe spectrale à vapeur de merc
 
 En déportant le regard encore plus loin de l'axe optique, on peut observer d'autres images colorées de la fente former un second spectre. 
 
-En séance de travaux pratiques, vous pourrez vérifier qu'il est même possible d'en apercevoir un troisième.
+En séance de travaux pratiques, dans le noir, vous pourrez vérifier qu'il est même possible d'apercevoir un troisième spectre et d'observer des spectres des trois ordres de l'autre côté, du côté des ordres négatifs.
 
 ### Approche expérimentale 2
 
-Dans la nouvelle configuration présentée ci-dessous, le même réseau est éclairé par le faisceau quasiment _monochromatique_ d'un laser. 
+Dans cette nouvelle configuration, le même réseau est placé sur un plateau. En faisant tourner le plateau, on peut faire varier l'angle sous lequel le réseau est éclairé. 
 
-En faisant tourner le plateau, on peut faire varier l'angle sous lequel le réseau est éclairé. 
+Le réseau est éclairé par le faisceau quasiment _monochromatique_ d'un laser.
 
 Plus précisément, on fait varier l'angle d'incidence $\theta_0$ de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro.
 

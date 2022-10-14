@@ -39,111 +39,129 @@ déviation</em></a></li>
 </ol>
 </blockquote>
 <hr />
-<section id="2" class="level2">
-<h2>2 - La formule fondamentale du réseau</h2>
-<p>À partir de la loi de la réfraction dans le cas du prisme, ou à
-partir des principes de la diffraction dans le cas du réseau, on peut
-établir une expression mathématique, une formule, qui nous permet de
-<em>calculer</em> les longueurs d’onde à partir des angles que l’on peut
-<em>mesurer</em> directement.</p>
-<p>La <em>formule fondamentale du réseau</em>, <span
+<section id="prolongement-symétrie-de-la-situation-de-mesure"
+class="level2">
+<h2>Prolongement: symétrie de la situation de mesure</h2>
+<section id="approche-expérimentale" class="level3">
+<h3>Approche expérimentale</h3>
+<p>Il est légitime de demander à notre <em>modèle physique</em> de
+rester pertinent que l’on regarde le phénomène depuis <strong>le
+haut</strong> … ou bien qu’on le regarde depuis <strong>le
+bas</strong>.</p>
+<p>Il existe donc nécessairement une position symétrique du réseau et de
+la lunette qui réalise exactement la même configuration angulaire … de
+l’autre côté du goniomètre.</p>
+<hr />
+<p><em>Protocole</em> <span
 class="sidenote-wrapper"><label for="sn-0" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-0" class="margin-toggle"/><span
-class="marginnote"><img src="images/spectro_3_0.png" />Dans la formule
-du réseau, les angles sont repérés par rapport à la normale <span
-class="math inline">\((N)\)</span> au réseau.<br />
+class="marginnote"><img src="images/spectro_17.png" /> <em>Visée</em> de
+la raie verte dans l’ordre <span
+class="math inline">\(p=-1\)</span>.<br />
 <br />
-</span></span> dont nous admettrons la validité dans une première
-approche, permet de déterminer les directions dans lesquelles on peut
-trouver les maxima d’éclairement, en fonction des autres grandeurs
-pertinentes.</p>
-<p><span class="math display">\[ \sin(\theta)-
-\sin(\theta_0)=p\frac{\lambda}{a}\]</span></p>
-<ul>
-<li><p><span class="math inline">\(\theta_0\)</span> représente
-<em>l’angle d’incidence</em>, angle sous lequel arrive la lumière issue
-du collimateur sur le réseau. Bien noter que cet angle est repéré par
-rapport à <em>la normale (N)</em> au réseau ;</p></li>
-<li><p><em>p</em> est <em>l’ordre d’interférence</em> considéré. C’est
-un entier relatif qui nous permet de numéroter les différentes images de
-la fente source d’une même couleur, les différentes raies du même vert
-par exemple ;</p></li>
-</ul>
-<p><img src="images/spectro_3_2.png" /><span
+</span></span> <span
 class="sidenote-wrapper"><label for="sn-1" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-1" class="margin-toggle"/><span
-class="marginnote">Cas particulier de la composante verte de la lampe
-spectrale à vapeur de mercure. On considère l’image de la fente source à
-l’orde <span class="math inline">\(p=-1\)</span>. C’est l’image que l’on
-peut observer à l’angle <span
-class="math inline">\(\theta_{p=-1}\)</span> repéré par rapport à la
-normale <span class="math inline">\((N)\)</span> au réseau.<br />
+class="marginnote"><img src="images/spectro_18.png" /> <em>Visée</em> de
+la raie verte dans l’ordre <span class="math inline">\(p=+1\)</span> de
+la situation symétrique, de l’autre côté de l’axe du collimateur.<br />
 <br />
 </span></span></p>
-<ul>
-<li><p><span class="math inline">\(\theta_p\)</span> représente l’angle
-sous lequel on peut repérer l’image de la fente source d’ordre p de la
-couleur considérée. Cet angle est également défini par rapport à la
-normale <span class="math inline">\((N)\)</span> au réseau ;</p></li>
-<li><p><span class="math inline">\(a\)</span> est une grandeur qui
-caractérise le réseau particulier que l’on a utilisé. C’est la distance
-entre deux gravures successives (réseau = grating in english) ou <em>pas
-du réseau</em>. Elle est de l’ordre du micromètre. Dans la pratique,
-c’est l’inverse du pas qui est indiqué sur l’objet, <em>le nombre de
-traits par unité de longueur</em>, 300 traits par mm dans notre
-exemple.</p></li>
-</ul>
-<p><img src="images/spectro_3_5.png" /> <span
+<p>Résumé en trois étapes, nous allons :</p>
+<ol type="1">
+<li><p><strong>Viser la raie</strong> verte dans l’ordre <span
+class="math inline">\(p=-1\)</span> et déterminer son azimut <span
+class="math inline">\(\alpha_1\)</span> au minimum de déviation
+;</p></li>
+<li><p>Déplacer le réseau, <strong>par rotation du plateau</strong>,
+approximativement dans la position symétrique à la précédente par
+rapport à l’axe qui est la direction de la lumière incidente ;</p></li>
+<li><p><strong>Viser la même raie une seconde fois</strong>, mais dans
+l’ordre <span class="math inline">\(p=+1\)</span> de cette nouvelle
+configuration et déterminer son azimut <span
+class="math inline">\(\alpha_2\)</span> au minimum de
+déviation.</p></li>
+</ol>
+<hr />
+<p>On obtient donc :</p>
+<p><span class="math display">\[ \lambda = 2\frac{a}{p}
+\sin(\frac{(2D_{min}/2)}{2}) \]</span></p>
+<p>On cherchera ici également à exprimer <span
+class="math inline">\(\lambda\)</span> en fonction des azimuts <span
+class="math inline">\(\alpha_1\)</span> et <span
+class="math inline">\(\alpha_2\)</span> qui sont les grandeurs mesurés
+directement et auxquelles on pourra attacher des incertitudes :</p>
+<p><span class="math display">\[ \lambda = 2\frac{a}{p} \sin(\vert
+\frac{\alpha_2-\alpha_1}{4} \vert)\]</span></p>
+<p><strong>Bilan</strong> : en effectuant les deux visées, nous avons
+cette fois déterminé l’angle <span
+class="math inline">\((2D_{min})\)</span>. L’incertitude expérimentale
+attachée à la détermination de l’angle <span
+class="math inline">\(D_{min}\)</span> est donc divisée par deux !</p>
+</section>
+<section id="approche-par-lexploration-du-modèle-mathématique"
+class="level3">
+<h3>Approche par l’exploration du modèle mathématique</h3>
+<p>La transformation mathématique <span
 class="sidenote-wrapper"><label for="sn-2" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-2" class="margin-toggle"/><span
-class="marginnote">L’indication <span class="math inline">\(300\)</span>
-traits par mm permet de calculer une estimation de la valeur du pas du
-réseau.<br />
+class="marginnote"><img src="images/spectro_17.png" /> <em>Visée</em> de
+la raie verte dans l’ordre <span
+class="math inline">\(p=-1\)</span>.<br />
 <br />
-</span></span></p>
-<ul>
-<li><span class="math inline">\(\lambda\)</span>, enfin, est la longueur
-d’onde dans l’air du rayonnement considéré. Elle caractérise
-quantitativement la couleur de la raie. Dans notre exemple, la raie
-verte de la lampe à vapeur de Mercure possède une teinte absolument
-singulière, caractérisée par la longueur d’onde 576 nm.</li>
-</ul>
-<section id="13" class="level3">
-<h3>Angle de déviation D</h3>
-<p>Pour <span class="math inline">\(p=0\)</span>, on peut remarquer que
-la formule fondamentale du réseau se réduit à : <span
-class="math display">\[ \sin(\theta) = \sin(\theta_0)\]</span> <span
-class="math display">\[\theta = \theta_0\]</span></p>
-<p>Une partie de la lumière incidente n’est donc pas du tout déviée,
-quel que soit l’angle d’incidence et quelle que soit la longueur
-d’onde.</p>
-<blockquote>
-<p>L’image de la fente d’ordre zéro, que l’on peut voir directement dans
-l’axe du collimateur, a donc la même couleur que le <em>mélange</em>
-directement issu de la source.</p>
-</blockquote>
-<p><em>En pratique</em>, nous allons repérer les différentes raies
-colorées par rapport à cet ordre zéro, direction que l’on peut viser à
-la lunette, plutôt que par rapport à la normale <span
-class="math inline">\((N)\)</span> au réseau, qui est une direction dans
-laquelle on ne peut pas voir de lumière.</p>
-<p>On considèrera donc, dorénavant, la <em>déviation</em> <span
-class="math inline">\(D_p\)</span> d’une raie colorée, grandeur
-mesurable, plutôt que son angle de sortie <span
-class="math inline">\(\theta_p\)</span> tel qu’il est défini dans la
-mise en place théorique de la formule fondamentale du réseau.</p>
-<p>Par construction, il vient : <span
-class="math display">\[  D_p=\theta_p-\theta_0 \]</span></p>
-<p><img src="images/spectro_3_4.png" /> <span
+</span></span> <span
 class="sidenote-wrapper"><label for="sn-3" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-3" class="margin-toggle"/><span
-class="marginnote"><span class="math inline">\(\theta_p\)</span>, mesuré
-par rapport à la normale <span class="math inline">\((N)\)</span> est
-l’angle tel que définit dans la mise en place théorique. En pratique, on
-repère les angles par rapport à l’ordre zéro, et on définit l’angle de
-déviation <span class="math inline">\(D_p\)</span>.<br />
+class="marginnote"><img src="images/spectro_17_bis.jpeg" /> Image
+précédente <em>retournée</em>, comme <em>vue de dessous</em>.<br />
 <br />
-</span></span></p>
+</span></span> <span
+class="sidenote-wrapper"><label for="sn-4" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-4" class="margin-toggle"/><span
+class="marginnote"><img src="images/spectro_18.png" /> <em>Visée</em> de
+la raie verte dans l’ordre <span class="math inline">\(p=+1\)</span> de
+la situation symétrique, de l’autre côté de l’axe du collimateur.<br />
+<br />
+</span></span> qui correspond au changement de point de vue haut/bas
+peut être vue comme un retournement de l’image, une rotation d’un
+demi-tour autour de l’axe qui est vertical sur la feuille et passe par
+son milieu.</p>
+<p>En gardant la même convention d’orientation des angles, cette
+transformation :</p>
+<ul>
+<li><p>conserve <em>en norme</em> les valeurs des angles <span
+class="math inline">\(\theta_0\)</span> et <span
+class="math inline">\(\theta\)</span>,</p></li>
+<li><p>change l’ordre <span class="math inline">\(p=-1\)</span> en un
+ordre <span class="math inline">\(p=+1\)</span>,</p></li>
+<li><p>change l’angle <span class="math inline">\(\theta_0\)</span> en
+<span class="math inline">\(-\theta_0\)</span></p></li>
+<li><p>et change l’angle <span class="math inline">\(\theta\)</span> en
+<span class="math inline">\(-\theta\)</span>.</p></li>
+</ul>
+<p><span class="math display">\[ \sin(-\theta) - \sin(-\theta_0) =
+(-p)\frac{\lambda}{a} \]</span></p>
+<p>Vous noterez que l’invariance observée est traduite, dans le modèle
+mathématique, par la propriété de la fonction sinus d’être une
+<em>fonction impaire</em>, c’est à dire telle que : <span
+class="math display">\[ \sin(-x) = - \sin(x)\]</span></p>
+<p>Les angles correspondant à la situation symétrique vérifient donc
+bien la formule fondamentale du réseau avec les mêmes valeurs : <span
+class="math display">\[ \sin(\theta) - \sin(\theta_0) =
+p\frac{\lambda}{a} \]</span></p>
+<hr />
 </section>
+<section id="bilan" class="level3">
+<h3>Bilan :</h3>
+<p>En effectuant la mesure symétrique, nous avons de nouveau divisé par
+deux le facteur devant les grandeurs auxquelles on attache une
+incertitude expérimentale de mesure :</p>
+<p><span class="math display">\[ \lambda = 2\frac{a}{p}
+\sin(\frac{(2D_{min}/2)}{2}) = 2\frac{a}{p} \sin(\vert
+\frac{\alpha_2-\alpha_1}{4} \vert)\]</span></p>
+<p>Soit au total un gain de l’ordre de 1 à 4.</p>
+<hr />
+<p>Dans le <a href="/SspectroE02.html">prochaine épisode</a>, nous nous
+intéresserons au problème de la précision des visées.</p>
+<p>En particulier, nous traiterons de la manière dont on règle à sa vue
+l’ensemble lunette et collimateur.</p>
+<p>Au revoir, et à très bientôt j’espère.</p>
 </section>
-<section id="3" class="level2">
-<h2>3 - Symétries des images diffractées au minimum de déviation</h2>
 </section>
 </article>
 </body>

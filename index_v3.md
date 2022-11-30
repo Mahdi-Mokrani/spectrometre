@@ -56,77 +56,63 @@ ___
     {-} ![](images/spectro_17_bis.jpeg) Image précédente _retournée_, comme _vue de dessous_.
 [^mn45]:
     {-} ![](images/spectro_18.png) _Visée_ de la raie verte dans l'ordre $p=+1$ de la situation symétrique, de l'autre côté de l'axe du collimateur.
+[^mn46]:
+    {-} ![](images/Plateau_rapporteur.png)
+[^mn47]:
+    {-} ![](images/Laser.png)
 
 
-## Prolongement: symétrie de la situation de mesure
-### Approche expérimentale
+### Approche expérimentale 2
 
-Il est légitime de demander à notre _modèle physique_ de rester pertinent que l'on regarde le phénomène depuis **le haut** ... ou bien qu'on le regarde depuis **le bas**.
+Dans cette nouvelle configuration, le réseau est placé sur un plateau. En faisant tourner le plateau, on peut faire varier l'angle sous lequel le réseau est éclairé. 
 
-Il existe donc nécessairement une position symétrique du réseau et de la lunette qui réalise exactement la même configuration angulaire ... de l'autre côté du goniomètre.
+Le réseau est éclairé par le faisceau quasiment _monochromatique_ d'un laser.
 
-___
+![](images/spectro_8.png) [^mn31]
 
- _Protocole_ [^mn41] [^mn42]
+Plus précisément, on fait varier l'angle d'incidence $\theta_0$ de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro.
 
- Résumé en trois étapes, nous allons :
+>La tâche centrale reste immobile quel que soit l'angle d'incidence ; elle correspond à la partie de la lumière qui n'est pas déviée par le réseau.
 
-1. **Viser la raie** verte dans l'ordre $p=-1$ et déterminer son azimut $\alpha_1$ au minimum de déviation ; 
+>En revanche, les autres tâches de diffraction se rapprochent de la tâche centrale puis s'en éloignent. Autrement dit, leur distance à la tâche centrale _passe par un minimum_.
 
-2. Déplacer le réseau, **par rotation du plateau**, approximativement dans la position symétrique à la précédente par rapport à l'axe qui est la  direction de la lumière incidente ;
+## 2 - La formule fondamentale du réseau {#2}
 
-3. **Viser la même raie une seconde fois**, mais dans l'ordre $p=+1$ de cette nouvelle configuration et déterminer son azimut $\alpha_2$ au minimum de déviation.
+La _formule fondamentale du réseau_, dont nous admettrons la validité dans une première approche, permet de déterminer les directions dans lesquelles on peut trouver les maxima d'éclairement, en fonction des autres grandeurs pertinentes.
 
-___
+$$ \sin(\theta)- \sin(\theta_0)=p\frac{\lambda}{a}$$ 
 
-On obtient donc :
-
-$$ \lambda = 2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) $$
-
-On cherchera ici également à exprimer $\lambda$ en fonction des azimuts $\alpha_1$ et $\alpha_2$  qui sont les grandeurs mesurés directement et auxquelles on pourra attacher des incertitudes  :
-
-$$ \lambda = 2\frac{a}{p} \sin(\vert \frac{\alpha_2-\alpha_1}{4} \vert)$$
-
-**Bilan** : en effectuant les deux visées, nous avons cette fois déterminé l'angle $(2D_{min})$. L'incertitude expérimentale attachée à la détermination de l'angle $D_{min}$  est donc divisée par deux !
-
-### Approche par l'exploration du modèle mathématique
-
-La transformation mathématique [^mn43] [^mn44] [^mn45] qui correspond au changement de point de vue haut/bas peut être vue comme un retournement de l'image, une rotation d'un demi-tour autour de l'axe qui est vertical sur la feuille et passe par son milieu.
-
-En gardant la même convention d'orientation des angles, cette transformation :
-
-- conserve _en norme_ les valeurs des angles $\theta_0$ et $\theta$,
-
-- change l'ordre $p=-1$ en un ordre $p=+1$,
-
-- change l'angle $\theta_0$ en $-\theta_0$
-
-- et change l'angle $\theta$ en $-\theta$.
-
-$$ \sin(-\theta) - \sin(-\theta_0) = (-p)\frac{\lambda}{a} $$
-
-Vous noterez que l'invariance observée est traduite, dans le modèle mathématique, par la propriété de la fonction sinus d'être une _fonction impaire_, c'est à dire telle que : 
-$$ \sin(-x) = - \sin(x)$$
-
-Les angles correspondant à la situation symétrique vérifient donc bien la formule fondamentale du réseau avec les mêmes valeurs :
-$$ \sin(\theta) - \sin(\theta_0) = p\frac{\lambda}{a} $$
-
-___
-
-### Bilan :
-
-En effectuant la mesure symétrique, nous avons de nouveau divisé par deux le facteur devant les grandeurs auxquelles on attache une incertitude expérimentale de mesure :
-
-$$ \lambda = 2\frac{a}{p} \sin(\frac{(2D_{min}/2)}{2}) = 2\frac{a}{p} \sin(\vert \frac{\alpha_2-\alpha_1}{4} \vert)$$
+>[^mn22] 
 
 
-Soit au total un gain de l'ordre de 1 à 4.
+- $\theta_0$ représente _l'angle d'incidence_, angle sous lequel arrive la lumière issue du collimateur sur le réseau. Bien noter que cet angle est repéré par rapport à _la normale (N)_ au réseau ;
 
-___
+- _p_ est _l'ordre d'interférence_ considéré. C'est un entier relatif qui nous permet de numéroter les différentes images de la fente source d'une même couleur, les différentes raies du même vert par exemple ;
 
+![](images/spectro_3_2.png)[^mn23] 
 
-Dans le [prochaine épisode](/SspectroE02.html), nous nous intéresserons au problème de la précision des visées. 
+- $\theta_p$ représente l'angle sous lequel on peut repérer l'image de la fente source d'ordre p de la couleur considérée. Cet angle est également défini par rapport à la normale $(N)$ au réseau ; 
 
-En particulier, nous traiterons de la manière dont on règle à sa vue l'ensemble lunette et collimateur.
+- $a$ est une grandeur qui caractérise le réseau particulier que l'on a utilisé. C'est la distance entre deux gravures successives (réseau = grating in english) ou _pas du réseau_. Elle est de l'ordre du micromètre. Dans la pratique, c'est l'inverse du pas qui est indiqué sur l'objet, _le nombre de traits par unité de longueur_, 300 traits par mm dans notre exemple.
 
-Au revoir, et à très bientôt j'espère.
+![](images/spectro_3_5.png) [^mn223]
+
+- $\lambda$, enfin, est la longueur d'onde dans l'air du rayonnement considéré. Elle caractérise quantitativement la couleur de la raie. Dans notre exemple, la raie verte de la lampe à vapeur de Mercure possède une teinte absolument singulière, caractérisée par la longueur d'onde 576 nm.
+
+### Angle de déviation D {#13}
+
+Pour $p=0$, on peut remarquer que la formule fondamentale du réseau se réduit à : 
+$$ \sin(\theta) = \sin(\theta_0)$$ $$\theta = \theta_0$$
+
+Une partie de la lumière incidente n'est donc pas du tout déviée, quel que soit l'angle d'incidence et quelle que soit la longueur d'onde.
+
+>L'image de la fente d'ordre zéro, que l'on peut voir directement dans l'axe du collimateur, a donc la même couleur que le _mélange_ directement issu de la source.
+
+_En pratique_, nous allons repérer les différentes raies colorées par rapport à cet ordre zéro, direction que l'on peut viser à la lunette, plutôt que par rapport à la normale $(N)$ au réseau, qui est une direction dans laquelle on ne peut pas voir de lumière. 
+
+On considèrera donc, dorénavant, la _déviation_ $D_p$ d'une raie colorée, grandeur mesurable, plutôt que son angle de sortie $\theta_p$ tel qu'il est défini dans la mise en place théorique de la formule fondamentale du réseau. 
+
+Par construction, il vient : 
+$$  D_p=\theta_p-\theta_0 $$
+
+![](images/spectro_3_4.png) [^mn24]

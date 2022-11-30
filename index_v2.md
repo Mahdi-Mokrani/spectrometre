@@ -56,11 +56,16 @@ ___
     {-} ![](images/spectro_17_bis.jpeg) Image précédente _retournée_, comme _vue de dessous_.
 [^mn45]:
     {-} ![](images/spectro_18.png) _Visée_ de la raie verte dans l'ordre $p=+1$ de la situation symétrique, de l'autre côté de l'axe du collimateur.
-
+[^mn46]:
+    {-} ![](images/Plateau_rapporteur.png)
+[^mn47]:
+    {-} ![](images/Laser.png)
 
 ### Prologue
 
-[^mn0] Pour un physicien, la lumière est un message duquel on peut extraire de nombreuses informations.
+Pour un physicien, la lumière est un message duquel on peut extraire de nombreuses informations.
+
+>[^mn0]
 
 Déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte, est le point de départ de nombreuses analyses, dans des champs d'application très variés.
 
@@ -68,18 +73,20 @@ Pour s'assurer d'une reproducion fidèle des couleurs en photographie ou en vid�
 
 ### Introduction
 
->Un _goniomètre_ est un instrument de précision qui sert à mesurer des angles.
+>Un _goniomètre_ est un instrument de précision qui, comme le rapporteur des leçons de géométrie, sert à mesurer des angles. Si le rapporteur présente 90 graduations pour un angle droit, une graduation pour chaque degré, le goniomètre, lui, présente _60 fois plus_ de graduations, soit une graduation pour chaque _minute d'arc_.
 
 ![](images/spectro_1.png)[^mni1]
 
 
->[^mn3] Le _spectromètre_ est l'instrument qui permet de séparer le faisceau de lumière issu d'une source _polychromatique_, c'est-à-dire considérée comme un mélange de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_, et d'obtenir une mesure de leurs longueurs d'onde.
+>[^mn3] On appellera _spectromètre_ l'ensemble d'instruments qui permet de séparer le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un mélange de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_, et d'obtenir une mesure de leurs longueurs d'onde.
     
-On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme qui _réfracte_ chaque rayon coloré selon un angle différent.
+On pourra obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme qui _réfracte_ chaque rayon coloré selon un angle différent.
  
+>[^mn4] 
+
 On peut aussi utiliser un réseau qui _diffracte_ la lumière incidente dans des directions différentes et dans des ordres différents.
 
-[^mn4] On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la nature de leur spectre : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
+On a d'ailleurs pris l'habitude de classer les sources de lumière en fonction de la nature de leur spectre : une lampe blanche possède un spectre _continu_ alors que les lampes à vapeurs métalliques ont un spectre contenant un nombre _discret_ de raies, qui sont comme la _signature_ de l'élément chimique qui les a émis.
 
 ___
 
@@ -101,19 +108,21 @@ En déportant le regard encore plus loin de l'axe optique, on peut observer d'au
 
 En séance de travaux pratiques, dans le noir, vous pourrez vérifier qu'il est même possible d'apercevoir un troisième spectre et d'observer des spectres des trois ordres de l'autre côté, du côté des ordres négatifs.
 
+>[^mn46]
+
 ### Approche expérimentale 2
 
 Dans cette nouvelle configuration, le réseau est placé sur un plateau. En faisant tourner le plateau, on peut faire varier l'angle sous lequel le réseau est éclairé. 
 
 Le réseau est éclairé par le faisceau quasiment _monochromatique_ d'un laser.
 
+![](images/spectro_8.png) [^mn31]
+
 Plus précisément, on fait varier l'angle d'incidence $\theta_0$ de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro.
 
 >La tâche centrale reste immobile quel que soit l'angle d'incidence ; elle correspond à la partie de la lumière qui n'est pas déviée par le réseau.
 
 >En revanche, les autres tâches de diffraction se rapprochent de la tâche centrale puis s'en éloignent. Autrement dit, leur distance à la tâche centrale _passe par un minimum_.
-
-![](images/spectro_8.png) [^mn31]
 
 ## 2 - La formule fondamentale du réseau {#2}
 

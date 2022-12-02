@@ -1,5 +1,5 @@
 all:
-	pandoc -s -o index.html index_v3.md \
+	pandoc -s -o index.html index_v2.md \
                 --mathjax \
                 --section-divs \
                 --from markdown+tex_math_single_backslash \

@@ -108,8 +108,6 @@ En déportant le regard encore plus loin de l'axe optique, on peut observer d'au
 
 En séance de travaux pratiques, dans le noir, vous pourrez vérifier qu'il est même possible d'apercevoir un troisième spectre et d'observer des spectres des trois ordres de l'autre côté, du côté des ordres négatifs.
 
->[^mn46]
-
 ### Approche expérimentale 2
 
 Dans cette nouvelle configuration, le réseau est placé sur un plateau. En faisant tourner le plateau, on peut faire varier l'angle sous lequel le réseau est éclairé. 
@@ -128,7 +126,9 @@ Plus précisément, on fait varier l'angle d'incidence $\theta_0$ de manière _m
 
 À partir de la loi de la réfraction dans le cas du prisme, ou à partir des principes de la diffraction dans le cas du réseau, on peut établir une expression mathématique, une formule, qui nous permet de _calculer_ les longueurs d'onde à partir des angles que l'on peut _mesurer_ directement.
 
-La _formule fondamentale du réseau_, [^mn22] dont nous admettrons la validité dans une première approche, permet de déterminer les directions dans lesquelles on peut trouver les maxima d'éclairement, en fonction des autres grandeurs pertinentes.
+La _formule fondamentale du réseau_, dont nous admettrons la validité dans une première approche, permet de déterminer les directions dans lesquelles on peut trouver les maxima d'éclairement, en fonction des autres grandeurs pertinentes.
+
+[^mn22] 
 
 $$ \sin(\theta)- \sin(\theta_0)=p\frac{\lambda}{a}$$ 
 
@@ -208,7 +208,6 @@ $\begin{multline*}
 \frac{d(\sin(\theta_0+D))}{d\theta_0} = \cos(\theta_0) \cos(D) (1+\frac{dD}{d\theta_0}) \\
 -\sin(\theta_0) \sin(D) (1+\frac{dD}{d\theta_0}) 
 \end{multline*}$
-
 
 Et comme au minimum de déviation on a : $$ \frac{dD}{d\theta_0}=0 $$
 

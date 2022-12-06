@@ -63,13 +63,13 @@ ___
 
 ### Prologue
 
-Pour un physicien, la lumière est un message duquel on peut extraire de nombreuses informations.
+Pour un physicien, la lumière est un message.
 
 >[^mn0]
 
 Déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte, est le point de départ de nombreuses analyses, dans des champs d'application très variés.
 
-Pour s'assurer d'une reproducion fidèle des couleurs en photographie ou en vidéo, par exemple, on effectue des _mesures physiques_ précises, tout le long de la chaîne de production, de la prise de vue à la projection finale.
+En photographie ou en vidéo par exemple, pour s'assurer d'une reproducion fidèle des couleurs, on effectue des _mesures physiques_ précises, tout le long de la chaîne de production, de la prise de vue à la projection finale.
 
 ### Introduction
 
@@ -78,7 +78,9 @@ Pour s'assurer d'une reproducion fidèle des couleurs en photographie ou en vid�
 ![](images/spectro_1.png)[^mni1]
 
 
->[^mn3] On appellera _spectromètre_ l'ensemble d'instruments qui permet de séparer le faisceau issu d'une source de lumière _polychromatique_, c'est-à-dire considérée comme un mélange de lumières colorées, dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_, et d'obtenir une mesure de leurs longueurs d'onde.
+>[^mn3] Un _spectroscope_ un instrument qui permet de séparer le faisceau issu d'une source de lumière _polychromatique_ dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_.
+
+>On parlera enfin d'un _spectromètre_ lorsque l'ensemble d'instruments permet d'obtenir également  une _mesure_ de chaque longueur d'onde.
     
 On pourra obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme qui _réfracte_ chaque rayon coloré selon un angle différent.
  

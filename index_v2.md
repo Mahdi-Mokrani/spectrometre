@@ -59,7 +59,7 @@ ___
 [^mn46]:
     {-} ![](images/Plateau_rapporteur.png)
 [^mn47]:
-    {-} ![](images/Laser.png)
+    {-} ![](images/nuage-de-mots%20(1).png)
 
 ### Prologue
 

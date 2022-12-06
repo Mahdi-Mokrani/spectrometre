@@ -80,7 +80,7 @@ En photographie ou en vidéo par exemple, pour s'assurer d'une reproducion fidè
 
 >[^mn3] Un _spectroscope_ un instrument qui permet de séparer le faisceau issu d'une source de lumière _polychromatique_ dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_.
 
->On parlera enfin d'un _spectromètre_ lorsque l'ensemble d'instruments permet d'obtenir également  une _mesure_ de chaque longueur d'onde.
+>On parlera d'un _spectromètre_ lorsque l'ensemble d'instruments permet également d'obtenir une _mesure_ de chaque longueur d'onde.
     
 On pourra obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme qui _réfracte_ chaque rayon coloré selon un angle différent.
  

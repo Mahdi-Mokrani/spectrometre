@@ -11,7 +11,7 @@ ___
 >1. [_Images d'une fente source à travers un réseau de diffraction_](#1)
 >2. [_La formule fondamentale du réseau_](#2)
 >3. [_Symétries des images diffractées au minimum de déviation_](#3)
->4. [_Comment se servir d'un goniomètre ?_](#4)
+>4. [_Conclusion : comment se servir d'un goniomètre ?_](#4)
 
 ___
 [^mn0]:
@@ -69,7 +69,7 @@ Pour un physicien, la lumière est un message.
 
 Déterminer avec précision la fréquence d'un rayonnement, sa couleur exacte, est le point de départ de nombreuses analyses, dans des champs d'application très variés.
 
-En photographie ou en vidéo par exemple, pour s'assurer d'une reproducion fidèle des couleurs, on effectue des _mesures physiques_ précises, tout le long de la chaîne de production, de la prise de vue à la projection finale.
+En photographie ou en vidéo par exemple, pour s'assurer d'une reproduction consistante des couleurs, on effectue des _mesures physiques_ précises, tout le long de la chaîne de production, de la prise de vue à la projection finale.
 
 ### Introduction
 
@@ -78,11 +78,11 @@ En photographie ou en vidéo par exemple, pour s'assurer d'une reproducion fidè
 ![](images/spectro_1.png)[^mni1]
 
 
->[^mn3] Un _spectroscope_ un instrument qui permet de séparer le faisceau issu d'une source de lumière _polychromatique_ dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_.
+>[^mn3] Un _spectroscope_ est un instrument qui permet de séparer le faisceau d'une source de lumière _polychromatique_ dans l'ensemble des lumières _monochromatiques_ ou lumières colorées pures qui constituent son _spectre_.
 
->On parlera d'un _spectromètre_ lorsque l'instrument permet également d'obtenir une _mesure_ de chaque longueur d'onde.
+>Lorsque l'instrument permet également d'obtenir une _mesure_ de chaque longueur d'onde, on parlera d'un _spectromètre_.
     
-On pourra obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme qui _réfracte_ chaque rayon coloré selon un angle différent.
+On peut obtenir un spectromètre en associant le goniomètre avec un système dispersif comme le prisme qui _réfracte_ chaque rayon coloré selon un angle différent.
  
 >[^mn4] 
 
@@ -98,31 +98,31 @@ ___
 
 La fente du collimateur est éclairée par une lampe spectrale à vapeur de mercure.
 
->En regardant, à travers le réseau, directement dans l'axe du collimateur, on peut voir une image de la fente source, très lumineuse, et dont la couleur gris-bleuté est celle du mélange issu de la lampe.
+>En regardant, à travers le réseau, directement dans l'axe du collimateur, on peut voir une image de la fente source, très lumineuse, et dont la couleur gris-bleuté est celle du mélange polychromatique issu de la lampe.
 
 ![](images/spectro_14.png) [^mn11]
 
->En déportant le regard horizontalement, c'est à dire perpendiculairement à la direction des fentes du réseau, on peut voir d'autres images de la fente source, qui ont chacune une couleur pure, et dont l'ensemble constitue le _spectre de raies_ de la lampe au mercure.
+>En déportant le regard horizontalement, c'est à dire perpendiculairement à la direction des fentes du réseau, on peut voir d'autres images de la fente source, qui ont chacune une couleur pure, et dont l'ensemble constitue le _spectre de raies monchromatiques_ de la lampe au mercure.
 
 ![](images/spectro_16.png) [^mn12]
 
-En déportant le regard encore plus loin de l'axe optique, on peut observer d'autres images colorées de la fente former un second spectre. 
+En déportant le regard encore plus loin de l'axe optique, on peut observer d'autres images colorées de la fente former un second spectre ou _spectre d'ordre 2_. 
 
-En séance de travaux pratiques, dans le noir, vous pourrez vérifier qu'il est même possible d'apercevoir un troisième spectre et d'observer des spectres des trois ordres de l'autre côté, du côté des ordres négatifs.
+En séance de travaux pratiques, dans le noir, vous pourrez vérifier qu'avec le réseau qui vous sera confié, il est même possible d'apercevoir un spectre d'ordre 3 et qu'il est possible d'observer trois ordres de spectres de l'autre côté, du côté des ordres que l'on qualifiera de négatifs.
 
 ### Approche expérimentale 2
 
 Dans cette nouvelle configuration, le réseau est placé sur un plateau. En faisant tourner le plateau, on peut faire varier l'angle sous lequel le réseau est éclairé. 
 
-Le réseau est éclairé par le faisceau quasiment _monochromatique_ d'un laser.
+On remplace lampe à vapeur de Mercure par le faisceau quasiment _monochromatique_ d'un laser.
 
 ![](images/spectro_8.png) [^mn31]
 
-Plus précisément, on fait varier l'angle d'incidence $\theta_0$ de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro.
+Plus précisément, on fait varier l'angle d'incidence de manière _monotone_ entre zéro et 90 degrés puis de nouveau de manière _monotone_ entre 90 degrés et zéro.
 
 >La tâche centrale reste immobile quel que soit l'angle d'incidence ; elle correspond à la partie de la lumière qui n'est pas déviée par le réseau.
 
->En revanche, les autres tâches de diffraction se rapprochent de la tâche centrale puis s'en éloignent. Autrement dit, leur distance à la tâche centrale _passe par un minimum_.
+>En revanche, les autres tâches de diffraction se rapprochent de la tâche centrale puis s'en éloignent. Autrement dit, leur distance à la tâche centrale, prise comme une fonction de l'angle d'incidence, _passe par un minimum_.
 
 ## 2 - La formule fondamentale du réseau {#2}
 
